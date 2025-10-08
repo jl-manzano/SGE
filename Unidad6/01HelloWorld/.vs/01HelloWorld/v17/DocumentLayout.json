@@ -1,12 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jl.manzano\\GitHub\\Unidad5\\01HelloWorld\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad6\\01HelloWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC91BCED-F697-4B2C-ADA2-1CFD00594233}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\jl.manzano\\github\\sge\\unidad6\\01helloworld\\01helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC91BCED-F697-4B2C-ADA2-1CFD00594233}|01HelloWorld\\01HelloWorld.csproj|solutionrelative:01helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC91BCED-F697-4B2C-ADA2-1CFD00594233}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\jl.manzano\\github\\sge\\unidad6\\01helloworld\\01helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC91BCED-F697-4B2C-ADA2-1CFD00594233}|01HelloWorld\\01HelloWorld.csproj|solutionrelative:01helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC91BCED-F697-4B2C-ADA2-1CFD00594233}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\jl.manzano\\github\\sge\\unidad6\\01helloworld\\01helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC91BCED-F697-4B2C-ADA2-1CFD00594233}|01HelloWorld\\01HelloWorld.csproj|solutionrelative:01helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "01HelloWorld\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "01HelloWorld\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-08T12:34:52.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "01HelloWorld\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "01HelloWorld\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-08T12:28:41.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad6\\01HelloWorld\\01HelloWorld\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "01HelloWorld\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad6\\01HelloWorld\\01HelloWorld\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "01HelloWorld\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:27:56.914Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
