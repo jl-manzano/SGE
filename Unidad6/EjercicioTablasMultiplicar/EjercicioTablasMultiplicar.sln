@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioTablasMultiplicar", "EjercicioTablasMultiplicar\EjercicioTablasMultiplicar.csproj", "{B6090389-64D0-4A86-A7F6-46FF9E3389EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6090389-64D0-4A86-A7F6-46FF9E3389EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6090389-64D0-4A86-A7F6-46FF9E3389EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6090389-64D0-4A86-A7F6-46FF9E3389EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6090389-64D0-4A86-A7F6-46FF9E3389EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2551F821-6CA2-4F0E-B676-6547016907F8}
+	EndGlobalSection
+EndGlobal
