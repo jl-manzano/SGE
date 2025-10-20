@@ -1,0 +1,36 @@
+﻿@model Ejercicio4.Models.DAL.clsPersona
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="GuardarPersona">
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", id = "Nombre" })
+    </div>
+
+    <div class="form-group">
+        <label for="Apellidos">Apellidos</label>
+        @Html.TextBoxFor(model => model.Apellidos, new { @class = "form-control", id = "Apellidos" })
+    </div>
+
+    <div class="form-group">
+        <label for="Edad">Edad</label>
+        @Html.TextBoxFor(model => model.Edad, new { @class = "form-control", id = "Edad" })
+    </div>
+
+    <div class="form-group">
+        <label for="Departamento">Departamento</label>
+        @Html.DropDownListFor(
+            model => model.Departamento.IdDepartamento, // Aquí usamos 'model' correctamente
+            new SelectList(ViewBag.Departamentos, "IdDepartamento", "NombreDepartamento",
+                           model.Departamento != null ? model.Departamento.IdDepartamento : (int?)null),
+            "-- Selecciona Departamento --",
+            new { @class = "form-control", id = "Departamento" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+<hr />
+
+<a href="@Url.Action("Index", "Home")">Volver a la página principal</a>

@@ -1,0 +1,9 @@
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\Ejercicio4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\Ejercicio4.AssemblyInfoInputs.cache
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\Ejercicio4.AssemblyInfo.cs
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\Ejercicio4.csproj.CoreCompileInputs.cache
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\Ejercicio4.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\Ejercicio4.RazorAssemblyInfo.cache
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\Ejercicio4.RazorAssemblyInfo.cs
+C:\Users\portatil\Desktop\j\dam\SGE\Unidad7\Ejercicio4\Ejercicio4\obj\Debug\net9.0\Ejercicio4.sourcelink.json

@@ -1,0 +1,19 @@
+@model Ejercicio3.Models.DAL.clsPersona
+
+@{
+    ViewData["Title"] = "Persona en la posición 3";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h3>Datos de la persona:</h3>
+    <p><strong>ID:</strong>@Model.Id</p>
+    <p><strong>Nombre:</strong>@Model.Nombre</p>
+    <p><strong>Apellidos:</strong>@Model.Apellidos</p>
+    <p><strong>Edad:</strong>@Model.Edad</p>
+</div>
+
+<hr />
+
+<a href="@Url.Action("Index", "Home")">Volver a la página Arincipal</a>

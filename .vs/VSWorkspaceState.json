@@ -1,10 +1,19 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Unidad6",
-    "\\Unidad6\\EjercicioTablasMultiplicar",
-    "\\Unidad7"
+    "\\Unidad7",
+    "\\Unidad7\\Ejercicio3",
+    "\\Unidad7\\Ejercicio3\\Ejercicio3",
+    "\\Unidad7\\Ejercicio3\\Ejercicio3\\Models",
+    "\\Unidad7\\Ejercicio3\\Ejercicio3\\Models\\DAL",
+    "\\Unidad7\\Ejercicio4",
+    "\\Unidad7\\Ejercicio4\\Ejercicio4",
+    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers",
+    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Models",
+    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL",
+    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views",
+    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home"
   ],
-  "SelectedNode": "\\Unidad7",
+  "SelectedNode": "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
