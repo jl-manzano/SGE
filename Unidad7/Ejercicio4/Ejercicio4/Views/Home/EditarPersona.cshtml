@@ -3,33 +3,43 @@
 <h2>@ViewData["Title"]</h2>
 
 <form method="post" asp-action="GuardarPersona">
-    <!-- Campo para Nombre -->
+    <!-- Campo para el Nombre de la persona -->
     <div class="form-group">
         <label for="Nombre">Nombre</label>
         @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", id = "Nombre" })
     </div>
 
-    <!-- Campo para Apellidos -->
+    <!-- Campo para los Apellidos de la persona -->
     <div class="form-group">
         <label for="Apellidos">Apellidos</label>
         @Html.TextBoxFor(model => model.Apellidos, new { @class = "form-control", id = "Apellidos" })
     </div>
 
-    <!-- Campo para Edad -->
+    <!-- Campo para la Edad de la persona -->
     <div class="form-group">
         <label for="Edad">Edad</label>
         @Html.TextBoxFor(model => model.Edad, new { @class = "form-control", id = "Edad" })
     </div>
 
-    <!-- Campo para seleccionar el Departamento -->
+    <!-- Campo para seleccionar el Departamento al que pertenece la persona -->
     <div class="form-group">
         <label for="Departamento">Departamento</label>
+
         @Html.DropDownListFor(
-            model => model.Departamento.IdDepartamento,  // Enlaza al ID del Departamento
-            new SelectList(ViewBag.Departamentos, "IdDepartamento", "NombreDepartamento",
-                           Model.Departamento != null ? Model.Departamento.IdDepartamento : (int?)null),
-            "-- Selecciona Departamento --", // Texto por defecto
-            new { @class = "form-control", id = "Departamento" })
+            model => Model.Departamento.IdDepartamento, // Este es el campo que se enlaza al modelo (ID del Departamento)
+
+            // crea el SelectList para las opciones del Dropdown
+            new SelectList(ViewBag.Departamentos, "IdDepartamento", "NombreDepartamento", Model.Departamento?.IdDepartamento),
+            // primer parámetro de SelectList es la lista de departamentos (ViewBag.Departamentos)
+            // segundo parámetro es el campo que se usará como valor de cada opción en el dropdown
+            // tercer parámetro es el campo que se usará como texto visible de cada opción en el dropdown
+            // cuarto parámetro es el valor seleccionado por defecto en el dropdown. Aquí, se usa el IdDepartamento de la persona ya seleccionada
+
+            "-- Selecciona Departamento --", // Texto por defecto que aparece cuando el usuario no ha seleccionado nada
+
+            // Atributos HTML adicionales para darle estilo al dropdown (form-control es una clase de Bootstrap)
+            new { @class = "form-control", id = "Departamento" }
+        )
     </div>
 
     <!-- Botón para enviar el formulario -->

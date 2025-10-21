@@ -4,10 +4,13 @@ namespace Ejercicio4.Models.DAL
     {
         #region atributos privados
         private int _id;
-        private string _nombre = string.Empty;  // inicializado con un valor vacío
-        private string _apellidos = string.Empty;  // inicializado con un valor vacío
+        // inicializado con un valor vacío
+        private string _nombre = string.Empty;
+        // inicializado con un valor vacío
+        private string _apellidos = string.Empty;
         private int _edad;
-        private clsDepartamento _dpto = new clsDepartamento(0, "");  // inicializado con un valor predeterminado
+        // inicializado con un valor predeterminado
+        private clsDepartamento _dpto = new clsDepartamento(0, ""); 
         #endregion
 
         #region getters y setters
@@ -43,11 +46,12 @@ namespace Ejercicio4.Models.DAL
         #endregion
 
         #region constructores
-        // Constructor vacío necesario para el model binding
+        // constructor vacío necesario para el model binding
         public clsPersona()
         {
         }
 
+        // constructor con parámetros para inicializar los valores
         public clsPersona(int id, string nombre, string apellidos, int edad, clsDepartamento departamento)
         {
             _id = id;

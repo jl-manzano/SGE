@@ -14,11 +14,13 @@ namespace Ejercicio4.Controllers
             _logger = logger;
         }
 
+        // acción que renderiza la vista principal
         public IActionResult Index()
         {
             return View();
         }
 
+        // lista de departamentos
         private static List<clsDepartamento> departamentos = new List<clsDepartamento>
         {
             new clsDepartamento(1, "Recursos Humanos"),
@@ -26,6 +28,7 @@ namespace Ejercicio4.Controllers
             new clsDepartamento(3, "Marketing")
         };
 
+        // lista de personas
         private static List<clsPersona> personas = new List<clsPersona>
         {
             new clsPersona(1, "José", "Domínguez", 30, departamentos[0]),
@@ -35,23 +38,18 @@ namespace Ejercicio4.Controllers
             new clsPersona(5, "Pedro", "Martínez", 40, departamentos[0])
         };
 
-        // acción para editar los datos de una persona (se pasa por id)
-        public IActionResult EditarPersona(int id)
+        // acción para editar los datos de una persona
+        public IActionResult EditarPersona()
         {
-            // buscar la persona por ID
-            var persona = personas.FirstOrDefault(p => p.Id == id);
-
-            // verificar si la persona existe
-            if (persona == null)
-            {
-                return NotFound();
-            }
+            // seleccionar aleatoriamente una persona de la lista
+            Random random = new Random();
+            var persona = personas[random.Next(personas.Count)]; // selecciona una persona al azar
 
             // pasar los departamentos a la vista
             ViewBag.Departamentos = departamentos;
 
-            // pasar la persona encontrada a la vista
-            return View(persona); 
+            // pasar la persona seleccionada a la vista
+            return View(persona);
         }
 
         // acción para guardar los datos modificados de una persona
@@ -61,7 +59,7 @@ namespace Ejercicio4.Controllers
             // verificar si el modelo es válido (validación del formulario)
             if (ModelState.IsValid)
             {
-                // buscar la persona original por id
+                // buscar la persona original por ID
                 var personaExistente = personas.FirstOrDefault(p => p.Id == persona.Id);
 
                 // si la persona existe, actualizar sus datos
@@ -77,22 +75,18 @@ namespace Ejercicio4.Controllers
                 return RedirectToAction("Index");
             }
 
-            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-            {
-                // Esto imprimirá los errores en la consola o en el log para que puedas revisarlos
-                Console.WriteLine(error.ErrorMessage);
-            }
-
             // si los datos no son válidos, devolver la vista de edición con errores
             ViewBag.Departamentos = departamentos; // pasar los departamentos nuevamente a la vista
             return View("EditarPersona", persona); // volver a mostrar el formulario de edición
         }
 
+        // acción de privacidad
         public IActionResult Privacy()
         {
             return View();
         }
 
+        // acción para manejar los errores
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
