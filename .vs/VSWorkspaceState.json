@@ -4,8 +4,8 @@
     "\\Unidad7",
     "\\Unidad7\\Ejercicio3",
     "\\Unidad7\\Ejercicio3\\Ejercicio3",
-    "\\Unidad7\\Ejercicio3\\Ejercicio3\\Models",
-    "\\Unidad7\\Ejercicio3\\Ejercicio3\\Models\\DAL",
+    "\\Unidad7\\Ejercicio3\\Ejercicio3\\Views",
+    "\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home",
     "\\Unidad7\\Ejercicio4",
     "\\Unidad7\\Ejercicio4\\Ejercicio4",
     "\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers",
@@ -14,6 +14,6 @@
     "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views",
     "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home"
   ],
-  "SelectedNode": "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

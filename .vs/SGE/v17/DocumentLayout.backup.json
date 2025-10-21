@@ -1,65 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\",
+  "WorkspaceRootPath": "C:\\Users\\jl.manzano\\GitHub\\SGE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio3\\Ejercicio3\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -70,77 +66,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EditarPersona.cshtml",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml",
               "RelativeToolTip": "Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-20T20:16:00.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAuwDUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAswFMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:02:45.177Z"
+              "WhenOpened": "2025-10-20T20:02:45.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-20T20:15:17.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "clsDepartamento.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs",
               "RelativeToolTip": "Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsDepartamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:03:20.968Z"
+              "WhenOpened": "2025-10-20T20:03:20.968Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "clsPersona.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs",
               "RelativeToolTip": "Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\clsPersona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:01:03.734Z"
+              "WhenOpened": "2025-10-20T20:01:03.734Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "ListadoPersonas.cshtml",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml",
               "RelativeToolTip": "Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\ListadoPersonas.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -148,11 +147,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Unidad7\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwC8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -160,11 +159,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Unidad7\\Ejercicio2\\Ejercicio2\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -172,11 +171,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Unidad7\\Ejercicio2\\Ejercicio2\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -184,23 +183,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "clsPersona.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Models\\DAL\\clsPersona.cs",
-              "RelativeDocumentMoniker": "Unidad7\\Ejercicio3\\Ejercicio3\\Models\\DAL\\clsPersona.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Models\\DAL\\clsPersona.cs",
-              "RelativeToolTip": "Unidad7\\Ejercicio3\\Ejercicio3\\Models\\DAL\\clsPersona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T19:23:59.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -208,11 +195,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PersonaPosTres.cshtml",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml",
               "RelativeToolTip": "Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home\\PersonaPosTres.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -220,11 +207,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs",
               "RelativeToolTip": "Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities\\Persona.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -232,11 +219,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "clsPersona.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs",
               "RelativeToolTip": "Unidad7\\Ejercicio2\\Ejercicio2\\Models\\DAL\\clsPersona.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAwwCsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -244,11 +231,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\GitHub\\SGE\\Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Unidad7\\Ejercicio1\\Ejercicio1\\Controllers\\HomeController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

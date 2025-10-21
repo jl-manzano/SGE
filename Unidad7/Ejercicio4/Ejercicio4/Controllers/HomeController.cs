@@ -77,6 +77,12 @@ namespace Ejercicio4.Controllers
                 return RedirectToAction("Index");
             }
 
+            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+            {
+                // Esto imprimirá los errores en la consola o en el log para que puedas revisarlos
+                Console.WriteLine(error.ErrorMessage);
+            }
+
             // si los datos no son válidos, devolver la vista de edición con errores
             ViewBag.Departamentos = departamentos; // pasar los departamentos nuevamente a la vista
             return View("EditarPersona", persona); // volver a mostrar el formulario de edición

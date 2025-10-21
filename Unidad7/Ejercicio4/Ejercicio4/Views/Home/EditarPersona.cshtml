@@ -3,34 +3,40 @@
 <h2>@ViewData["Title"]</h2>
 
 <form method="post" asp-action="GuardarPersona">
+    <!-- Campo para Nombre -->
     <div class="form-group">
         <label for="Nombre">Nombre</label>
         @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", id = "Nombre" })
     </div>
 
+    <!-- Campo para Apellidos -->
     <div class="form-group">
         <label for="Apellidos">Apellidos</label>
         @Html.TextBoxFor(model => model.Apellidos, new { @class = "form-control", id = "Apellidos" })
     </div>
 
+    <!-- Campo para Edad -->
     <div class="form-group">
         <label for="Edad">Edad</label>
         @Html.TextBoxFor(model => model.Edad, new { @class = "form-control", id = "Edad" })
     </div>
 
+    <!-- Campo para seleccionar el Departamento -->
     <div class="form-group">
         <label for="Departamento">Departamento</label>
         @Html.DropDownListFor(
-            model => model.Departamento.IdDepartamento, // Aquí usamos 'model' correctamente
+            model => model.Departamento.IdDepartamento,  // Enlaza al ID del Departamento
             new SelectList(ViewBag.Departamentos, "IdDepartamento", "NombreDepartamento",
-                           model.Departamento != null ? model.Departamento.IdDepartamento : (int?)null),
-            "-- Selecciona Departamento --",
+                           Model.Departamento != null ? Model.Departamento.IdDepartamento : (int?)null),
+            "-- Selecciona Departamento --", // Texto por defecto
             new { @class = "form-control", id = "Departamento" })
     </div>
 
+    <!-- Botón para enviar el formulario -->
     <button type="submit" class="btn btn-primary">Guardar</button>
 </form>
 
 <hr />
 
+<!-- Enlace para volver a la página principal -->
 <a href="@Url.Action("Index", "Home")">Volver a la página principal</a>
