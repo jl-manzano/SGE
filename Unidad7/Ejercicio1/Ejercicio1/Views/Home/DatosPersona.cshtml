@@ -1,0 +1,23 @@
+@model Ejercicio1.Models.Entities.Persona
+
+@{
+    ViewData["Title"] = "Persona en la posición 3";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h3>Datos de la persona:</h3>
+    <p><strong>ID:</strong> @Model.Id</p>
+    <p><strong>Nombre:</strong> @Model.Nombre</p>
+    <p><strong>Apellidos:</strong> @Model.Apellidos</p>
+    <p><strong>Edad:</strong> @Model.Edad</p>
+</div>
+
+<hr />
+
+<div class="d-flex mt-4">
+    @Html.ActionLink("Ver Vista Principal", "Index", "Home", null, new { @class = "btn btn-primary me-2" })
+    @Html.ActionLink("Ver listado de personas", "Listado", "Home", null, new { @class = "btn btn-primary me-2" })
+
+</div>

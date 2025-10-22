@@ -40,12 +40,12 @@ namespace Ejercicio1.Controllers
             return View();
         }
 
-        public IActionResult ListadoPersonas()
+        public IActionResult Listado()
         {
             return View(ListadoPersonas.getListadoPersonas());
         }
         
-        public IActionResult PersonaPosTres()
+        public IActionResult DatosPersona()
         {
             return View(ListadoPersonas.getPersonaByPosition(3));
         }

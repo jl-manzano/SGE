@@ -15,5 +15,7 @@
     <li>Nombre: @ViewBag.Persona.Nombre</li>
 </ul>
 
-@Html.ActionLink("Ver Vista Listado Personas", "ListadoPersonas", "Home", null, new { @class = "btn btn-primary me-2" })
-@Html.ActionLink("Ver datos de la persona con ID 3", "PersonaPosTres", "Home", null, new { @class = "btn btn-success" })
+<div class="btn-group mt-4" role="group" aria-label="Basic example">
+    @Html.ActionLink("Ver listado de personas", "Listado", "Home", null, new { @class = "btn btn-primary me-2" })
+    @Html.ActionLink("Ver datos de la persona con ID 3", "DatosPersona", "Home", null, new { @class = "btn btn-success me-2" })
+</div>

@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Unidad7",
-    "\\Unidad7\\Ejercicio1",
     "\\Unidad7\\Ejercicio1\\Ejercicio1",
-    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Controllers",
     "\\Unidad7\\Ejercicio1\\Ejercicio1\\Models",
     "\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Data",
     "\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Properties",
     "\\Unidad7\\Ejercicio1\\Ejercicio1\\Views",
-    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Views\\Home"
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Views\\Home",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Views\\Shared"
   ],
-  "SelectedNode": "\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Data\\ListadoPersonas.cs",
+  "SelectedNode": "\\Unidad7\\Ejercicio4",
   "PreviewInSolutionExplorer": false
 }

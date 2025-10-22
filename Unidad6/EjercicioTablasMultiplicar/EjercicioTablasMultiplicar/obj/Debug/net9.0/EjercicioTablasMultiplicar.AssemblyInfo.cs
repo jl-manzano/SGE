@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EjercicioTablasMultiplicar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+126645b6a510c4edfc672817d16eb41577023d10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9972253709ad20528e06333c81b544691090793")]
 [assembly: System.Reflection.AssemblyProductAttribute("EjercicioTablasMultiplicar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EjercicioTablasMultiplicar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
