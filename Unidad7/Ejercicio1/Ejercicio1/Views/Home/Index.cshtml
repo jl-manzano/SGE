@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Ejercicio1.Models.Entities.Persona
+
+@{
     ViewData["Title"] = "Inicio";
 }
 
@@ -12,3 +14,6 @@
     <li>ID: @ViewBag.Persona.Id</li>
     <li>Nombre: @ViewBag.Persona.Nombre</li>
 </ul>
+
+@Html.ActionLink("Ver Vista Listado Personas", "ListadoPersonas", "Home", null, new { @class = "btn btn-primary me-2" })
+@Html.ActionLink("Ver datos de la persona con ID 3", "PersonaPosTres", "Home", null, new { @class = "btn btn-success" })

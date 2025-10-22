@@ -2,18 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Unidad7",
-    "\\Unidad7\\Ejercicio3",
-    "\\Unidad7\\Ejercicio3\\Ejercicio3",
-    "\\Unidad7\\Ejercicio3\\Ejercicio3\\Views",
-    "\\Unidad7\\Ejercicio3\\Ejercicio3\\Views\\Home",
-    "\\Unidad7\\Ejercicio4",
-    "\\Unidad7\\Ejercicio4\\Ejercicio4",
-    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers",
-    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Models",
-    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL",
-    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views",
-    "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home"
+    "\\Unidad7\\Ejercicio1",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Controllers",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Models",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Data",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Entities",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Views",
+    "\\Unidad7\\Ejercicio1\\Ejercicio1\\Views\\Home"
   ],
-  "SelectedNode": "\\Unidad7\\Ejercicio4\\Ejercicio4\\Views\\Home\\EditarPersona.cshtml",
+  "SelectedNode": "\\Unidad7\\Ejercicio1\\Ejercicio1\\Models\\Data\\ListadoPersonas.cs",
   "PreviewInSolutionExplorer": false
 }

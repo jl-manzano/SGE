@@ -1,0 +1,37 @@
+@model List<Ejercicio1.Models.Entities.Persona>
+
+    @{
+    ViewData["Title"] = "Listado de Personas";
+    }
+
+    <h2>@ViewData["Title"]</h2>
+
+    @if (Model != null && Model.Any())
+{
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDOS</th>
+                <th>EDAD</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var persona in Model)
+            {
+            <tr>
+                <td>@persona.Nombre</td>
+                <td>@persona.Apellidos</td>
+                <td>@persona.Edad</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay personas en el listado.</p>
+}
+
+    @Html.ActionLink("Ver Vista Principal", "Index", "Home", null, new { @class = "btn btn-primary me-2" })
+    @Html.ActionLink("Ver datos de la persona con ID 3", "PersonaPosTres", "Home", null, new { @class = "btn btn-success" })

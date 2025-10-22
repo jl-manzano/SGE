@@ -34,12 +34,22 @@ namespace Ejercicio1.Controllers
 
             ViewBag.Fecha = fecha;
 
-            Persona persona = new Persona(1, "José Luis");
-
-            ViewBag.persona = persona;
+            Persona persona = new Persona(1, "José Luis", "Manzano Borrego", 20);
+            ViewBag.Persona = persona;
 
             return View();
         }
+
+        public IActionResult ListadoPersonas()
+        {
+            return View(ListadoPersonas.getListadoPersonas());
+        }
+        
+        public IActionResult PersonaPosTres()
+        {
+            return View(ListadoPersonas.getPersonaByPosition(3));
+        }
+
 
         public IActionResult Privacy()
         {
