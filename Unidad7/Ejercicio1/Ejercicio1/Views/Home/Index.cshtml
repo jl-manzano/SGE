@@ -1,0 +1,21 @@
+﻿@model Ejercicio1.Models.Entities.Persona
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h1>@ViewBag.Mensaje</h1>
+<p>Fecha actual: @ViewBag.Fecha</p>
+
+<hr />
+
+<h2>Datos de la Persona</h2>
+<ul>
+    <li>ID: @ViewBag.Persona.Id</li>
+    <li>Nombre: @ViewBag.Persona.Nombre</li>
+</ul>
+
+<div class="btn-group mt-4" role="group" aria-label="Basic example">
+    @Html.ActionLink("Ver listado de personas", "Listado", "Home", null, new { @class = "btn btn-primary me-2" })
+    @Html.ActionLink("Ver datos de la persona con ID 3", "DatosPersona", "Home", null, new { @class = "btn btn-success me-2" })
+</div>

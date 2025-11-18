@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nGQ2MYRwd6s=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jl.manzano\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.10\\microsoft.extensions.configuration.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\jl.manzano\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.10\\microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\jl.manzano\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.10\\microsoft.extensions.primitives.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

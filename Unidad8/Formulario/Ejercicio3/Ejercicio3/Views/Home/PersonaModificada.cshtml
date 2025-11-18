@@ -1,0 +1,26 @@
+﻿@model Ejercicio3.Models.clsPersona
+
+@{
+    ViewData["Title"] = "Persona Modificada";
+}
+
+<h2>Persona Modificada</h2>
+
+<div>
+    <label for="Id">ID: </label>
+    <p>@Model.Id</p>
+</div>
+<div>
+    <label for="Nombre">Nombre: </label>
+    <p>@Model.Nombre</p>
+</div>
+<div>
+    <label for="Apellidos">Apellidos: </label>
+    <p>@Model.Apellidos</p>
+</div>
+<div>
+    <label for="Edad">Edad: </label>
+    <p>@Model.Edad</p>
+</div>
+
+@Html.ActionLink("Editar de nuevo", "Index", "Home")

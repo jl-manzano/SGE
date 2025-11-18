@@ -1,0 +1,16 @@
+﻿@model List<Domain.Entities.Mision>
+
+<div class="text-center">
+    <h1 class="display-4">Mandalorian</h1>
+
+    <form asp-action="MisionSeleccionada" asp-controller="Home" method="post">
+        <select name="idMision" class="form-select">
+            @foreach (var mision in Model)
+            {
+                <option value="@mision.Id">@mision.Title</option>
+            }
+        </select>
+        <br />
+        <button type="submit">Obtener misión</button>
+    </form>
+</div>

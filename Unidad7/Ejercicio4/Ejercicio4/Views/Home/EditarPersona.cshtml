@@ -1,0 +1,53 @@
+﻿@model Ejercicio4.Models.DAL.clsPersona
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="GuardarPersona">
+    <!-- Campo para el Nombre de la persona -->
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", id = "Nombre" })
+    </div>
+
+    <!-- Campo para los Apellidos de la persona -->
+    <div class="form-group">
+        <label for="Apellidos">Apellidos</label>
+        @Html.TextBoxFor(model => model.Apellidos, new { @class = "form-control", id = "Apellidos" })
+    </div>
+
+    <!-- Campo para la Edad de la persona -->
+    <div class="form-group">
+        <label for="Edad">Edad</label>
+        @Html.TextBoxFor(model => model.Edad, new { @class = "form-control", id = "Edad" })
+    </div>
+
+    <!-- Campo para seleccionar el Departamento al que pertenece la persona -->
+    <div class="form-group">
+        <label for="Departamento">Departamento</label>
+        @Html.DropDownListFor(
+        model => Model.IdDepartamento, // aquí estamos indicando que el valor seleccionado en el dropdown se enlazará con el campo 'IdDepartamento' del modelo (representado por 'Model.IdDepartamento').
+        
+        // new selectlist() crea una lista de opciones para el dropdown. recibe cuatro parámetros:
+        new SelectList(
+            ViewBag.Departamentos, // la fuente de datos para el dropdown. 'ViewBag.Departamentos' es la lista de departamentos que se pasa desde el controlador.
+            "IdDepartamento",      // el campo que se usará como valor de cada opción en el dropdown (el id del departamento).
+            "NombreDepartamento",  // el campo que se usará como texto visible para cada opción (el nombre del departamento).
+            Model.IdDepartamento   // este es el valor que se preseleccionará en el dropdown. usamos 'Model.IdDepartamento' para que el valor de la persona seleccionada se mantenga cuando se edita.
+        ),
+        
+        // "-- selecciona departamento --" es el texto por defecto que aparecerá en la lista desplegable antes de que el usuario elija una opción.
+        "-- Selecciona Departamento --",
+
+        // los atributos adicionales de estilo del dropdown, en este caso se le asigna la clase 'form-control' para estilizarlo con bootstrap y se le da un id específico.
+        new { @class = "form-control", id = "Departamento" }
+    )
+    </div>
+
+    <!-- Botón para enviar el formulario -->
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+<hr />
+
+<!-- Enlace para volver a la página principal -->
+<a href="@Url.Action("Index", "Home")">Volver a la página principal</a>

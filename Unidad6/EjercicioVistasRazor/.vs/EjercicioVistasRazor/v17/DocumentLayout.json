@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad6\\EjercicioVistasRazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9BE6EE-5668-4F0A-B4C5-8C0B40A3D6EA}|EjercicioVistasRazor\\EjercicioVistasRazor.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad6\\ejerciciovistasrazor\\ejerciciovistasrazor\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9BE6EE-5668-4F0A-B4C5-8C0B40A3D6EA}|EjercicioVistasRazor\\EjercicioVistasRazor.csproj|solutionrelative:ejerciciovistasrazor\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9BE6EE-5668-4F0A-B4C5-8C0B40A3D6EA}|EjercicioVistasRazor\\EjercicioVistasRazor.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad6\\ejerciciovistasrazor\\ejerciciovistasrazor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA9BE6EE-5668-4F0A-B4C5-8C0B40A3D6EA}|EjercicioVistasRazor\\EjercicioVistasRazor.csproj|solutionrelative:ejerciciovistasrazor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9BE6EE-5668-4F0A-B4C5-8C0B40A3D6EA}|EjercicioVistasRazor\\EjercicioVistasRazor.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad6\\ejerciciovistasrazor\\ejerciciovistasrazor\\ejerciciovistasrazor.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AA9BE6EE-5668-4F0A-B4C5-8C0B40A3D6EA}|EjercicioVistasRazor\\EjercicioVistasRazor.csproj|solutionrelative:ejerciciovistasrazor\\ejerciciovistasrazor.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad6\\EjercicioVistasRazor\\EjercicioVistasRazor\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "EjercicioVistasRazor\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad6\\EjercicioVistasRazor\\EjercicioVistasRazor\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "EjercicioVistasRazor\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T13:33:54.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad6\\EjercicioVistasRazor\\EjercicioVistasRazor\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EjercicioVistasRazor\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad6\\EjercicioVistasRazor\\EjercicioVistasRazor\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EjercicioVistasRazor\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:33:23.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EjercicioVistasRazor",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad6\\EjercicioVistasRazor\\EjercicioVistasRazor\\EjercicioVistasRazor.csproj",
+              "RelativeDocumentMoniker": "EjercicioVistasRazor\\EjercicioVistasRazor.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad6\\EjercicioVistasRazor\\EjercicioVistasRazor\\EjercicioVistasRazor.csproj",
+              "RelativeToolTip": "EjercicioVistasRazor\\EjercicioVistasRazor.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-18T13:33:18.456Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Data",
+    "\\Data\\Repositories",
+    "\\Domain",
+    "\\Domain\\Entities",
+    "\\Domain\\UseCases",
+    "\\Domain\\UseCases\\Interfaces"
+  ],
+  "SelectedNode": "\\Data\\Repositories\\ListadoPersonas.cs",
+  "PreviewInSolutionExplorer": false
+}
