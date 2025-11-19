@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,7 @@ namespace Domain.UseCases.Interfaces
     public interface IListadoPersonasUseCases
     {
         List<Entities.Persona> obtenerListadoPersonas();
+        Persona obtenerPersonaId(int id);
+
     }
 }

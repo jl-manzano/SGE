@@ -26,6 +26,12 @@ namespace Data.Repositories
         {
             return _listadoPersonas;
         }
+
+        public Persona obtenerPersonaId(int id)
+        {
+            return _listadoPersonas.FirstOrDefault(p => p.Id == id);
+        }
+
     }
 
 }

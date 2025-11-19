@@ -18,5 +18,11 @@ namespace Domain.UseCases
         {
             return _listadoPersonasRepository.obtenerListadoPersonas();
         }
+
+        public Entities.Persona obtenerPersonaId(int id)
+        {
+            return _listadoPersonasRepository.obtenerPersonaId(id);
+        }
+
     }
 }
