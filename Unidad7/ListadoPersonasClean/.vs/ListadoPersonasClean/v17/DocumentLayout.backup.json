@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\",
+  "WorkspaceRootPath": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\repositories\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\repositories\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\repositories\\personasrepositoryazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\repositories\\personasrepositoryazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58137509-B31F-42CD-8BD2-0AF95D0F2988}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\data\\repositories\\personasrepositoryazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\repositories\\personasrepositoryazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\data\\repositories\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\repositories\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58137509-B31F-42CD-8BD2-0AF95D0F2988}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58137509-B31F-42CD-8BD2-0AF95D0F2988}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\interfaces\\ilistadopersonasusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\interfaces\\ilistadopersonasusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\interfaces\\ilistadopersonasusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\getlistadopersonasuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\getlistadopersonasuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\getlistadopersonasuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\interfaces\\ilistadopersonasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\interfaces\\ilistadopersonasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\interfaces\\ilistadopersonasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\repositories\\listadopersonasvacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\data\\repositories\\listadopersonasvacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\repositories\\listadopersonasvacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|solutionrelative:ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\listadopersonasclean\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -62,176 +62,166 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "UI\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "UI\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T19:47:50.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T19:47:50.241Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "IListadoPersonasUseCases.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
               "RelativeDocumentMoniker": "Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
               "RelativeToolTip": "Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.62Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "InversifyConfig.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\CompositionRoot\\InversifyConfig.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\CompositionRoot\\InversifyConfig.cs",
               "RelativeDocumentMoniker": "CompositionRoot\\InversifyConfig.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\CompositionRoot\\InversifyConfig.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\CompositionRoot\\InversifyConfig.cs",
               "RelativeToolTip": "CompositionRoot\\InversifyConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Connection.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
               "RelativeDocumentMoniker": "Data\\Database\\Connection.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
               "RelativeToolTip": "Data\\Database\\Connection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T18:42:31.634Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PersonasRepositoryAzure.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\PersonasRepositoryAzure.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\PersonasRepositoryAzure.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\PersonasRepositoryAzure.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\PersonasRepositoryAzure.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\PersonasRepositoryAzure.cs",
               "RelativeToolTip": "Data\\Repositories\\PersonasRepositoryAzure.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwDcAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T18:42:31.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Entities\\Persona.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Entities\\Persona.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Persona.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Entities\\Persona.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Entities\\Persona.cs",
               "RelativeToolTip": "Domain\\Entities\\Persona.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAA7wAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "UI\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAUwB0AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-18T18:42:31.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ListadoPersonas.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonas.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonas.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\ListadoPersonas.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonas.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonas.cs",
               "RelativeToolTip": "Data\\Repositories\\ListadoPersonas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswBQAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.612Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "GetListadoPersonasUC.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\GetListadoPersonasUC.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\GetListadoPersonasUC.cs",
               "RelativeDocumentMoniker": "Domain\\UseCases\\GetListadoPersonasUC.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\GetListadoPersonasUC.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\GetListadoPersonasUC.cs",
               "RelativeToolTip": "Domain\\UseCases\\GetListadoPersonasUC.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T19:07:22.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T19:07:22.536Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "IListadoPersonasRepository.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
               "RelativeDocumentMoniker": "Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
               "RelativeToolTip": "Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.625Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "ListadoPersonasVacio.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonasVacio.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonasVacio.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\ListadoPersonasVacio.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonasVacio.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonasVacio.cs",
               "RelativeToolTip": "Data\\Repositories\\ListadoPersonasVacio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.616Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "UI\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Controllers\\HomeController.cs",
               "RelativeToolTip": "UI\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:50:43.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:50:43.35Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Data.csproj",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Data.csproj",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Data.csproj",
               "RelativeDocumentMoniker": "Data\\Data.csproj",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Data.csproj",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Data.csproj",
               "RelativeToolTip": "Data\\Data.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-18T18:42:31.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.642Z"
             }
           ]
         }
