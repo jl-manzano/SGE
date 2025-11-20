@@ -24,42 +24,84 @@ namespace UI.Controllers
             return View(personas);
         }
 
-        [HttpPost]
-        public IActionResult Create(Persona persona)
-        {
-            if (!ModelState.IsValid)
-                return View(persona); // Si el modelo no es válido, retornamos la vista con el modelo
-
-            _useCaseListadoPersonas.AgregarPersona(persona);  // Método en el repositorio para agregar la persona
-            return RedirectToAction(nameof(Index));  // Redirige a la lista de personas después de la creación
-        }
-
-        [HttpPost]
-        public IActionResult Edit(int id, Persona persona)
-        {
-            if (id != persona.Id)
-                return RedirectToAction(nameof(Index));  // Si el id no coincide, redirige a la lista de personas
-
-            if (ModelState.IsValid)
-                _useCaseListadoPersonas.ActualizarPersona(persona);  // Actualiza la persona en el repositorio
-
-            return RedirectToAction(nameof(Details), new { id = persona.Id });  // Redirige a la vista de detalles
-        }
-
         public IActionResult Details(int id)
         {
             return View(_useCaseListadoPersonas.obtenerPersonaId(id));
         }
 
+        // GET: Home/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Home/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Persona persona)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(persona);
+            }
+
+            _useCaseListadoPersonas.insertarPersona(persona);
+            return RedirectToAction(nameof(Index));
+        }
+
+        // GET: Home/Edit/5
+        public IActionResult Edit(int id)
+        {
+            var persona = _useCaseListadoPersonas.obtenerPersonaId(id);
+            if (persona == null)
+                return RedirectToAction(nameof(Index));
+
+            return View(persona);
+        }
+
+        // POST: Home/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, Persona persona)
+        {
+            if (id != persona.Id)
+                return BadRequest();
+
+            if (!ModelState.IsValid)
+            {
+                return View(persona);
+            }
+
+            _useCaseListadoPersonas.actualizarPersona(persona);
+            return RedirectToAction(nameof(Index));
+        }
+
+        // GET: Muestra la página de confirmación para eliminar
         public IActionResult Delete(int id)
         {
             var persona = _useCaseListadoPersonas.obtenerPersonaId(id);
             if (persona == null)
-                return RedirectToAction(nameof(Index));  // Si no se encuentra, redirige a la lista de personas
+            {
+                return NotFound();
+            }
 
-            return View(persona);  // Muestra la confirmación de eliminación
+            return View(persona);
         }
 
+        // POST: Elimina el registro
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var persona = _useCaseListadoPersonas.obtenerPersonaId(id);
+            if (persona == null)
+            {
+                return NotFound();
+            }
+
+            _useCaseListadoPersonas.eliminarPersona(id);
+            return RedirectToAction(nameof(Index));
+        }
 
         public IActionResult Privacy()
         {

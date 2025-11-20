@@ -27,5 +27,33 @@ namespace Data.Repositories
             return _listadoPersonas.FirstOrDefault(p => p.Id == id);
         }
 
+        public void insertarPersona(Persona persona)
+        {
+            _listadoPersonas.Add(persona);
+        }
+
+        public void actualizarPersona(Persona persona)
+        {
+            var personaExistente = obtenerPersonaId(persona.Id);
+            if (personaExistente != null)
+            {
+                personaExistente.Nombre = persona.Nombre;
+                personaExistente.Apellidos = persona.Apellidos;
+                personaExistente.FechaNac = persona.FechaNac;
+                personaExistente.Direccion = persona.Direccion;
+                personaExistente.Telefono = persona.Telefono;
+                personaExistente.Foto = persona.Foto;
+            }
+        }
+
+        public void eliminarPersona(int id)
+        {
+            var personaAEliminar = obtenerPersonaId(id);
+            if (personaAEliminar != null)
+            {
+                _listadoPersonas.Remove(personaAEliminar);
+            }
+        }
+
     }
 }

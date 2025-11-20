@@ -131,6 +131,85 @@ namespace Data.Repositories
             return oPersona;
         }
 
+        public void insertarPersona(Persona persona)
+        {
+            using (SqlConnection miConexion = new SqlConnection("server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;"))
+            {
+                try
+                {
+                    miConexion.Open();
+                    string query = "INSERT INTO personas (Nombre, Apellidos, FechaNacimiento, Direccion, Telefono, Foto) VALUES (@Nombre, @Apellidos, @FechaNacimiento, @Direccion, @Telefono, @Foto)";
+                    using (SqlCommand miComando = new SqlCommand(query, miConexion))
+                    {
+                        miComando.Parameters.AddWithValue("@Nombre", persona.Nombre);
+                        miComando.Parameters.AddWithValue("@Apellidos", persona.Apellidos);
+                        miComando.Parameters.AddWithValue("@FechaNacimiento", persona.FechaNac);
+                        miComando.Parameters.AddWithValue("@Direccion", persona.Direccion);
+                        miComando.Parameters.AddWithValue("@Telefono", persona.Telefono);
+                        miComando.Parameters.AddWithValue("@Foto", persona.Foto);
+
+                        miComando.ExecuteNonQuery();  // Ejecuta la inserción
+                    }
+                }
+                catch (SqlException exSql)
+                {
+                    // En caso de error, lanzamos la excepción
+                    throw exSql;
+                }
+            }
+        }
+
+        public void actualizarPersona(Persona persona)
+        {
+            using (SqlConnection miConexion = new SqlConnection("server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;"))
+            {
+                try
+                {
+                    miConexion.Open();
+                    string query = "UPDATE personas SET Nombre = @Nombre, Apellidos = @Apellidos, FechaNacimiento = @FechaNacimiento, Direccion = @Direccion, Telefono = @Telefono, Foto = @Foto WHERE ID = @Id";
+                    using (SqlCommand miComando = new SqlCommand(query, miConexion))
+                    {
+                        miComando.Parameters.AddWithValue("@Id", persona.Id);
+                        miComando.Parameters.AddWithValue("@Nombre", persona.Nombre);
+                        miComando.Parameters.AddWithValue("@Apellidos", persona.Apellidos);
+                        miComando.Parameters.AddWithValue("@FechaNacimiento", persona.FechaNac);
+                        miComando.Parameters.AddWithValue("@Direccion", persona.Direccion);
+                        miComando.Parameters.AddWithValue("@Telefono", persona.Telefono);
+                        miComando.Parameters.AddWithValue("@Foto", persona.Foto);
+
+                        miComando.ExecuteNonQuery();  // Ejecuta la actualización
+                    }
+                }
+                catch (SqlException exSql)
+                {
+                    // En caso de error, lanzamos la excepción
+                    throw exSql;
+                }
+            }
+        }
+
+        public void eliminarPersona(int id)
+        {
+            using (SqlConnection miConexion = new SqlConnection("server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;"))
+            {
+                try
+                {
+                    miConexion.Open();
+                    string query = "DELETE FROM personas WHERE ID = @Id";
+                    using (SqlCommand miComando = new SqlCommand(query, miConexion))
+                    {
+                        miComando.Parameters.AddWithValue("@Id", id);
+
+                        miComando.ExecuteNonQuery();  // Ejecuta la eliminación
+                    }
+                }
+                catch (SqlException exSql)
+                {
+                    // En caso de error, lanzamos la excepción
+                    throw exSql;
+                }
+            }
+        }
 
     }
 }
