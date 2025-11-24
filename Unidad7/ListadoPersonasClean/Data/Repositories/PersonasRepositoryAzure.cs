@@ -153,11 +153,11 @@ namespace Data.Repositories
                 }
                 catch (SqlException exSql)
                 {
-                    // En caso de error, lanzamos la excepción
                     throw exSql;
                 }
             }
         }
+
 
         public void actualizarPersona(Persona persona)
         {

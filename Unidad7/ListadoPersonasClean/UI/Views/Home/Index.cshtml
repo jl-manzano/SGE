@@ -6,6 +6,11 @@
 
 <h1>@ViewData["Title"]</h1>
 
+<!-- Botón para crear una nueva persona -->
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-success">Crear Nueva Persona</a>
+</div>
+
 <table class="table table-bordered table-striped">
     <thead class="table-dark">
         <tr>
@@ -24,18 +29,24 @@
             <tr>
                 <td align="center" style="vertical-align:middle">@Html.DisplayFor(m => persona.Nombre)</td>
                 <td align="center" style="vertical-align:middle">@Html.DisplayFor(m => persona.Apellidos)</td>
-                <td align="center" style="vertical-align:middle">@Html.DisplayFor(m => persona.FechaNac)</td>
+                <td align="center" style="vertical-align:middle">@persona.FechaNac.ToString("dd/MM/yyyy")</td> <!-- Formato de la fecha -->
                 <td align="center" style="vertical-align:middle">@Html.DisplayFor(m => persona.Direccion)</td>
                 <td align="center" style="vertical-align:middle">@Html.DisplayFor(m => persona.Telefono)</td>
                 <td align="center">
-                    <img src="@persona.Foto" alt="Foto" style="width: 100px; height: 100px;" />
+                    @if (!string.IsNullOrEmpty(persona.Foto))
+                    {
+                        <img src="@persona.Foto" alt="Foto" style="width: 100px; height: 100px;" />
+                    }
+                    else
+                    {
+                        <span>No disponible</span>
+                    }
                 </td>
                 <td align="center" style="vertical-align:middle">
-                    @Html.ActionLink("Editar", "Edit", new { id = persona.Id })
-                    @Html.ActionLink("Detalles", "Details", new { id = persona.Id })
+                    @Html.ActionLink("Editar", "Edit", new { id = persona.Id }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = persona.Id }) |
                     @Html.ActionLink("Eliminar", "Delete", new { id = persona.Id })
                 </td>
-
             </tr>
         }
     </tbody>
