@@ -140,6 +140,119 @@ namespace Data.Repositories
 
         }
 
+
+        public int addDepartamento(Departamento departamento)
+        {
+            // Creamos la conexión
+            SqlConnection miConexion = new SqlConnection();
+
+            // Creamos el comando
+            SqlCommand miComando = new SqlCommand();
+
+            // Obtenemos la cadena de conexión
+            miConexion.ConnectionString = "server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;";
+
+            try
+            {
+                // Abrimos la conexión
+                miConexion.Open();
+
+                // Asociamos el comando a la conexión
+                miComando.Connection = miConexion;
+
+                // Creamos la consulta Sql
+                miComando.CommandText = "INSERT INTO DEPARTAMENTOS (Nombre) VALUES (@Nombre)";
+
+                // Asignamos valor al parámetro de la consulta
+                miComando.Parameters.AddWithValue("@Nombre", departamento.NombreDepartamento);
+
+                // Ejecutamos la consulta y devolvemos el resultado (filas afectadas)
+                return miComando.ExecuteNonQuery();
+
+            }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine(sqlEx.Message);
+                throw;
+
+            }
+        }
+
+        public int updateDepartamento(int id, Departamento departamento)
+        {
+            // Creamos la conexión
+            SqlConnection miConexion = new SqlConnection();
+
+            // Creamos el comando
+            SqlCommand miComando = new SqlCommand();
+
+            // Obtenemos la cadena de conexión
+            miConexion.ConnectionString = "server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;";
+
+            try
+            {
+                // Abrimos la conexión
+                miConexion.Open();
+
+                // Asociamos el comando a la conexión
+                miComando.Connection = miConexion;
+
+                // Creamos la consulta Sql
+                miComando.CommandText = "UPDATE Departamentos SET Nombre = @Nombre WHERE ID = @ID";
+
+                // Asignamos valor a los parámetros de la consulta
+                miComando.Parameters.AddWithValue("@Nombre", departamento.NombreDepartamento);
+                miComando.Parameters.AddWithValue("@ID", id);
+
+                // Ejecutamos la consulta y devolvemos el resultado (filas afectadas)
+                return miComando.ExecuteNonQuery();
+
+            } catch (SqlException sqlEx)
+            {
+                Console.WriteLine(sqlEx.Message);
+                throw;
+            }
+
+        }
+
+        public int deleteDepartamento(int id)
+        {
+            // Creamos la conexión
+            SqlConnection miConexion = new SqlConnection();
+
+            // Creamos el comando
+            SqlCommand miComando = new SqlCommand();
+
+            // Obtenemos la cadena de conexión
+            miConexion.ConnectionString = "server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;";
+
+            try
+            {
+                // Abrimos la conexión
+                miConexion.Open();
+
+                //Asociamos el comando a la conexión
+                miComando.Connection = miConexion;
+
+                // Creamos la consulta Sql
+                miComando.CommandText = "DELETE FROM Departamentos WHERE ID = @ID";
+
+                // Asignamos valor al parámetro de la consulta
+                miComando.Parameters.AddWithValue("@ID", id);
+
+                // Ejecutamos la consulta y devolvemos el resultado (filas afectadas)
+                return miComando.ExecuteNonQuery();
+
+            }
+
+            catch(SqlException SqlEx)
+            {
+                Console.WriteLine(SqlEx.Message);
+                throw;
+            }
+
+        }
+
     }
 
 }
