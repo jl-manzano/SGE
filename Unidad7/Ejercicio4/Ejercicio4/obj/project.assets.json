@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jl.manzano\\.nuget\\packages\\": {},
+    "C:\\Users\\portatil\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Ejercicio4.csproj",
+      "projectUniqueName": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Ejercicio4.csproj",
       "projectName": "Ejercicio4",
-      "projectPath": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Ejercicio4.csproj",
-      "packagesPath": "C:\\Users\\jl.manzano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\obj\\",
+      "projectPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Ejercicio4.csproj",
+      "packagesPath": "C:\\Users\\portatil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jl.manzano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\portatil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -76,7 +76,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

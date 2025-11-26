@@ -8,16 +8,17 @@ namespace Data.Repositories
 {
     public class PersonasRepositoryAzure : IListadoPersonasRepository
     {
-        private SqlConnection miConexion = new SqlConnection();
-        private List<Persona> listadoPersonas = new List<Persona>();
-        private SqlCommand miComando = new SqlCommand();
-        private SqlDataReader miLector;
-        private Persona oPersona;
+
 
         public List<Persona> obtenerListadoPersonas()
         {
-            // Establecemos la cadena de conexión
-            miConexion.ConnectionString = "server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;";
+        SqlConnection miConexion = new SqlConnection();
+        List<Persona> listadoPersonas = new List<Persona>();
+        SqlCommand miComando = new SqlCommand();
+        SqlDataReader miLector;
+        Persona oPersona;
+        // Establecemos la cadena de conexión
+        miConexion.ConnectionString = "server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;";
 
             try
             {
@@ -76,6 +77,12 @@ namespace Data.Repositories
 
         public Persona obtenerPersonaId(int id)
         {
+            SqlConnection miConexion = new SqlConnection();
+            List<Persona> listadoPersonas = new List<Persona>();
+            SqlCommand miComando = new SqlCommand();
+            SqlDataReader miLector;
+            Persona oPersona = new Persona();
+
             // Establecemos la cadena de conexión
             miConexion.ConnectionString = "server=josemnzano.database.windows.net;database=PersonasDB;uid=jlmanzano;pwd=abc12345_;trustServerCertificate=true;";
 

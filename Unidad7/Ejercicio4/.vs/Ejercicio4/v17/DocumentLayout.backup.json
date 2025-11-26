@@ -1,9 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\",
+  "WorkspaceRootPath": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\Ejercicio4\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
+      "AbsoluteMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad7\\ejercicio4\\ejercicio4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\ejercicio4\\ejercicio4\\models\\dal\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|solutionrelative:ejercicio4\\models\\dal\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\ejercicio4\\ejercicio4\\models\\dal\\listadodepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|solutionrelative:ejercicio4\\models\\dal\\listadodepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\ejercicio4\\ejercicio4\\models\\entities\\clsdepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|solutionrelative:ejercicio4\\models\\entities\\clsdepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\ejercicio4\\ejercicio4\\models\\entities\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|solutionrelative:ejercicio4\\models\\entities\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\ejercicio4\\ejercicio4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{83C1F8BF-CFC0-47A7-A9CD-01FD421DAA08}|Ejercicio4\\Ejercicio4.csproj|solutionrelative:ejercicio4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,20 +34,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsPersona.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\Entities\\clsPersona.cs",
+              "RelativeDocumentMoniker": "Ejercicio4\\Models\\Entities\\clsPersona.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\Entities\\clsPersona.cs",
+              "RelativeToolTip": "Ejercicio4\\Models\\Entities\\clsPersona.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:32:55.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsDepartamento.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\Entities\\clsDepartamento.cs",
+              "RelativeDocumentMoniker": "Ejercicio4\\Models\\Entities\\clsDepartamento.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\Entities\\clsDepartamento.cs",
+              "RelativeToolTip": "Ejercicio4\\Models\\Entities\\clsDepartamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:32:44.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListadoDepartamento.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\ListadoDepartamento.cs",
+              "RelativeDocumentMoniker": "Ejercicio4\\Models\\DAL\\ListadoDepartamento.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\ListadoDepartamento.cs",
+              "RelativeToolTip": "Ejercicio4\\Models\\DAL\\ListadoDepartamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:32:35.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ListadoPersonas.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\ListadoPersonas.cs",
+              "RelativeDocumentMoniker": "Ejercicio4\\Models\\DAL\\ListadoPersonas.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Models\\DAL\\ListadoPersonas.cs*",
+              "RelativeToolTip": "Ejercicio4\\Models\\DAL\\ListadoPersonas.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:32:29.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Ejercicio4\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad7\\Ejercicio4\\Ejercicio4\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Ejercicio4\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T19:59:00.906Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

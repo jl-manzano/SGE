@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vkvfRHnHpgM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPersonasConDepartamento\\CompositionRoot\\CompositionRoot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\portatil\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0\\microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\portatil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\portatil\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0\\microsoft.extensions.primitives.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
