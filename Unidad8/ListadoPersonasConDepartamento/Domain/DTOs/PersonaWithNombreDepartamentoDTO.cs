@@ -1,5 +1,4 @@
 ﻿using Domain.Entities;
-using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,16 +9,14 @@ namespace Domain.DTOs
 {
     public class PersonaWithNombreDepartamentoDTO
     {
-        public Persona persona { get; }
-        public string nombreDepartamento { get; }
-        private readonly IDepartamentoRepository _departamentoRepository;
+        public Persona persona { get; set; }
+        public string nombreDepartamento { get; set; }
 
         public PersonaWithNombreDepartamentoDTO() { }
-        public PersonaWithNombreDepartamentoDTO(Persona persona, IDepartamentoRepository departamentoRepository)
+        public PersonaWithNombreDepartamentoDTO(Persona persona, string nombreDepartamento)
         {
            this.persona = persona;
-           _departamentoRepository = departamentoRepository;
-           var nombreDepartamento = _departamentoRepository.getDepartamento(persona.IdDepartamento).NombreDepartamento;
+           this.nombreDepartamento = nombreDepartamento;
         }
     }
 }

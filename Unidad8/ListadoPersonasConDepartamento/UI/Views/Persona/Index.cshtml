@@ -1,0 +1,47 @@
+﻿using System;
+using System.Reflection;
+
+@model List<Domain.DTOs.PersonaWithNombreDepartamentoDTO>
+
+@{
+    ViewData["Title"] = "Listado de Personas";
+}
+
+< h1 > @ViewData["Title"] </ h1 >
+
+< !--Botón para crear una nueva persona -->
+<div class= "mb-3" >
+    < a asp - action = "Create" class= "btn btn-success" > Crear Nueva Persona</a>
+</div>
+
+<table class= "table table-bordered table-striped" >
+    < thead class= "table-dark" >
+        < tr >
+            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.Nombre) </ th >
+            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.Apellidos) </ th >
+            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.FechaNac) </ th >
+            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.Direccion) </ th >
+            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.Telefono) </ th >
+            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().nombreDepartamento) </ th >
+            < th style = "text-align:center;" > Acciones </ th >
+        </ tr >
+    </ thead >
+    < tbody >
+        @foreach(var personaDTO in Model)
+        {
+            < tr >
+                < td align = "center" style = "vertical-align:middle" > @Html.DisplayFor(m => personaDTO.persona.Nombre) </ td >
+                < td align = "center" style = "vertical-align:middle" > @Html.DisplayFor(m => personaDTO.persona.Apellidos) </ td >
+                < td align = "center" style = "vertical-align:middle" > @personaDTO.persona.FechaNac.ToString("dd/MM/yyyy") </ td >
+                < td align = "center" style = "vertical-align:middle" > @Html.DisplayFor(m => personaDTO.persona.Direccion) </ td >
+                < td align = "center" style = "vertical-align:middle" > @Html.DisplayFor(m => personaDTO.persona.Telefono) </ td >
+                < td align = "center" style = "vertical-align:middle" > @personaDTO.nombreDepartamento </ td >
+                < td align = "center" style = "vertical-align:middle" >
+                    @Html.ActionLink("Editar", "Edit", new { id = personaDTO.persona.Id }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = personaDTO.persona.Id }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = personaDTO.persona.Id })
+                </ td >
+            </ tr >
+        }
+    </ tbody >
+</ table >

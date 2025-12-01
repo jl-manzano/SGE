@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\repositories\\personasrepositoryazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58137509-B31F-42CD-8BD2-0AF95D0F2988}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58137509-B31F-42CD-8BD2-0AF95D0F2988}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\getlistadopersonasuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\getlistadopersonasuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\interfaces\\ilistadopersonasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\interfaces\\ilistadopersonasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|solutionrelative:ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\getlistadopersonasuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\getlistadopersonasuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\repositories\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,20 +63,8 @@
       "RelativeMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\domain\\usecases\\interfaces\\ilistadopersonasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60F866DC-EF50-481C-B55B-E4609248922E}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\interfaces\\ilistadopersonasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\repositories\\listadopersonasvacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\repositories\\listadopersonasvacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CDDE662-5DB0-4685-9F53-662C52F2FDAE}|Data\\Data.csproj|solutionrelative:data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58137509-B31F-42CD-8BD2-0AF95D0F2988}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58137509-B31F-42CD-8BD2-0AF95D0F2988}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7690BB4C-3983-4571-B6D1-3D20EA30584F}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad7\\listadopersonasclean\\ui\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -90,32 +90,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Domain",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Domain.csproj",
-              "RelativeToolTip": "Domain\\Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-25T16:20:27.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UI",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\UI.csproj",
-              "RelativeDocumentMoniker": "UI\\UI.csproj",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\UI.csproj",
-              "RelativeToolTip": "UI\\UI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-25T16:11:46.311Z",
+              "DocumentIndex": 1,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
+              "RelativeDocumentMoniker": "Data\\Database\\Connection.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
+              "RelativeToolTip": "Data\\Database\\Connection.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswFoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T18:42:31.634Z",
               "EditorCaption": ""
             },
             {
@@ -126,14 +113,90 @@
               "RelativeDocumentMoniker": "Data\\Repositories\\PersonasRepositoryAzure.cs",
               "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\PersonasRepositoryAzure.cs",
               "RelativeToolTip": "Data\\Repositories\\PersonasRepositoryAzure.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAIwI0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAACcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T18:42:31.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InversifyConfig.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\CompositionRoot\\InversifyConfig.cs",
+              "RelativeDocumentMoniker": "CompositionRoot\\InversifyConfig.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\CompositionRoot\\InversifyConfig.cs",
+              "RelativeToolTip": "CompositionRoot\\InversifyConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T18:42:31.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "GetListadoPersonasUC.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\GetListadoPersonasUC.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\GetListadoPersonasUC.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\GetListadoPersonasUC.cs",
+              "RelativeToolTip": "Domain\\UseCases\\GetListadoPersonasUC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:07:22.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IListadoPersonasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
+              "RelativeToolTip": "Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T18:42:31.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Entities\\Persona.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Persona.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Entities\\Persona.cs",
+              "RelativeToolTip": "Domain\\Entities\\Persona.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAuwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T18:42:31.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UI.csproj",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\UI.csproj",
+              "RelativeDocumentMoniker": "UI\\UI.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\UI.csproj",
+              "RelativeToolTip": "UI\\UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-25T16:11:46.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-25T16:20:27.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "UI\\Controllers\\HomeController.cs",
@@ -141,25 +204,11 @@
               "RelativeToolTip": "UI\\Controllers\\HomeController.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAowAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:50:43.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:50:43.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetListadoPersonasUC.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\GetListadoPersonasUC.cs",
-              "RelativeDocumentMoniker": "Domain\\UseCases\\GetListadoPersonasUC.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\GetListadoPersonasUC.cs",
-              "RelativeToolTip": "Domain\\UseCases\\GetListadoPersonasUC.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T19:07:22.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "IListadoPersonasUseCases.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
               "RelativeDocumentMoniker": "Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
@@ -167,12 +216,11 @@
               "RelativeToolTip": "Domain\\UseCases\\Interfaces\\IListadoPersonasUseCases.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ListadoPersonas.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonas.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\ListadoPersonas.cs",
@@ -180,25 +228,11 @@
               "RelativeToolTip": "Data\\Repositories\\ListadoPersonas.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAqwEAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Entities\\Persona.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Persona.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\Entities\\Persona.cs",
-              "RelativeToolTip": "Domain\\Entities\\Persona.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "UI\\Views\\Home\\Privacy.cshtml",
@@ -210,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
@@ -222,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Delete.cshtml",
               "RelativeDocumentMoniker": "UI\\Views\\Home\\Delete.cshtml",
@@ -234,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\UI\\Views\\Home\\Create.cshtml",
               "RelativeDocumentMoniker": "UI\\Views\\Home\\Create.cshtml",
@@ -246,19 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IListadoPersonasRepository.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
-              "RelativeToolTip": "Domain\\UseCases\\Interfaces\\IListadoPersonasRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ListadoPersonasVacio.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Repositories\\ListadoPersonasVacio.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\ListadoPersonasVacio.cs",
@@ -267,30 +289,6 @@
               "ViewState": "AgIAABQAAAAAAAAAAAAqwDoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T18:42:31.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Connection.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
-              "RelativeDocumentMoniker": "Data\\Database\\Connection.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
-              "RelativeToolTip": "Data\\Database\\Connection.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAgwG8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "InversifyConfig.cs",
-              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\CompositionRoot\\InversifyConfig.cs",
-              "RelativeDocumentMoniker": "CompositionRoot\\InversifyConfig.cs",
-              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad7\\ListadoPersonasClean\\CompositionRoot\\InversifyConfig.cs",
-              "RelativeToolTip": "CompositionRoot\\InversifyConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:42:31.559Z"
             },
             {
               "$type": "Document",
@@ -326,8 +324,7 @@
               "RelativeToolTip": "Data\\Data.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-18T18:42:31.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T18:42:31.642Z"
             },
             {
               "$type": "Document",
