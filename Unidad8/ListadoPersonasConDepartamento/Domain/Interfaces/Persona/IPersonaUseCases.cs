@@ -10,6 +10,7 @@ namespace Domain.Interfaces
 {
     public interface IPersonaUseCases
     {
+        List<Persona> getListadoPersonas();
         List<Departamento> getDepartamentos();
         PersonaWithNombreDepartamentoDTO getPersona(int id);
         List<PersonaWithNombreDepartamentoDTO> getPersonas();

@@ -20,6 +20,11 @@ namespace Domain.UseCases
             _departamentoRepository = departamentoRepository;
         }
 
+        public List<Persona> getListadoPersonas()
+        {
+            return _personaRepository.getPersonas();
+        }
+
         public List<Departamento> getDepartamentos()
         {
             return _departamentoRepository.getDepartamentos();
