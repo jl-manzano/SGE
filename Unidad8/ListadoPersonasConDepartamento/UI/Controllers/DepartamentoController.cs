@@ -1,5 +1,6 @@
 ﻿using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Domain.Entities;
 
 namespace UI.Controllers
 {
@@ -28,7 +29,7 @@ namespace UI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Domain.Entities.Departamento departamento)
+        public IActionResult Create(Departamento departamento)
         {
             if (ModelState.IsValid)
             {
@@ -44,7 +45,7 @@ namespace UI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(int id, Domain.Entities.Departamento departamento)
+        public IActionResult Edit(int id, Departamento departamento)
         {
             if (ModelState.IsValid)
             {
