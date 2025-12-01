@@ -1,5 +1,5 @@
-﻿using System;
-using System.Reflection;
+﻿@using System
+@using System.Reflection
 
 @model List<Domain.DTOs.PersonaWithNombreDepartamentoDTO>
 
@@ -7,41 +7,55 @@ using System.Reflection;
     ViewData["Title"] = "Listado de Personas";
 }
 
-< h1 > @ViewData["Title"] </ h1 >
+<h1>@ViewData["Title"]</h1>
 
-< !--Botón para crear una nueva persona -->
-<div class= "mb-3" >
-    < a asp - action = "Create" class= "btn btn-success" > Crear Nueva Persona</a>
+<!-- Botón para crear una nueva persona -->
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-success">Crear Nueva Persona</a>
 </div>
 
-<table class= "table table-bordered table-striped" >
-    < thead class= "table-dark" >
-        < tr >
-            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.Nombre) </ th >
-            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.Apellidos) </ th >
-            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.FechaNac) </ th >
-            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.Direccion) </ th >
-            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().persona.Telefono) </ th >
-            < th style = "text-align:center;" > @Html.DisplayNameFor(model => model.First().nombreDepartamento) </ th >
-            < th style = "text-align:center;" > Acciones </ th >
-        </ tr >
-    </ thead >
-    < tbody >
-        @foreach(var personaDTO in Model)
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th style="text-align:center;">Nombre</th>
+            <th style="text-align:center;">Apellidos</th>
+            <th style="text-align:center;">Fecha de Nacimiento</th>
+            <th style="text-align:center;">Dirección</th>
+            <th style="text-align:center;">Teléfono</th>
+            <th style="text-align:center;">Foto</th>
+            <th style="text-align:center;">Departamento</th> <!-- Columna para el nombre del departamento -->
+            <th style="text-align:center;">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var personaDTO in Model) // Solución: Encierra el bloque en llaves
         {
-            < tr >
-                < td align = "center" style = "vertical-align:middle" > @Html.DisplayFor(m => personaDTO.persona.Nombre) </ td >
-                < td align = "center" style = "vertical-align:middle" > @Html.DisplayFor(m => personaDTO.persona.Apellidos) </ td >
-                < td align = "center" style = "vertical-align:middle" > @personaDTO.persona.FechaNac.ToString("dd/MM/yyyy") </ td >
-                < td align = "center" style = "vertical-align:middle" > @Html.DisplayFor(m => personaDTO.persona.Direccion) </ td >
-                < td align = "center" style = "vertical-align:middle" > @Html.DisplayFor(m => personaDTO.persona.Telefono) </ td >
-                < td align = "center" style = "vertical-align:middle" > @personaDTO.nombreDepartamento </ td >
-                < td align = "center" style = "vertical-align:middle" >
-                    @Html.ActionLink("Editar", "Edit", new { id = personaDTO.persona.Id }) |
-                    @Html.ActionLink("Detalles", "Details", new { id = personaDTO.persona.Id }) |
-                    @Html.ActionLink("Eliminar", "Delete", new { id = personaDTO.persona.Id })
-                </ td >
-            </ tr >
+            <tr>
+                <!-- Mostrar los datos de la persona -->
+                <td align="center" style="vertical-align:middle">@personaDTO.persona.Nombre</td>
+                <td align="center" style="vertical-align:middle">@personaDTO.persona.Apellidos</td>
+                <td align="center" style="vertical-align:middle">@personaDTO.persona.FechaNac.ToString("dd/MM/yyyy")</td>
+                <td align="center" style="vertical-align:middle">@personaDTO.persona.Direccion</td>
+                <td align="center" style="vertical-align:middle">@personaDTO.persona.Telefono</td>
+                <td align="center">
+                    <!-- Verifica si la persona tiene foto -->
+                    @if (!string.IsNullOrEmpty(personaDTO.persona.Foto))
+                    {
+                        <img src="@personaDTO.persona.Foto" alt="Foto" style="width: 100px; height: 100px;" />
+                    }
+                    else
+                    {
+                        <span>No disponible</span>
+                    }
+                </td>
+                <td align="center" style="vertical-align:middle">@personaDTO.nombreDepartamento</td>
+                <td align="center" style="vertical-align:middle">
+                    <!-- Acciones de cada persona -->
+                    <a asp-action="Edit" asp-route-id="@personaDTO.persona.Id">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@personaDTO.persona.Id">Detalles</a> |
+                    <a asp-action="Delete" asp-route-id="@personaDTO.persona.Id">Eliminar</a>
+                </td>
+            </tr>
         }
-    </ tbody >
-</ table >
+    </tbody>
+</table>

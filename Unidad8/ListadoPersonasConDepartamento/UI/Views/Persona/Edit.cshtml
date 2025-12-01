@@ -1,33 +1,51 @@
-﻿@model Domain.DTOs.PersonaWithNombreDepartamentoDTO
+﻿@model Domain.Entities.Persona
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Persona";
 }
 
-<h1>Edit</h1>
+<h1>@ViewData["Title"]</h1>
 
-<h4>PersonaWithNombreDepartamentoDTO</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="nombreDepartamento" class="control-label"></label>
-                <input asp-for="nombreDepartamento" class="form-control" />
-                <span asp-validation-for="nombreDepartamento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<form method="post">
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        <input type="text" class="form-control" id="Nombre" name="Nombre" value="@Model.Nombre" />
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div class="form-group">
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" class="form-control" id="Apellidos" name="Apellidos" value="@Model.Apellidos" />
+    </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <div class="form-group">
+        <label for="FechaNac">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" id="FechaNac" name="FechaNac" value="@Model.FechaNac.ToString("yyyy-MM-dd")" />
+    </div>
+
+    <div class="form-group">
+        <label for="Direccion">Dirección</label>
+        <input type="text" class="form-control" id="Direccion" name="Direccion" value="@Model.Direccion" />
+    </div>
+
+    <div class="form-group">
+        <label for="Telefono">Teléfono</label>
+        <input type="text" class="form-control" id="Telefono" name="Telefono" value="@Model.Telefono" />
+    </div>
+
+    <div class="form-group">
+        <label for="Foto">Foto</label>
+        <input type="text" class="form-control" id="Foto" name="Foto" value="@Model.Foto" />
+    </div>
+
+    <div class="form-group">
+        <label for="IdDepartamento">Departamento</label>
+        <select class="form-control" id="IdDepartamento" name="IdDepartamento">
+            @foreach (var departamento in ViewBag.Departamentos)
+            {
+                <option value="@departamento.IdDepartamento">@departamento.NombreDepartamento</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

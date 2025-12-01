@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Persona\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Views\Persona\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CompositionRoot\CompositionRoot.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>

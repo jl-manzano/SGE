@@ -1,24 +1,30 @@
 ﻿@model Domain.DTOs.PersonaWithNombreDepartamentoDTO
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles de Persona";
 }
 
-<h1>Details</h1>
+<h1>@ViewData["Title"]</h1>
 
 <div>
-    <h4>PersonaWithNombreDepartamentoDTO</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.nombreDepartamento)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.nombreDepartamento)
-        </dd>
-    </dl>
+    <h3>Nombre: @Model.persona.Nombre</h3>
+    <p>Apellidos: @Model.persona.Apellidos</p>
+    <p>Fecha de Nacimiento: @Model.persona.FechaNac.ToString("dd/MM/yyyy")</p>
+    <p>Dirección: @Model.persona.Direccion</p>
+    <p>Teléfono: @Model.persona.Telefono</p>
+    <p>Departamento: @Model.nombreDepartamento</p>
+
+    @if (!string.IsNullOrEmpty(Model.persona.Foto))
+    {
+        <img src="@Model.persona.Foto" alt="Foto" style="width: 200px; height: 200px;" />
+    }
+    else
+    {
+        <span>No disponible</span>
+    }
 </div>
+
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.persona.Id" class="btn btn-primary">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Volver al Listado</a>
 </div>

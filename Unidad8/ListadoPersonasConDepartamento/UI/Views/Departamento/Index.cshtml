@@ -6,7 +6,6 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<!-- Botón para crear un nuevo departamento -->
 <div class="mb-3">
     <a asp-action="Create" class="btn btn-success">Crear Nuevo Departamento</a>
 </div>
@@ -14,7 +13,8 @@
 <table class="table table-bordered table-striped">
     <thead class="table-dark">
         <tr>
-            <th style="text-align:center;">@Html.DisplayNameFor(model => model.First().NombreDepartamento)</th>
+            <th style="text-align:center;">ID</th>
+            <th style="text-align:center;">Nombre</th>
             <th style="text-align:center;">Acciones</th>
         </tr>
     </thead>
@@ -22,8 +22,12 @@
         @foreach (var departamento in Model)
         {
             <tr>
-                <td align="center" style="vertical-align:middle">@Html.DisplayFor(m => departamento.NombreDepartamento)</td>
+                <!-- Mostrar ID del departamento -->
+                <td align="center" style="vertical-align:middle">@departamento.IdDepartamento</td>
+                <!-- Mostrar nombre del departamento -->
+                <td align="center" style="vertical-align:middle">@departamento.NombreDepartamento</td>
                 <td align="center" style="vertical-align:middle">
+                    <!-- Botones de acción -->
                     @Html.ActionLink("Editar", "Edit", new { id = departamento.IdDepartamento }) |
                     @Html.ActionLink("Detalles", "Details", new { id = departamento.IdDepartamento }) |
                     @Html.ActionLink("Eliminar", "Delete", new { id = departamento.IdDepartamento })

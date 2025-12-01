@@ -1,5 +1,7 @@
 ﻿using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Domain.Entities;
+using Domain.DTOs;
 
 namespace UI.Controllers
 {
@@ -9,66 +11,79 @@ namespace UI.Controllers
 
         public PersonaController(IPersonaUseCases personaUseCases)
         {
-           _personaUseCases = personaUseCases;
+            _personaUseCases = personaUseCases;
         }
 
+        // Index - Muestra la lista de personas con los departamentos
         public IActionResult Index()
         {
-            return View(_personaUseCases.getPersonas());
+            var personas = _personaUseCases.getPersonas(); // Recupera la lista de personas con sus departamentos
+            return View(personas); // Pasa el modelo a la vista
         }
 
+        // Details - Muestra los detalles de una persona específica
         public IActionResult Details(int id)
         {
-            return View(_personaUseCases.getPersona(id));
+            var personaDTO = _personaUseCases.getPersona(id); // Obtiene la persona con el nombre del departamento
+            return View(personaDTO); // Pasa el DTO (PersonaWithNombreDepartamentoDTO) a la vista
         }
 
-        public IActionResult Create()
+        public ActionResult Create()
         {
-            ViewBag.Departamentos = _personaUseCases.getDepartamentos();
-            return View();
+            return View(_personaUseCases.getDepartamentos());
         }
 
         [HttpPost]
-        public IActionResult Create(Domain.Entities.Persona persona)
+        public ActionResult Create(Persona persona)
         {
-            if (ModelState.IsValid)
+            string mensaje;
+            int res = _personaUseCases.addPersona(persona);
+            if (res > 0)
             {
-                _personaUseCases.addPersona(persona);
-                return RedirectToAction("Index");
+                mensaje = "La persona se ha creado correctamente";
             }
-            ViewBag.Departamentos = _personaUseCases.getDepartamentos();
-            return View(persona);
+            else
+            {
+                mensaje = "La persona no se ha podido crear";
+            }
+            ViewBag.mensaje = mensaje;
+            return View(_personaUseCases.getDepartamentos());
         }
 
+        // Edit (GET) - Muestra el formulario para editar una persona
         public IActionResult Edit(int id)
         {
-            ViewBag.Departamentos = _personaUseCases.getDepartamentos();
-            return View(_personaUseCases.getPersona(id));
+            var personaDTO = _personaUseCases.getPersona(id); // Obtiene la persona con el nombre del departamento
+            ViewBag.Departamentos = _personaUseCases.getDepartamentos(); // Carga los departamentos
+            return View(personaDTO.persona); // Pasa solo la persona al formulario de edición
         }
 
+        // Edit (POST) - Actualiza los datos de una persona
         [HttpPost]
-        public IActionResult Edit(int id, Domain.Entities.Persona persona)
+        public IActionResult Edit(int id, Persona persona)
         {
             if (ModelState.IsValid)
             {
-                _personaUseCases.updatePersona(id, persona);
-                return RedirectToAction("Index");
+                _personaUseCases.updatePersona(id, persona); // Llama al caso de uso para actualizar la persona
+                return RedirectToAction("Index"); // Redirige a la lista de personas
             }
-            ViewBag.Departamentos = _personaUseCases.getDepartamentos();
-            return View(persona);
+            ViewBag.Departamentos = _personaUseCases.getDepartamentos(); // Recarga los departamentos si el modelo no es válido
+            return View(persona); // Muestra la vista con el modelo de persona
         }
 
+        // Delete (GET) - Muestra el formulario para confirmar la eliminación de una persona
         public IActionResult Delete(int id)
         {
-            return View(_personaUseCases.getPersona(id));
+            var personaDTO = _personaUseCases.getPersona(id); // Obtiene la persona con el nombre del departamento
+            return View(personaDTO); // Pasa el DTO (PersonaWithNombreDepartamentoDTO) a la vista
         }
 
+        // Delete (POST) - Elimina una persona
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
-            _personaUseCases.deletePersona(id);
-            return RedirectToAction("Index");
+            _personaUseCases.deletePersona(id); // Llama al caso de uso para eliminar la persona
+            return RedirectToAction("Index"); // Redirige a la lista de personas
         }
-
     }
 }

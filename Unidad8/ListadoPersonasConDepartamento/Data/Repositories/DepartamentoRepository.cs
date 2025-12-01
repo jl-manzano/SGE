@@ -29,9 +29,6 @@ namespace Data.Repositories
             // Creamos la lista de departamentos a devolver
             List<Departamento> departamentos = new List<Departamento>();
 
-            // Creamos el departamento que vamos a ir añadiendo
-            Departamento departamento = new Departamento();
-
             try
             {
                 // Abrimos la conexión
@@ -51,9 +48,12 @@ namespace Data.Repositories
                 {
                     while (miLector.Read())
                     {
-                        // Obtenemos el departamento
-                        departamento.IdDepartamento = (int)miLector["ID"];
-                        departamento.NombreDepartamento = (string)miLector["Nombre"];
+                        // Creamos una nueva instancia de Departamento para cada fila
+                        Departamento departamento = new Departamento
+                        {
+                            IdDepartamento = (int)miLector["ID"],
+                            NombreDepartamento = (string)miLector["Nombre"]
+                        };
 
                         // Añadimos el departamento al listado
                         departamentos.Add(departamento);
@@ -63,10 +63,8 @@ namespace Data.Repositories
                 // Cerramos el comando
                 miLector.Close();
                 miConexion.Close();
-
             }
-
-                catch (SqlException sqlEx)
+            catch (SqlException sqlEx)
             {
                 Console.WriteLine(sqlEx.Message);
                 throw;
@@ -74,7 +72,6 @@ namespace Data.Repositories
 
             // Devolvemos los departamentos
             return departamentos;
-
         }
 
         public Departamento getDepartamento(int id)
@@ -139,7 +136,6 @@ namespace Data.Repositories
             return departamento;
 
         }
-
 
         public int addDepartamento(Departamento departamento)
         {

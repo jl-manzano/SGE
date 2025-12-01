@@ -1,33 +1,75 @@
-﻿@model Domain.DTOs.PersonaWithNombreDepartamentoDTO
+﻿@model List<Domain.Entities.Departamento>
 
-@{
-    ViewData["Title"] = "Create";
-}
+<h1>Crear Persona</h1>
 
-<h1>Create</h1>
-
-<h4>PersonaWithNombreDepartamentoDTO</h4>
 <hr />
+<!-- Mensaje -->
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-info">
+        @ViewBag.Mensaje
+    </div>
+}
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+    <div class="col-md-6">
+        <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Nombre -->
             <div class="form-group">
-                <label asp-for="nombreDepartamento" class="control-label"></label>
-                <input asp-for="nombreDepartamento" class="form-control" />
-                <span asp-validation-for="nombreDepartamento" class="text-danger"></span>
+                <label for="nombre">Nombre</label>
+                <input name="nombre" class="form-control" />
             </div>
+
+            <!-- Apellidos -->
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label for="apellidos">Apellidos</label>
+                <input name="apellidos" class="form-control" />
             </div>
+
+            <!-- Teléfono -->
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input name="telefono" class="form-control" />
+            </div>
+
+            <!-- Dirección -->
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input name="direccion" class="form-control" />
+            </div>
+
+            <!-- Foto -->
+            <div class="form-group">
+                <label for="foto">Foto</label>
+                <input name="foto" class="form-control" />
+            </div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="form-group">
+                <label for="FechaNac">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="FechaNac" name="FechaNac" />
+            </div>
+
+            <!-- Departamento -->
+            <div class="form-group">
+                <label for="departamentoId">Departamento</label>
+                <select name="idDepartamento" class="form-control">
+                    <option value="">Seleccione un departamento</option>
+                    @foreach (var dep in Model)
+                    {
+                        <option value="@dep.IdDepartamento">@dep.NombreDepartamento</option>
+                    }
+                </select>
+            </div>
+
+            <br />
+
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+                <a asp-action="Index">Back to List</a>
+            </div>
+
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
