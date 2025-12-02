@@ -17,15 +17,13 @@ namespace UI.Controllers
         // Index - Muestra la lista de personas con los departamentos
         public IActionResult Index()
         {
-            var personas = _personaUseCases.getPersonas(); // Recupera la lista de personas con sus departamentos
-            return View(personas); // Pasa el modelo a la vista
+            return View(_personaUseCases.getPersonas()); // Pasa el modelo a la vista
         }
 
         // Details - Muestra los detalles de una persona específica
         public IActionResult Details(int id)
         {
-            var personaDTO = _personaUseCases.getPersona(id); // Obtiene la persona con el nombre del departamento
-            return View(personaDTO); // Pasa el DTO (PersonaWithNombreDepartamentoDTO) a la vista
+            return View(_personaUseCases.getPersona(id)); // Pasa el DTO (PersonaWithNombreDepartamentoDTO) a la vista
         }
 
         public ActionResult Create()
@@ -53,9 +51,8 @@ namespace UI.Controllers
         // Edit (GET) - Muestra el formulario para editar una persona
         public IActionResult Edit(int id)
         {
-            var personaDTO = _personaUseCases.getPersona(id); // Obtiene la persona con el nombre del departamento
             ViewBag.Departamentos = _personaUseCases.getDepartamentos(); // Carga los departamentos
-            return View(personaDTO.persona); // Pasa solo la persona al formulario de edición
+            return View(_personaUseCases.getPersona(id).persona); // Pasa solo la persona al formulario de edición
         }
 
         // Edit (POST) - Actualiza los datos de una persona
@@ -74,8 +71,7 @@ namespace UI.Controllers
         // Delete (GET) - Muestra el formulario para confirmar la eliminación de una persona
         public IActionResult Delete(int id)
         {
-            var personaDTO = _personaUseCases.getPersona(id); // Obtiene la persona con el nombre del departamento
-            return View(personaDTO); // Pasa el DTO (PersonaWithNombreDepartamentoDTO) a la vista
+            return View(_personaUseCases.getPersona(id)); // Pasa el DTO (PersonaWithNombreDepartamentoDTO) a la vista
         }
 
         // Delete (POST) - Elimina una persona
