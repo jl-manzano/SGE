@@ -1,19 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Domain.Entities;
 
 namespace Domain.Interfaces
 {
+    /// <summary>
+    /// Interfaz para las operaciones relacionadas con los departamentos en la base de datos.
+    /// </summary>
     public interface IDepartamentoRepository
     {
+        /// <summary>
+        /// Obtiene la lista de todos los departamentos.
+        /// </summary>
+        /// <returns>Lista de departamentos.</returns>
         List<Departamento> getDepartamentos();
-        Departamento getDepartamento(int id);
-        int addDepartamento(Departamento departamento);
-        int updateDepartamento(int id, Departamento departamento);
-        int deleteDepartamento(int id);
 
+        /// <summary>
+        /// Obtiene un departamento por su ID.
+        /// </summary>
+        /// <param name="id">ID del departamento.</param>
+        /// <returns>Un departamento con el ID especificado.</returns>
+        Departamento getDepartamento(int id);
+
+        /// <summary>
+        /// Añade un nuevo departamento.
+        /// </summary>
+        /// <param name="departamento">El departamento a añadir.</param>
+        /// <returns>El número de filas afectadas.</returns>
+        int addDepartamento(Departamento departamento);
+
+        /// <summary>
+        /// Actualiza los datos de un departamento.
+        /// </summary>
+        /// <param name="id">ID del departamento a actualizar.</param>
+        /// <param name="departamento">Nuevo objeto de departamento con los datos actualizados.</param>
+        /// <returns>El número de filas afectadas.</returns>
+        int updateDepartamento(int id, Departamento departamento);
+
+        /// <summary>
+        /// Elimina un departamento por su ID.
+        /// </summary>
+        /// <param name="id">ID del departamento a eliminar.</param>
+        /// <returns>El número de filas afectadas.</returns>
+        int deleteDepartamento(int id);
     }
 }

@@ -9,8 +9,12 @@ using Microsoft.Data.SqlClient;
 
 namespace Data.Repositories
 {
-    public class PersonaRepository: IPersonaRepository
+    public class PersonaRepository : IPersonaRepository
     {
+        /// <summary>
+        /// Obtiene la lista de todas las personas de la base de datos.
+        /// </summary>
+        /// <returns>Lista de personas.</returns>
         public List<Persona> getPersonas()
         {
             // Creamos la conexión
@@ -77,8 +81,7 @@ namespace Data.Repositories
                 // Cerramos el lector y la conexión
                 miLector.Close();
                 miConexion.Close();
-
-            } // Capturamos y lanzamos la excepcion
+            }
             catch (SqlException exSql)
             {
                 Console.WriteLine(exSql.Message);
@@ -89,6 +92,11 @@ namespace Data.Repositories
             return listaPersonas;
         }
 
+        /// <summary>
+        /// Obtiene una persona por su ID.
+        /// </summary>
+        /// <param name="id">ID de la persona a obtener.</param>
+        /// <returns>La persona con el ID especificado.</returns>
         public Persona getPersona(int id)
         {
             // Creamos la conexión
@@ -144,7 +152,6 @@ namespace Data.Repositories
                 // Cerramos el lector y la conexión
                 miLector.Close();
                 miConexion.Close();
-
             }
             catch (SqlException exSql)
             {
@@ -156,6 +163,11 @@ namespace Data.Repositories
             return persona;
         }
 
+        /// <summary>
+        /// Añade una nueva persona a la base de datos.
+        /// </summary>
+        /// <param name="persona">Objeto Persona con los datos a insertar.</param>
+        /// <returns>El número de filas afectadas por la inserción.</returns>
         public int addPersona(Persona persona)
         {
             // Creamos una conexion sql
@@ -175,7 +187,6 @@ namespace Data.Repositories
                 // Asignamos el comando a la conexion
                 miComando.Connection = miConexion;
 
-
                 // Creamos la consulta Sql
                 miComando.CommandText = "INSERT INTO Personas (Nombre, Apellidos, Telefono, Direccion, Foto, FechaNacimiento, IDDepartamento) VALUES (@Nombre, @Apellidos, @Telefono, @Direccion, @Foto, @FechaNacimiento, @IDDepartamento)";
 
@@ -190,7 +201,6 @@ namespace Data.Repositories
 
                 // Ejecutamos la consulta y devolvemos su resultado
                 return miComando.ExecuteNonQuery();
-
             }
             catch (SqlException SqlEx)
             {
@@ -199,6 +209,12 @@ namespace Data.Repositories
             }
         }
 
+        /// <summary>
+        /// Actualiza los datos de una persona en la base de datos.
+        /// </summary>
+        /// <param name="id">ID de la persona a actualizar.</param>
+        /// <param name="persona">Objeto Persona con los nuevos datos.</param>
+        /// <returns>El número de filas afectadas por la actualización.</returns>
         public int updatePersona(int id, Persona persona)
         {
             // Creamos la conexión
@@ -234,7 +250,6 @@ namespace Data.Repositories
 
                 // Ejecutamos la consulta y obtenemos el número de filas afectadas
                 return miComando.ExecuteNonQuery();
-
             }
             catch (SqlException exSql)
             {
@@ -243,6 +258,11 @@ namespace Data.Repositories
             }
         }
 
+        /// <summary>
+        /// Elimina una persona de la base de datos por su ID.
+        /// </summary>
+        /// <param name="id">ID de la persona a eliminar.</param>
+        /// <returns>El número de filas afectadas por la eliminación.</returns>
         public int deletePersona(int id)
         {
             // Creamos la conexión
@@ -270,7 +290,6 @@ namespace Data.Repositories
 
                 // Ejecutamos la consulta y obtenemos el número de filas afectadas
                 return miComando.ExecuteNonQuery();
-
             }
             catch (SqlException exSql)
             {
@@ -278,8 +297,5 @@ namespace Data.Repositories
                 throw;
             }
         }
-
-
     }
-
 }

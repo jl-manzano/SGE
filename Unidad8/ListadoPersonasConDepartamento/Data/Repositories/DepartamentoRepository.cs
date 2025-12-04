@@ -10,8 +10,12 @@ using System.Threading.Tasks;
 
 namespace Data.Repositories
 {
-    public class DepartamentoRepository: IDepartamentoRepository
+    public class DepartamentoRepository : IDepartamentoRepository
     {
+        /// <summary>
+        /// Obtiene la lista de todos los departamentos de la base de datos.
+        /// </summary>
+        /// <returns>Lista de departamentos.</returns>
         public List<Departamento> getDepartamentos()
         {
             // Creamos la conexion
@@ -74,6 +78,11 @@ namespace Data.Repositories
             return departamentos;
         }
 
+        /// <summary>
+        /// Obtiene un departamento por su ID.
+        /// </summary>
+        /// <param name="id">ID del departamento a buscar.</param>
+        /// <returns>Un departamento con los datos solicitados.</returns>
         public Departamento getDepartamento(int id)
         {
             // Creamos la conexion
@@ -117,14 +126,12 @@ namespace Data.Repositories
                         // Asignamos los valores
                         departamento.IdDepartamento = (int)miLector["ID"];
                         departamento.NombreDepartamento = (string)miLector["Nombre"];
-                    } 
+                    }
                 }
 
                 // Cerramos el lector y la conexión
                 miLector.Close();
                 miConexion.Close();
-
-
             }
             catch (SqlException sqlEx)
             {
@@ -134,9 +141,13 @@ namespace Data.Repositories
 
             // Devolvemos el departamento
             return departamento;
-
         }
 
+        /// <summary>
+        /// Añade un nuevo departamento a la base de datos.
+        /// </summary>
+        /// <param name="departamento">Objeto de tipo Departamento a insertar.</param>
+        /// <returns>El número de filas afectadas en la base de datos.</returns>
         public int addDepartamento(Departamento departamento)
         {
             // Creamos la conexión
@@ -164,16 +175,20 @@ namespace Data.Repositories
 
                 // Ejecutamos la consulta y devolvemos el resultado (filas afectadas)
                 return miComando.ExecuteNonQuery();
-
             }
             catch (SqlException sqlEx)
             {
                 Console.WriteLine(sqlEx.Message);
                 throw;
-
             }
         }
 
+        /// <summary>
+        /// Actualiza los datos de un departamento existente.
+        /// </summary>
+        /// <param name="id">ID del departamento a actualizar.</param>
+        /// <param name="departamento">Objeto Departamento con los nuevos datos.</param>
+        /// <returns>El número de filas afectadas en la base de datos.</returns>
         public int updateDepartamento(int id, Departamento departamento)
         {
             // Creamos la conexión
@@ -202,15 +217,19 @@ namespace Data.Repositories
 
                 // Ejecutamos la consulta y devolvemos el resultado (filas afectadas)
                 return miComando.ExecuteNonQuery();
-
-            } catch (SqlException sqlEx)
+            }
+            catch (SqlException sqlEx)
             {
                 Console.WriteLine(sqlEx.Message);
                 throw;
             }
-
         }
 
+        /// <summary>
+        /// Elimina un departamento de la base de datos por su ID.
+        /// </summary>
+        /// <param name="id">ID del departamento a eliminar.</param>
+        /// <returns>El número de filas afectadas en la base de datos.</returns>
         public int deleteDepartamento(int id)
         {
             // Creamos la conexión
@@ -238,17 +257,12 @@ namespace Data.Repositories
 
                 // Ejecutamos la consulta y devolvemos el resultado (filas afectadas)
                 return miComando.ExecuteNonQuery();
-
             }
-
-            catch(SqlException SqlEx)
+            catch (SqlException SqlEx)
             {
                 Console.WriteLine(SqlEx.Message);
                 throw;
             }
-
         }
-
     }
-
 }
