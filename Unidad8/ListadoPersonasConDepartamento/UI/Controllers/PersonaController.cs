@@ -11,14 +11,16 @@ namespace UI.Controllers
     public class PersonaController : Controller
     {
         private readonly IPersonaUseCases _personaUseCases;
+        private readonly IDepartamentoUseCases _departamentoUseCases;
 
         /// <summary>
         /// Constructor que inicializa el controlador con los casos de uso de las personas.
         /// </summary>
         /// <param name="personaUseCases">Casos de uso para las personas.</param>
-        public PersonaController(IPersonaUseCases personaUseCases)
+        public PersonaController(IPersonaUseCases personaUseCases, IDepartamentoUseCases departamentoUseCases)
         {
             _personaUseCases = personaUseCases;
+            _departamentoUseCases = departamentoUseCases;
         }
 
         /// <summary>
@@ -64,7 +66,7 @@ namespace UI.Controllers
         {
             try
             {
-                return View(_personaUseCases.getDepartamentos());
+                return View(_departamentoUseCases.getDepartamentos());
             }
             catch (Exception ex)
             {
@@ -94,7 +96,7 @@ namespace UI.Controllers
                     mensaje = "La persona no se ha podido crear";
                 }
                 ViewBag.mensaje = mensaje;
-                return View(_personaUseCases.getDepartamentos());
+                return View(_departamentoUseCases.getDepartamentos());
             }
             catch (Exception ex)
             {
@@ -112,7 +114,7 @@ namespace UI.Controllers
         {
             try
             {
-                ViewBag.Departamentos = _personaUseCases.getDepartamentos();
+                ViewBag.Departamentos = _departamentoUseCases.getDepartamentos();
                 return View(_personaUseCases.getPersona(id).persona);
             }
             catch (Exception ex)
@@ -138,7 +140,7 @@ namespace UI.Controllers
                     _personaUseCases.updatePersona(id, persona);
                     return RedirectToAction("Index");
                 }
-                ViewBag.Departamentos = _personaUseCases.getDepartamentos();
+                ViewBag.Departamentos = _departamentoUseCases.getDepartamentos();
                 return View(persona);
             }
             catch (Exception ex)

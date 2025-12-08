@@ -17,12 +17,6 @@ namespace Domain.Interfaces
         List<Persona> getListadoPersonas();
 
         /// <summary>
-        /// Obtiene la lista de todos los departamentos.
-        /// </summary>
-        /// <returns>Lista de departamentos.</returns>
-        List<Departamento> getDepartamentos();
-
-        /// <summary>
         /// Obtiene los detalles de una persona junto con el nombre de su departamento.
         /// </summary>
         /// <param name="id">ID de la persona.</param>
