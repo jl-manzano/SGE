@@ -1,0 +1,213 @@
+// ==================== EJERCICIO 4: GESTIÓN DE CURSOS Y ESTUDIANTES ====================
+// 
+// ENUNCIADO:
+// Gestionar cursos y estudiantes en una institución educativa usando Clean Architecture y MVVM.
+// 
+// FUNCIONALIDADES:
+// - Agregar cursos: nombre, descripción, fecha inicio, fecha finalización
+// - Agregar estudiantes: nombre, edad, curso asignado
+// - Asignar estudiantes a cursos (1 estudiante = 1 curso máximo)
+// - Mostrar estudiantes por curso: nombre, edad, curso
+// - Actualizar datos de estudiantes y asignación de cursos
+// - Eliminar estudiantes y cursos (reubicar/eliminar estudiantes huérfanos)
+// 
+// VALIDACIONES:
+// - Edad estudiante >= 18 años
+// - Un estudiante en máximo 1 curso
+// - Fecha inicio < Fecha finalización
+// 
+// REQUERIMIENTOS TÉCNICOS:
+// - MVVM: Lógica de negocio separada de la vista
+// - Clean Architecture:
+//   * Dominio: Entidades (Estudiante, Curso)
+//   * Aplicación: Casos de uso
+//   * Infraestructura: Repositorios
+//   * UI: Controladores y vistas
+
+COMPOSITION ROOT/
+    InversifyConfig.cs
+    + static class InversifyConfig
+
+DOMAIN/
+    ENTITIES/
+        Estudiante.cs
+        - id: int
+        - nombre: string
+        - edad: int
+        - idCurso: int
+        + Estudiante()
+        + Estudiante(id: int, nombre: string, edad: int, idCurso: int)
+        + getId(): int
+        + getNombre(): string
+        + getEdad(): int
+        + getCurso(): int
+        + setId(id: int)
+        + setNombre(nombre: string)
+        + setEdad(edad: int)
+        + setCurso(idCurso: int)
+
+        Curso.cs
+        - id: int
+        - nombre: string
+        - descripcion: string
+        - fechaInicio: Date 
+        - fechaFin: Date
+        + Curso()
+        + Curso(id: int, nombre: string, descripcion: string, fechaInicio: Date, fechaFin: Date)
+        + getId(): int
+        + getNombre(): string
+        + getDescripcion(): string
+        + getFechaInicio(): Date
+        + getFechaFin(): Date
+        + setId(id: int)
+        + setNombre(nombre: string)
+        + setDescripcion(descripcion: string)
+        + setFechaInicio(fechaInicio: Date)
+        + setFechaFin(fechaFin: Date)
+        
+    DTOs/
+        EstudianteWithCursoDTO.cs
+        + Estudiante estudiante { get; }
+        + string nombreCurso { get; }
+        + EstudianteWithCursoDTO(Estudiante estudiante, string nombreCurso)
+
+        EstudianteWithListadoCursosDTO.cs
+        + Estudiante estudiante { get; }
+        + List<Curso> cursos { get; }
+        + EstudianteWithListadoCursosDTO(Estudiante estudiante, List<Curso> cursos)
+
+    INTERFACES/
+        ESTUDIANTE/
+            IEstudianteRepository.cs
+            + interface IEstudianteRepository
+            List<Estudiante> getEstudiantes()
+            List<Estudiante> getEstudiantesPorCurso(int idCurso)        
+            Estudiante getEstudiante(int id)
+            int addEstudiante(Estudiante estudiante)
+            int updateEstudiante(int id, Estudiante estudiante)
+            int deleteEstudiante(int id)
+
+            IEstudianteUseCases.cs
+            + interface IEstudianteUseCases
+            List<EstudianteWithCursoDTO> getEstudiantes()
+            List<EstudianteWithCursoDTO> getEstudiantesPorCurso(int idCurso)        
+            EstudianteWithCursoDTO getEstudiante(int id)
+            EstudianteWithListadoCursosDTO getEstudianteWithListadoCursos(int id)
+            int addEstudiante(Estudiante estudiante)
+            int updateEstudiante(int id, Estudiante estudiante)
+            int deleteEstudiante(int id)
+
+        CURSO/
+            ICursoRepository.cs
+            + interface ICursoRepository
+            List<Curso> getCursos()
+            Curso getCurso(int id)
+            int addCurso(Curso curso)
+            int updateCurso(int id, Curso curso)
+            int deleteCurso(int id)
+
+            ICursoUseCases.cs
+            + interface ICursoUseCases
+            List<Curso> getCursos()
+            Curso getCurso(int id)
+            int addCurso(Curso curso)
+            int updateCurso(int id, Curso curso)
+            int deleteCurso(int id)
+
+        USECASES/
+            EstudianteUseCases.cs
+            + class EstudianteUseCases: IEstudianteUseCases
+                - readonly IEstudianteRepository _estudiantesRepository
+                - readonly ICursoRepository _cursoRepository
+                + EstudianteUseCases(IEstudianteRepository estudiantesRepository, ICursoRepository cursoRepository) { _estudiantesRepository = estudiantesRepository; _cursoRepository = cursoRepository }
+                + List<EstudianteWithCursoDTO> getEstudiantes()
+                + List<EstudianteWithCursoDTO> getEstudiantesPorCurso(int idCurso)        
+                + EstudianteWithCursoDTO getEstudiante(int id)
+                + EstudianteWithListadoCursosDTO getEstudianteWithListadoCursos(int id)
+                + List<Curso> getCursos()
+                + int addEstudiante(Estudiante estudiante)
+                + int updateEstudiante(int id, Estudiante estudiante)
+                + int deleteEstudiante(int id)
+            
+            CursoUseCases.cs
+            + class CursoUseCases: ICursoUseCases
+                - readonly ICursoRepository _cursoRepository
+                + CursoUseCases(ICursoRepository cursoRepository) { _cursoRepository = cursoRepository }
+                + List<Curso> getCursos()
+                + Curso getCurso(int id)
+                + int addCurso(Curso curso)
+                + int updateCurso(int id, Curso curso)
+                + int deleteCurso(int id)
+
+DATA/
+    DATARESOURCES/
+    Connection.cs
+        + class Connection
+            + Connection()
+            + Connection(String server, String database, String user, String pass)
+            + SqlConnection getConnection()
+            + void closeConnection(ref SqlConnection connection)
+
+    REPOSITORIES/
+        EstudianteRepository.cs
+        + class EstudianteRepository: IEstudianteRepository
+            + List<Estudiante> getEstudiantes()
+            + List<Estudiante> getEstudiantesPorCurso(int idCurso)        
+            + Estudiante getEstudiante(int id)
+            + int addEstudiante(Estudiante estudiante)
+            + int updateEstudiante(int id, Estudiante estudiante)
+            + int deleteEstudiante(int id)
+
+        CursoRepository.cs
+        + class CursoRepository: ICursoRepository
+            + List<Curso> getCursos()
+            + Curso getCurso(int id)
+            + int addCurso(Curso curso)
+            + int updateCurso(int id, Curso curso)
+            + int deleteCurso(int id)
+
+UI/
+    CONTROLLERS/
+        HomeController.cs
+            + class HomeController
+            + IActionResult Index()
+        
+        EstudianteController.cs
+            + class EstudianteController
+            + IActionResult Index() // Muestra el listado de estudiantes
+            + IActionResult Details(int id) // Muestra los detalles de un estudiante
+            + IActionResult Create() // Muestra el formulario para añadir los datos del nuevo estudiante
+            + IActionResult Create(Estudiante estudiante) [HttpPost] // Obtiene los datos del nuevo estudiante
+            + IActionResult Edit(int id) [HttpGet] // Muestra el formulario para editar
+            + IActionResult Edit(Estudiante estudiante) [HttpPost] // Obtiene los datos del nuevo estudiante
+            + IActionResult Delete(int id) [HttpGet] // Muestra la pantalla de confirmacion
+            + IActionResult Delete(int id) [HttpPost] // Obtiene la confirmacion de la vista delete
+
+        CursoController.cs
+            + class CursoController
+            + IActionResult Index() // Muestra el listado de cursos
+            + IActionResult Details(int id) // Muestra los detalles de un curso
+            + IActionResult Create() // Muestra el formulario para añadir los datos del nuevo curso
+            + IActionResult Create(Curso curso) [HttpPost] // Obtiene los datos del nuevo curso
+            + IActionResult Edit(int id) [HttpGet] // Muestra el formulario para editar
+            + IActionResult Edit(Curso curso) [HttpPost] // Obtiene los datos del nuevo curso
+            + IActionResult Delete(int id) [HttpGet] // Muestra la pantalla de confirmacion
+            + IActionResult Delete(int id) [HttpPost] // Obtiene la confirmacion de la vista delete
+
+    VIEWS/
+        HOME/
+            Index.cshtml
+        
+        ESTUDIANTE/
+            Index.cshtml
+            Create.cshtml
+            Details.cshtml
+            Edit.cshtml
+            Delete.cshtml
+
+        CURSO/
+            Index.cshtml
+            Create.cshtml
+            Details.cshtml
+            Edit.cshtml
+            Delete.cshtml

@@ -1,0 +1,95 @@
+COMPOSITION ROOT/
+    InversifyConfig.cs
+    + static class InversifyConfig
+        + static IServiceCollection AddCompositionRoot(this IServiceCollection services, IConfiguration configuration)
+            services.AddScoped<IPokemonRepository, PokemonRepository>()
+            services.AddScoped<IPokemonUseCase, PokemonUseCase>()
+
+DOMAIN/
+    ENTITIES/
+        Pokemon.cs
+        - nombre: string
+        - url: string
+        - generacion: int
+        + Pokemon() {}
+        + Pokemon(nombre: string, url: string, generacion: int) {}
+        + getNombre(): string
+        + getUrl(): string
+        + getGeneracion(): string
+        + setNombre(nombre: string)
+        + setUrl(url: string)
+        + setGeneracion(generacion: string)
+
+    DTO/
+        PokemonDTO.cs
+            - nombre: string
+            + PokemonDTO(nombre: string) {}
+            + getNombre(): string
+
+    INTERFACES/
+        IPokemonRepository.cs
+        + interface IPokemonRepository
+        List<Pokemon> getListadoPokemons()
+        Pokemon getPokemon(string nombre)
+        int addPokemon(Pokemon pokemon)
+        int updatePokemon(Pokemon pokemon, string nombre)
+        int deletePokemon(string nombre)
+
+        IPokemonUseCase.cs
+        + interface IPokemonUseCase
+        List<PokemonDTO> getListadoPokemonsDTO(int edadUsuario)
+        PokemonDTO getPokemon(string nombre)
+        int addPokemon(Pokemon pokemon)
+        int updatePokemon(Pokemon pokemon, string nombre)
+        int deletePokemon(string nombre)
+
+    USECASES/
+        PokemonUseCase.cs
+        + class PokemonUseCase: IPokemonUseCase
+        - readonly IPokemonRepository _pokemonRepository
+        + IPokemonUseCase (IPokemonRepository pokemonRepository){ _pokemonRepository = pokemonRepository }
+        + List<PokemonDTO> getListadoPokemonsDTO(int edadUsuario)
+        + PokemonDTO getPokemon(string nombre)
+        + int addPokemon(Pokemon pokemon)
+        + int updatePokemon(Pokemon pokemon, string nombre)
+        + int deletePokemon(string nombre)
+
+
+DATA/
+    REPOSITORIES/
+        PokemonRepository.cs
+        + class PokemonRepository: IPokemonRepository
+        + PokemonRepository()
+        + List<Pokemon> getListadoPokemons()
+        + Pokemon getPokemon(string nombre)
+        + int addPokemon(Pokemon pokemon)
+        + int updatePokemon(Pokemon pokemon, string nombre)
+        + int deletePokemon(string nombre)
+
+UI/
+    CONTROLLERS/
+        HomeController.cs
+            + class HomeController
+                + IActionResult Index()
+        
+        PokemonController.cs
+            - readonly IPokemonUseCase _pokemonUseCases
+            + PokemonController(IPokemonUseCase pokemonUseCases) { _pokemonUseCases = pokemonUseCases }
+            + IActionResult Index() // Muestra el listado de pokemons
+            + IActionResult Details(string nombre) // Muestra los detalles de un pokemon
+            + IActionResult Create() // Muestra el formulario para añadir los datos del nuevo pokemon
+            + IActionResult Create(Pokemon pokemon) [HttpPost] // Obtiene los datos de la nueva persona
+            + IActionResult Edit(string nombre) [HttpGet] // Muestra el formulario para editar
+            + IActionResult Edit(Pokemon pokemon) [HttpPost] // Obtiene los datos del nuevo pokemon
+            + IActionResult Delete(string nombre) [HttpGet] // Muestra la pantalla de confirmación
+            + IActionResult Delete(string nombre) [HttpPost] // Obtiene la confirmación de la vista delete
+
+    VIEWS/
+        Home/
+            Index.cshtml
+        Pokemon/
+            Index.cshtml
+            Details.cshtml
+            Create.cshtml
+            Edit.cshtml
+            Delete.cshtml

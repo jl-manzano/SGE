@@ -1,0 +1,190 @@
+COMPOSITION ROOT/
+    InversifyConfig.cs
+    + static class InversifyConfig
+        + static IServiceCollection AddCompositionRoot(this IServiceCollection services, IConfiguration configuration)
+            services.AddScoped<IJugadorRepository, JugadorRepository>()
+            services.AddScoped<IEquipoUseCases, EquipoUseCases>()
+
+DOMAIN/
+    ENTITIES/
+        Jugador.cs
+        + class Jugador
+        - id: int
+        - nombre: string
+        - posicion: string
+        - fechaNacimiento: Date
+        - idEquipo: int
+        + Jugador()
+        + Jugador(id: int, nombre: string, posicion: string, fechaNacimiento: Date, idEquipo: int)
+        + getId(): int
+        + getNombre(): string
+        + getPosicion(): string
+        + getFechaNacimiento(): Date
+        + getIdEquipo(): int
+        + setId(id: int)
+        + setNombre(nombre: string)
+        + setPosicion(posicion: string)
+        + setFechaNacimiento(fechaNacimiento: Date)
+        + setEquipo(idEquipo: int)
+
+        Equipo.cs
+        + class Equipo
+        - id: int
+        - nombre: string
+        - ciudad: string
+        - estadio: string
+        + Equipo()
+        + Equipo(id: int, nombre: string, ciudad: string, estadio: string)
+        + getId(): int
+        + getNombre(): string
+        + getCiudad(): string
+        + getEstadio(): string
+        + setId(id: int)
+        + setNombre(nombre: string)
+        + setCiudad(ciudad: string)
+        + setEstadio(estadio: string)
+
+    DTO/
+    JugadorWithNombreEquipoDTO.cs
+    + class JugadorWithNombreEquipoDTO
+    + Jugador jugador { get; }
+    + string nombreEquipo { get; }
+    + JugadorWithNombreEquipoDTO(Jugador jugador, string nombreEquipo)
+
+    JugadorWithListadoEquiposDTO.cs
+    + class JugadorWithListadoEquiposDTO
+    + Jugador jugador { get; }
+    + List<Equipo> equipos { get; }
+    + JugadorWithListadoEquiposDTO(Jugador jugador, List<Equipo> equipos)
+
+    INTERFACES/
+        JUGADOR/
+            IJugadorRepository.cs
+            + interface IJugadorRepository
+            List<Jugador> getJugadores()
+            Jugador getJugador(int id)
+            List<Jugador> getJugadoresPorEquipo(int idEquipo)
+            List<Jugador> getJugadoresPorPosicion(string posicion)        
+            int addJugador(Jugador jugador)
+            int updateJugador(int id, Jugador jugador)
+            int deleteJugador(int id)
+
+            IJugadorUseCases.cs
+            + interface IJugadorUseCases
+            List<JugadorWithNombreEquipoDTO> getJugadores()
+            JugadorWithNombreEquipoDTO getJugador(int id)
+            List<JugadorWithNombreEquipoDTO> getJugadoresPorEquipo(int idEquipo)
+            List<JugadorWithNombreEquipoDTO> getJugadoresPorPosicion(string posicion)
+            JugadorWithListadoEquiposDTO getJugadorWithListadoEquipos(int id)
+            int addJugador(Jugador jugador)
+            int updateJugador(int id, Jugador jugador)
+            int deleteJugador(int id)
+        
+        EQUIPO/
+            IEquipoRepository.cs
+            + interface IEquipoRepository
+            List<Equipo> getEquipos()
+            Equipo getEquipo(int id)
+            int addEquipo(Equipo equipo)
+            int updateEquipo(int id, Equipo equipo)
+            int deleteEquipo(int id)
+
+            IEquipoUseCases.cs
+            + interface IEquipoUseCases
+            List<Equipo> getEquipos()
+            Equipo getEquipo(int id)
+            int addEquipo(Equipo equipo)
+            int updateEquipo(int id, Equipo equipo)
+            int deleteEquipo(int id)
+
+    USECASES/
+        JugadorUseCases.cs
+        + class JugadorUseCases: IJugadorUseCases
+        - readonly IJugadorRepository _jugadorRepository
+        - readonly IEquipoRepository _equipoRepository
+        + JugadorUseCases(IJugadorRepository jugadorRepository) { _jugadorRepository = jugadorRepository, _equipoRepository = equipoRepository }
+        + List<JugadorWithNombreEquipoDTO> getJugadores()
+        + JugadorWithNombreEquipoDTO getJugador(int id)
+        + List<JugadorWithNombreEquipoDTO> getJugadoresPorEquipo(int idEquipo)
+        + List<JugadorWithNombreEquipoDTO> getJugadoresPorPosicion(string posicion)
+        + JugadorWithListadoEquiposDTO getJugadorWithListadoEquipos(int id)
+        + List<Equipo> getEquipos()
+        + int addJugador(Jugador jugador)
+        + int updateJugador(int id, Jugador jugador)
+        + int deleteJugador(int id)
+
+        EquipoUseCases.cs
+        + class EquipoUseCases: IEquipoUseCases
+        - readonly IEquipoRepository _equipoRepository
+        + EquipoUseCases(IEquipoRepository equipoRepository) { _equipoRepository = equipoRepository }
+        + List<Equipo> getEquipos()
+        + Equipo getEquipo(int id)
+        + int addEquipo(Equipo equipo)
+        + int updateEquipo(int id, Equipo equipo)
+        + int deleteEquipo(int id)
+
+DATA/
+    REPOSITORIES/
+    JugadorRepository.cs
+    + class JugadorRepository: IJugadorRepository
+    + List<Jugador> getJugadores()
+    + Jugador getJugador(int id)
+    + List<Jugador> getJugadoresPorEquipo(int idEquipo)
+    + List<Jugador> getJugadoresPorPosicion(string posicion)
+    + int addJugador(Jugador jugador)
+    + int updateJugador(int id, Jugador jugador)
+    + int deleteJugador(int id)
+
+    EquipoRepository.cs
+    + class EquipoRepository: IEquipoRepository
+    + List<Equipo> getEquipos()
+    + Equipo getEquipo(int id)
+    + int addEquipo(Equipo equipo)
+    + int updateEquipo(int id, Equipo equipo)
+    + int deleteEquipo(int id)
+    
+UI/
+    CONTROLLERS/
+        HomeController.cs
+            + class HomeController
+            + IActionResult Index()
+        
+        JugadorController.cs
+            + class JugadorController
+            + IActionResult Index() // Muestra el listado de jugadores
+            + IActionResult Details(int id) // Muestra los detalles de un jugador
+            + IActionResult Create() // Muestra el formulario para añadir los datos del nuevo jugador
+            + IActionResult Create(Jugador jugador) [HttpPost] // Obtiene los datos del nuevo jugador
+            + IActionResult Edit(int id) [HttpGet] // Muestra el formulario para editar
+            + IActionResult Edit(Jugador jugador) [HttpPost] // Obtiene los datos del nuevo jugador
+            + IActionResult Delete(int id) [HttpGet] // Muestra la pantalla de confirmacion
+            + IActionResult Delete(int id) [HttpPost] // Obtiene la confirmacion de la vista delete
+
+        EquipoController.cs
+            + class EquipoController
+            + IActionResult Index() // Muestra el listado de equipos
+            + IActionResult Details(int id) // Muestra los detalles de un equipo
+            + IActionResult Create() // Muestra el formulario para añadir los datos del nuevo equipo
+            + IActionResult Create(Equipo equipo) [HttpPost] // Obtiene los datos del nuevo equipo
+            + IActionResult Edit(int id) [HttpGet] // Muestra el formulario para editar
+            + IActionResult Edit(Equipo equipo) [HttpPost] // Obtiene los datos del nuevo equipo
+            + IActionResult Delete(int id) [HttpGet] // Muestra la pantalla de confirmacion
+            + IActionResult Delete(int id) [HttpPost] // Obtiene la confirmacion de la vista delete
+
+    VIEWS/
+        HOME/
+            Index.cshtml
+        
+        JUGADOR/
+            Index.cshtml
+            Create.cshtml
+            Details.cshtml
+            Edit.cshtml
+            Delete.cshtml
+
+        EQUIPO/
+            Index.cshtml
+            Create.cshtml
+            Details.cshtml
+            Edit.cshtml
+            Delete.cshtml

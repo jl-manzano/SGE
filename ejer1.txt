@@ -1,0 +1,98 @@
+COMPOSITION ROOT/
+    InversifyConfig.cs
+    + static class InversifyConfig
+        + static IServiceCollection AddCompositionRoot(this IServiceCollection services, IConfiguration configuration)
+            services.AddScoped<IHabitacionRepository, HabitacionRepository>()
+            services.AddScoped<IHabitacionUseCase, HabitacionUseCase>()
+
+DOMAIN/
+    ENTITIES/
+        Habitacion.cs
+            + class Habitacion
+            - numHabitacion: int
+            - precio: double
+            + Habitacion()
+            + Habitacion(numHabitacion, precio)
+            + getNumHabitacion(): int
+            + getPrecio(): double
+            + setPrecio(precio: double)
+
+    DTO/
+        HabitacionDTO.cs
+            + class HabitacionDTO
+            - numHabitacion: int
+            - precioTotal: double
+            + HabitacionDTO(numHabitacion, precioTotal)
+            + getNumHabitacion(): int
+            + getPrecio(): double
+            + setPrecio(precio: double)
+
+    INTERFACES/
+        IHabitacionRepository.ts
+            + interface IHabitacionRepository
+            List<Habitacion> getHabitaciones()
+            Habitacion getHabitacion(int numHabitacion)
+            int addHabitacion(Habitacion habitacion)
+            int updateHabitacion(int numHabitacion, Habitacion habitacion)
+            int deleteHabitacion(int numHabitacion)
+
+        IHabitacionUseCase.cs
+            + interface IHabitacionUseCase
+            List<HabitacionDTO> getHabitacionesDTO(fechaEntrada: Date, fechaSalida: Date, numPersonas: int, numHabitacion: int)
+            HabitacionDTO getHabitacion(int numHabitacion)
+            int addHabitacion(Habitacion habitacion)
+            int updateHabitacion(int numHabitacion, Habitacion habitacion)
+            int deleteHabitacion(int numHabitacion)
+
+    USECASES/
+        HabitacionUseCase.cs
+            + class HabitacionUseCase: IHabitacionUseCase
+            - readonly IHabitacionRepository _habitacionRepository
+            + HabitacionUseCase(IHabitacionRepository habitacionRepository) { _habitacionRepository = habitacionRepository }
+            + List<HabitacionDTO> getHabitacionesDTO(fechaEntrada: Date, fechaSalida: Date, numPersonas: int, numHabitacion: int)
+            + HabitacionDTO getHabitacion(int numHabitacion)
+            + int addHabitacion(Habitacion habitacion)
+            + int updateHabitacion(int numHabitacion, Habitacion habitacion)
+            + int deleteHabitacion(int numHabitacion)
+            - boolean compruebaFecha(fechaEntrada: Date, fechaSalida: Date) -> comprueba si la fecha de entrada >= a fecha de hoy y si es > fecha salida (true - si cumple dichas condiciones)
+            - boolean compruebaCapacidad(numPersonas: int, numHabitacion: int) -> comprueba si el numHabitaciones es proporcional a las personas que se desean hospedar (máximo 3 por habitacion)
+
+DATA/
+    REPOSITORIES/
+    HabitacionRepository.cs
+        + class HabitacionRepository: IHabitacionRepository
+        + List<Habitacion> getHabitaciones()
+        + Habitacion getHabitacion(int numHabitacion)
+        + int addHabitacion(Habitacion habitacion)
+        + int updateHabitacion(int numHabitacion, Habitacion habitacion)
+        + int deleteHabitacion(int numHabitacion)
+
+UI/
+    CONTROLLERS/
+    HomeController.cs
+        + class HomeController
+        + IActionResult Index()
+
+    HabitacionController.cs
+    + class HabitacionController
+        - readonly IHabitacionUseCase _habitacionUseCase
+        + HabitacionController(IHabitacionUseCase habitacionUseCase) { _habitacionUseCase = habitacionUseCase }
+        + IActionResult Index() // Muestra el listado de habitaciones
+        + IActionResult Details(int numHabitacion) // Muestra los detalles de una habitacion
+        + IActionResult Create() // Muestra el formulario para añadir los datos de una nueva habitacion
+        + IActionResult Create(Habitacion habitacion) [HttpPost] // Obtiene los datos de la nueva habitacion
+        + IActionResult Edit(int numHabitacion) [HttpGet] // Muestra el formulario para editar
+        + IActionResult Edit(Habitacion habitacion) [HttpPost] // Obtiene los datos de la nueva habitacion
+        + IActionResult Delete(int numHabitacion) [HttpGet] // Muestra la pantalla de confirmación
+        + IActionResult Delete(int numHabitacion) [HttpPost] // Obtiene la confirmación de la vista de eliminar
+
+    VIEWS/
+        HOME/
+        Index.cshtml
+
+        HABITACION/
+        Index.cshtml
+        Create.cshtml
+        Details.cshtml
+        Edit.cshtml
+        Delete.cshtml
