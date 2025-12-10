@@ -1,0 +1,18 @@
+﻿@using Domain.DTOs
+@model PlantaWithNombreCategoriaDTO
+
+<h2>Asignar Precio a la Planta: @Model.Planta.Nombre</h2>
+
+<!-- Formulario para asignar precio -->
+<div class="form-container">
+    <form method="post">
+        <div class="form-group">
+            <label for="NuevoPrecio" class="form-label">Nuevo Precio:</label>
+            <input type="number" name="nuevoPrecio" value="@Model.Planta.Precio" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+    </form>
+</div>
+
+<!-- Mensaje temporal -->
+<div class="alert alert-info mt-3">@TempData["Mensaje"]</div>

@@ -1,0 +1,59 @@
+﻿@using Domain.DTOs
+@using Domain.Entities
+@model ListadoPlantasWithListadoCategoriasDTO
+
+@{
+    ViewData["Title"] = "Inicio";
+    var categorias = ViewBag.Categorias as List<Domain.Entities.Categoria>;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<!-- Formulario para seleccionar la categoría -->
+<div class="form-container">
+    <form method="get" asp-action="Index">
+        <label for="Categoria" class="form-label">Seleccionar Categoría:</label>
+        <select id="Categoria" name="categoriaId" class="form-select">
+            <option value="">Seleccionar una categoría</option>
+            @if (categorias != null && categorias.Any())
+            {
+                @foreach (var categoria in categorias)
+                {
+                    <option value="@categoria.Id">@categoria.Nombre</option>
+                }
+            }
+            else
+            {
+                <option value="">No hay categorías disponibles</option>
+            }
+        </select>
+        <button type="submit" class="btn btn-primary">Ver Plantas</button>
+    </form>
+</div>
+
+<!-- Mostrar plantas si hay alguna disponible -->
+@if (Model != null && Model.Plantas != null && Model.Plantas.Any())
+{
+    <h3>Listado de Plantas</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var plantaDTO in Model.Plantas)
+            {
+                <tr>
+                    <td>@plantaDTO.Nombre</td>
+                    <td><a href="@Url.Action("Edit", "Planta", new { id = plantaDTO.Id })" class="btn btn-link">Asignar precio</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Model != null && !Model.Plantas.Any())
+{
+    <p>No se encontraron plantas para esta categoría.</p>
+}

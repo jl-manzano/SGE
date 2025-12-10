@@ -1,0 +1,66 @@
+﻿@using Domain.DTOs
+@using Domain.Entities
+@model ListadoPlantasWithListadoCategoriasDTO
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+
+    <!-- Formulario para seleccionar la categoría -->
+    <div class="card">
+        <div class="card-header">
+            <h4>Seleccionar Categoría</h4>
+        </div>
+        <div class="card-body">
+            <form method="get" asp-action="Index">
+                <div class="form-group">
+                    <label for="Categoria">Categoría</label>
+                    <select id="Categoria" name="categoriaId" class="form-control">
+                        <option value="">Seleccionar una categoría</option>
+                        @foreach (var categoria in ViewBag.Categorias)
+                        {
+                            <option value="@categoria.Id">@categoria.Nombre</option>
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Ver Plantas</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mostrar listado de plantas si existen -->
+    @if (Model != null && Model.Plantas != null && Model.Plantas.Any())
+    {
+        <h3 class="mt-4">Listado de Plantas</h3>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var planta in Model.Plantas)
+                    {
+                        <tr>
+                            <td>@planta.Nombre</td>
+                            <td>
+                                <a href="@Url.Action("Edit", new { id = planta.Id })" class="btn btn-link">Asignar precio</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else if (Model != null && !Model.Plantas.Any())
+    {
+        <div class="alert alert-warning mt-3">
+            No se encontraron plantas para esta categoría.
+        </div>
+    }
+</div>
