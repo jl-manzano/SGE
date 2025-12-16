@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D4E7F88-CC84-4A69-BC5E-1171C09510A4}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\data\\repositories\\plantarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D4E7F88-CC84-4A69-BC5E-1171C09510A4}|Data\\Data.csproj|solutionrelative:data\\repositories\\plantarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\dtos\\plantawithnombrecategoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\dtos\\plantawithnombrecategoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\dtos\\listadocategoriaswithlistadoplantasporcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\dtos\\listadocategoriaswithlistadoplantasporcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\ui\\controllers\\plantacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|solutionrelative:ui\\controllers\\plantacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\ui\\views\\planta\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|solutionrelative:ui\\views\\planta\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\usecases\\plantausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\plantausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D4E7F88-CC84-4A69-BC5E-1171C09510A4}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\data\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D4E7F88-CC84-4A69-BC5E-1171C09510A4}|Data\\Data.csproj|solutionrelative:data\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\usecases\\categoriausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\categoriausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\interfaces\\categoria\\icategoriausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\categoria\\icategoriausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\entities\\planta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\planta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\interfaces\\categoria\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\categoria\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\interfaces\\planta\\iplantarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\planta\\iplantarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\interfaces\\planta\\iplantausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\planta\\iplantausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD32E0BD-9BD8-4CB5-B8CE-1736405EAB41}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\ui\\views\\planta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|solutionrelative:ui\\views\\planta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31F5CC0-6783-41C2-9816-01F3FC9538FD}|UI\\UI.csproj|solutionrelative:ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F93E15-9DA9-4685-82CC-9D0CB5364F2E}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\listadoplantaswithcategoria\\compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F93E15-9DA9-4685-82CC-9D0CB5364F2E}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Program.cs",
+              "RelativeDocumentMoniker": "UI\\Program.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Program.cs",
+              "RelativeToolTip": "UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T00:49:16.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T22:28:12.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IPlantaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Interfaces\\Planta\\IPlantaRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Planta\\IPlantaRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Interfaces\\Planta\\IPlantaRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Planta\\IPlantaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T22:27:50.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICategoriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Interfaces\\Categoria\\ICategoriaRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Categoria\\ICategoriaRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Interfaces\\Categoria\\ICategoriaRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Categoria\\ICategoriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T22:27:35.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Planta.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Entities\\Planta.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Planta.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Entities\\Planta.cs",
+              "RelativeToolTip": "Domain\\Entities\\Planta.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAD4vxAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T22:27:32.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Entities\\Categoria.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Categoria.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Entities\\Categoria.cs",
+              "RelativeToolTip": "Domain\\Entities\\Categoria.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T22:27:27.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlantaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Data\\Repositories\\PlantaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\PlantaRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Data\\Repositories\\PlantaRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\PlantaRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T22:27:11.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Data\\Repositories\\CategoriaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\CategoriaRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Data\\Repositories\\CategoriaRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\CategoriaRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowCQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T22:26:38.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Views\\Planta\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Planta\\Index.cshtml",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Views\\Planta\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Planta\\Index.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T22:05:21.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Views\\Planta\\Edit.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Planta\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Views\\Planta\\Edit.cshtml",
+              "RelativeToolTip": "UI\\Views\\Planta\\Edit.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAiwF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T21:37:28.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAGQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T21:37:26.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlantaController.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Controllers\\PlantaController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\PlantaController.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\UI\\Controllers\\PlantaController.cs",
+              "RelativeToolTip": "UI\\Controllers\\PlantaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:27:07.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoriaUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\UseCases\\CategoriaUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\CategoriaUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\UseCases\\CategoriaUseCases.cs",
+              "RelativeToolTip": "Domain\\UseCases\\CategoriaUseCases.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:27:00.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlantaUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\UseCases\\PlantaUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\PlantaUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\UseCases\\PlantaUseCases.cs",
+              "RelativeToolTip": "Domain\\UseCases\\PlantaUseCases.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:26:54.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IPlantaUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Interfaces\\Planta\\IPlantaUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Planta\\IPlantaUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Interfaces\\Planta\\IPlantaUseCases.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Planta\\IPlantaUseCases.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAsAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:26:53.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICategoriaUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Interfaces\\Categoria\\ICategoriaUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Categoria\\ICategoriaUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\Interfaces\\Categoria\\ICategoriaUseCases.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Categoria\\ICategoriaUseCases.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:26:50.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListadoCategoriasWithListadoPlantasPorCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\DTOs\\ListadoCategoriasWithListadoPlantasPorCategoria.cs",
+              "RelativeDocumentMoniker": "Domain\\DTOs\\ListadoCategoriasWithListadoPlantasPorCategoria.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\DTOs\\ListadoCategoriasWithListadoPlantasPorCategoria.cs",
+              "RelativeToolTip": "Domain\\DTOs\\ListadoCategoriasWithListadoPlantasPorCategoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:26:46.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlantaWithNombreCategoriaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\DTOs\\PlantaWithNombreCategoriaDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\DTOs\\PlantaWithNombreCategoriaDTO.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\Domain\\DTOs\\PlantaWithNombreCategoriaDTO.cs",
+              "RelativeToolTip": "Domain\\DTOs\\PlantaWithNombreCategoriaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:26:45.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InversifyConfig.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\CompositionRoot\\InversifyConfig.cs",
+              "RelativeDocumentMoniker": "CompositionRoot\\InversifyConfig.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\ListadoPlantasWithCategoria\\CompositionRoot\\InversifyConfig.cs",
+              "RelativeToolTip": "CompositionRoot\\InversifyConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T21:26:41.691Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

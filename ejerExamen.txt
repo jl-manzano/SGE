@@ -22,80 +22,80 @@ DOMAIN/
 
     DTOs/
         PlantaWithNombreCategoriaDTO.cs
-        Planta planta { get; }
-        nombreCategoria: string { get; }
+        + Planta planta { get; }
+        + nombreCategoria: string { get; }
         + PlantaWithNombreCategoriaDTO(Planta planta, nombreCategoria: string)
 
-        ListadoPlantasWithListadoCategoriasDTO.cs
-        List<Planta> getPlantas() { get; }
-        List<Categoria> getCategorias() { get; }
-        + ListadoPlantasWithListadoCategoriasDTO(List<Planta> getPlantas(), List<Categoria> getCategorias())
+        ListadoCategoriasWithListadoPlantasListadoCategoriasWithListadoPlantasPorCategoria.cs
+        + List<Planta> plantas { get; }
+        + List<Categoria> categorias { get; }
+        + ListadoCategoriasWithListadoPlantasListadoCategoriasWithListadoPlantasPorCategoria(List<Categoria> categorias)
+        + ListadoCategoriasWithListadoPlantasListadoCategoriasWithListadoPlantasPorCategoria(List<Planta> plantas, List<Categoria> categorias)
 
     INTERFACES/
         PLANTA/
             IPlantaRepository.cs
             + interface IPlantaRepository
-            List<Planta> getPlantas(string categoria)
+            List<Planta> getPlantas(int idCategoria)
             Planta getPlanta(int id)
-            int asignarPrecio(int id, double precio)
+            int editarPrecio(int id, double precio)
 
             IPlantaUseCases.cs
             + interface IPlantaUseCases
-            ListadoPlantasWithListadoCategoriasDTO getPlantasWithListadoCategoriasDTO(int idCategoria)
-            List<PlantaWithNombreCategoriaDTO> getPlantas(string categoria)
+            ListadoCategoriasWithListadoPlantasListadoCategoriasWithListadoPlantasPorCategoria getPlantasWithListadoCategoriasDTO(int? idCategoria)
             PlantaWithNombreCategoriaDTO getPlanta(int id)
-            int asignarPrecio(int id, double precio)
+            int editarPrecio(int id, double precio)
 
         CATEGORIA/
             ICategoriaRepository.cs
             + interface ICategoriaRepository
             List<Categoria> getCategorias()
-            Categoria getCategoria(int id)
+            string getNombreCategoriaById(int id)
 
             ICategoriaUseCases.cs
             + interface ICategoriaUseCases
             List<Categoria> getCategorias()
-            Categoria getCategoria(int id)
+            string getNombreCategoriaById(int id)
 
     USECASES/
         PlantaUseCases.cs
         + class PlantaUseCases: IPlantaUseCases
             - readonly IPlantaRepository _plantaRepository
-            + PlantaUseCases(IPlantaRepository plantaRepository) { _plantaRepository = plantaRepository }
-            + ListadoPlantasWithListadoCategoriasDTO getPlantasWithListadoCategoriasDTO(int idCategoria)
-            + List<PlantaWithNombreCategoriaDTO> getPlantas(string categoria)
+            - readonly ICategoriaUseCases _categoriaUseCases
+            + PlantaUseCases(IPlantaRepository plantaRepository, ICategoriaUseCases categoriaUseCases) { _plantaRepository = plantaRepository, _categoriaUseCases = categoriaUseCases }
+            + ListadoCategoriasWithListadoPlantasListadoCategoriasWithListadoPlantasPorCategoria getListadoCategoriasWithListadoPlantasPorCategoria(int? idCategoria)
             + PlantaWithNombreCategoriaDTO getPlanta(int id)
-            + int asignarPrecio(int id, double precio)
+            + int editarPrecio(int id, double precio)
             - boolean compruebaPrecio(int id, double precioNuevo)
         
         CategoriaUseCases.cs
         + class CategoriaUseCases: ICategoriaUseCases
             + List<Categoria> getCategorias()
-            + Categoria getCategoria(int id) 
+            + string getNombreCategoriaById(int id) 
 
 DATA/
-    DATARESOURCES/
-    Connection.cs
-        + string server { get; set; }
-        + string database { get; set; }
-        + string user { get; set; }
-        + string pass { get; pass; }
-        + Connection()
-        + Connection(string server, string database, string user, string pass)
-        + SqlConnection getConnection()
-        + void closeConnection(ref SqlConnection connection)
+//    DATARESOURCES/
+//    Connection.cs
+//        + string server { get; set; }
+//        + string database { get; set; }
+//        + string user { get; set; }
+//        + string pass { get; set; }
+//        + Connection()
+//        + Connection(string server, string database, string user, string pass)
+//        + SqlConnection getConnection()
+//        + void closeConnection(ref SqlConnection connection)
 
     REPOSITORIES/
     PlantaRepository.cs
     + class PlantaRepository: IPlantaRepository
         + List<Planta> getPlantas(string categoria)
         + Planta getPlanta(int id)
-        + int asignarPrecio(int id, double precio)
+        + int editarPrecio(int id, double precio)
 
     CategoriaRepository.cs
     + class CategoriaRepository: ICategoriaRepository
         + List<Categoria> getCategorias()
-        + Categoria getCategoria(int id)
+        + string getNombreCategoriaById(int id)
 
 UI/
     CONTROLLERS/
@@ -103,9 +103,10 @@ UI/
         + IActionResult Index()
 
         PlantaController.cs
-        + IActionResult Index(int idCategoria) return View(dto) // Pasamos el DTO combinado (plantas y categorías) a la vista
-        + IActionResult Edit(int id) return View(planta) / Pasamos el DTO de la planta a la vista para editar el precio
-        + IActionResult Edit(int id, double precio) [HttpPost] return RedirectToAction("Index", new { idCategoria = planta.idCategoria }) // Redirige a Index con la categoría seleccionada
+        + IActionResult Index(int? idCategoria) return View(_plantaUseCases.getListadoCategoriasWithListadoPlantasPorCategoria(idCategoria)) // Pasamos el DTO combinado (plantas y categorías) a la vista
+        + IActionResult Index(int idCategoria) return View(_plantaUseCases.getListadoCategoriasWithListadoPlantasPorCategoria(idCategoria)) // [HttpPost] 
+        + IActionResult Edit(int id) return View(_plantaUseCases.getPlanta(id))
+        + IActionResult Edit(int id, double precioNuevo) _plantaUseCases.editarPrecio(id, precioNuevo) // Actualiza el precio de una planta. Si el nuevo precio es menor o igual al actual, muestra un error y no se guarda; de lo contrario se guardará con éxito.
 
     VIEWS/
         HOME/

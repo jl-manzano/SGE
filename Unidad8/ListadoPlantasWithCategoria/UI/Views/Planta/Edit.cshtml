@@ -1,0 +1,95 @@
+﻿@model Domain.DTOs.PlantaWithNombreCategoriaDTO
+
+@{
+    ViewData["Title"] = "Editar Precio";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Editar Precio de Planta</h3>
+                </div>
+                <div class="card-body">
+                    <!-- Mensajes de error -->
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Error:</strong> @TempData["Error"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    <!-- Información de la planta -->
+                    <div class="mb-4">
+                        <h5>Información de la Planta</h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>ID:</strong> @Model.planta.Id</p>
+                                <p><strong>Nombre:</strong> @Model.planta.Nombre</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Categoría:</strong> @Model.nombreCategoria</p>
+                                <p><strong>Precio Actual:</strong> <span class="badge bg-success fs-6">€@Model.planta.Precio.ToString("F2")</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p><strong>Descripción:</strong> @Model.planta.Descripcion</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de edición -->
+                    <div class="mb-3">
+                        <h5>Actualizar Precio</h5>
+                        <hr>
+                        <form asp-action="Edit" asp-route-id="@Model.planta.Id" method="post">
+                            <div class="mb-3">
+                                <label for="nuevoPrecio" class="form-label">Nuevo Precio (€)</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">€</span>
+                                    <input type="text"
+                                           name="nuevoPrecio"
+                                           id="nuevoPrecio"
+                                           class="form-control"
+                                           value="@Model.planta.Precio.ToString("F2")"
+                                           pattern="[0-9]+([.,][0-9]{1,2})?"
+                                           required>
+                                </div>
+                                <div class="form-text">Ingrese el nuevo precio para esta planta (debe ser mayor al actual). Use punto o coma como separador decimal.</div>
+                            </div>
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <a asp-action="Index" class="btn btn-secondary">
+                                    Cancelar
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    Guardar Cambios
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Convertir comas a puntos antes de enviar el formulario
+    document.querySelector('form').addEventListener('submit', function(e) {
+        var input = document.getElementById('nuevoPrecio');
+        // Reemplazar coma por punto para que sea compatible con el formato esperado
+        input.value = input.value.replace(',', '.');
+    });
+</script>
+
+@if (TempData["Error"] != null)
+{
+    <script>
+        alert("❌ @TempData["Error"]");
+    </script>
+}

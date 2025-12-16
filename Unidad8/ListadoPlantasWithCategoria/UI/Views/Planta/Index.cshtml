@@ -1,0 +1,94 @@
+﻿@model Domain.DTOs.ListadoCategoriasWithListadoPlantasPorCategoria
+
+@{
+    ViewData["Title"] = "Listado de Plantas";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Gestión de Plantas</h2>
+
+    <!-- Formulario de filtrado por categoría -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Filtrar por Categoría</h5>
+            <form asp-action="Index" method="post" class="row g-3">
+                <div class="col-md-8">
+                    <label for="idCategoria" class="form-label">Seleccione una categoría:</label>
+                    <select name="idCategoria" id="idCategoria" class="form-select" required>
+                        <option value="">-- Seleccione una categoría --</option>
+                        @foreach (var categoria in Model.categorias)
+                        {
+                            <option value="@categoria.Id">@categoria.Nombre</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Listado de plantas filtradas -->
+    @if (Model.plantas != null && Model.plantas.Any())
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Plantas Encontradas</h5>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var planta in Model.plantas)
+                            {
+                                <tr>
+                                    <td>@planta.Nombre</td>
+                                    <td>@planta.Descripcion</td>
+                                    <td>€@planta.Precio.ToString("F2")</td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@planta.Id" class="btn btn-warning btn-sm">
+                                            Editar Precio
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else if (Model.plantas != null)
+    {
+        <div class="alert alert-info" role="alert">
+            No se encontraron plantas para la categoría seleccionada.
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-secondary" role="alert">
+            Seleccione una categoría para ver las plantas disponibles.
+        </div>
+    }
+</div>
+
+<!-- Agregar Bootstrap si no está incluido en el layout -->
+@section Scripts {
+    <script>
+        // Opcional: validación adicional del lado del cliente
+        document.querySelector('form').addEventListener('submit', function(e) {
+            var select = document.getElementById('idCategoria');
+            if (select.value === '') {
+                e.preventDefault();
+                alert('Por favor, seleccione una categoría antes de filtrar.');
+            }
+        });
+    </script>
+}

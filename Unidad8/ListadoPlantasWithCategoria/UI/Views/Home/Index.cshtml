@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Página Principal";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <!-- Hero Section -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-success mb-3">
+                    <i class="bi bi-flower1"></i> Gestión de Plantas
+                </h1>
+                <p class="lead text-muted">¡Bienvenido a nuestra aplicación de gestión de plantas!</p>
+            </div>
+
+            <!-- Card principal -->
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h3 class="card-title text-success mb-4">¿Qué puedes hacer?</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>Filtrar por categorías</strong> - Organiza tu inventario
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>Editar precios</strong> - Actualiza los precios fácilmente
+                                </li>
+                            </ul>
+
+                            <div class="mt-4">
+                                <a href="@Url.Action("Index", "Planta")" class="btn btn-success btn-lg px-5">
+                                    <i class="bi bi-arrow-right-circle me-2"></i>Ver Plantas
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 text-center">
+                            <div class="p-4">
+                                <i class="bi bi-flower2" style="font-size: 150px; color: #28a745; opacity: 0.3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Información adicional -->
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-speedometer2 text-primary" style="font-size: 40px;"></i>
+                            <h5 class="card-title mt-3">Rápido</h5>
+                            <p class="card-text text-muted">Gestiona tu inventario en segundos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check text-success" style="font-size: 40px;"></i>
+                            <h5 class="card-title mt-3">Seguro</h5>
+                            <p class="card-text text-muted">Tus datos están protegidos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-star text-warning" style="font-size: 40px;"></i>
+                            <h5 class="card-title mt-3">Fácil</h5>
+                            <p class="card-text text-muted">Interfaz intuitiva y amigable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Estilos adicionales (opcional) -->
+<style>
+    .card {
+        transition: transform 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .btn-success {
+        transition: all 0.3s ease;
+    }
+
+        .btn-success:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+        }
+</style>
