@@ -12,10 +12,10 @@ namespace UI.Controllers
         }
 
         // Acción Index (GET) - Mostrar plantas con las categorías (DTO combinado)
-        public IActionResult Index(int? idCategoria)
+        public IActionResult Index()
         {
             // Pasamos el DTO combinado a la vista
-            return View(_plantaUseCases.getListadoCategoriasWithListadoPlantasPorCategoria(idCategoria));
+            return View(_plantaUseCases.getListadoCategoriasWithListadoPlantasPorCategoria(null));
         }
 
         // Acción Index (POST) - Filtrado por categoría

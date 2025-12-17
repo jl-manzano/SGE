@@ -103,7 +103,9 @@ UI/
         + IActionResult Index()
 
         PlantaController.cs
-        + IActionResult Index(int? idCategoria) return View(_plantaUseCases.getListadoCategoriasWithListadoPlantasPorCategoria(idCategoria)) // Pasamos el DTO combinado (plantas y categorías) a la vista
+        + IActionResult Index(int? idCategoria) return View(_plantaUseCases.getListadoCategoriasWithListadoPlantasPorCategoria(idCategoria)) o 
+	+ IActionResult Index() return View(_plantaUseCases.getListadoCategoriasWithListadoPlantasPorCategoria(null)) // Pasamos el DTO combinado 
+	(plantas y categorías) a la vista
         + IActionResult Index(int idCategoria) return View(_plantaUseCases.getListadoCategoriasWithListadoPlantasPorCategoria(idCategoria)) // [HttpPost] 
         + IActionResult Edit(int id) return View(_plantaUseCases.getPlanta(id))
         + IActionResult Edit(int id, double precioNuevo) _plantaUseCases.editarPrecio(id, precioNuevo) // Actualiza el precio de una planta. Si el nuevo precio es menor o igual al actual, muestra un error y no se guarda; de lo contrario se guardará con éxito.
