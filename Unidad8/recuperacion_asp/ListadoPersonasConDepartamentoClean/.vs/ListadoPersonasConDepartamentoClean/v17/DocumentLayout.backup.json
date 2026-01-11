@@ -1,0 +1,357 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\entities\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\dtos\\personadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\dtos\\personadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|solutionrelative:ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\dtos\\personacondepartamentoseleccionado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\dtos\\personacondepartamentoseleccionado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\ui\\models\\personaconcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|solutionrelative:ui\\models\\personaconcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\ui\\mappers\\domaintoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|solutionrelative:ui\\mappers\\domaintoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\usecases\\personausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\personausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\usecases\\departamentousecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\departamentousecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\interfaces\\persona\\ipersonausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\persona\\ipersonausecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\interfaces\\persona\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\persona\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\interfaces\\departamento\\idepartamentousecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\departamento\\idepartamentousecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\interfaces\\departamento\\idepartamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\departamento\\idepartamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\dtos\\personaconlistadodepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\dtos\\personaconlistadodepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53D70246-BC24-43B5-8A26-697816237802}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\data\\repositories\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53D70246-BC24-43B5-8A26-697816237802}|Data\\Data.csproj|solutionrelative:data\\repositories\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53D70246-BC24-43B5-8A26-697816237802}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\data\\repositories\\departamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53D70246-BC24-43B5-8A26-697816237802}|Data\\Data.csproj|solutionrelative:data\\repositories\\departamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53D70246-BC24-43B5-8A26-697816237802}|Data\\Data.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\data\\dataresources\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53D70246-BC24-43B5-8A26-697816237802}|Data\\Data.csproj|solutionrelative:data\\dataresources\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886F8585-B78D-4AFA-A435-C5DC43D9A4D4}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886F8585-B78D-4AFA-A435-C5DC43D9A4D4}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\inversifyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\ui\\mappers\\idomaintoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|solutionrelative:ui\\mappers\\idomaintoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Program.cs",
+              "RelativeDocumentMoniker": "UI\\Program.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Program.cs",
+              "RelativeToolTip": "UI\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T23:32:06.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAHwBAAAAAAAAAAAkwI8BAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-04T23:27:08.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PersonaConColor.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Models\\PersonaConColor.cs",
+              "RelativeDocumentMoniker": "UI\\Models\\PersonaConColor.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Models\\PersonaConColor.cs",
+              "RelativeToolTip": "UI\\Models\\PersonaConColor.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:31:58.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IDomainToUI.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Mappers\\IDomainToUI.cs",
+              "RelativeDocumentMoniker": "UI\\Mappers\\IDomainToUI.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Mappers\\IDomainToUI.cs",
+              "RelativeToolTip": "UI\\Mappers\\IDomainToUI.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:31:52.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DomainToUI.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Mappers\\DomainToUI.cs",
+              "RelativeDocumentMoniker": "UI\\Mappers\\DomainToUI.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Mappers\\DomainToUI.cs",
+              "RelativeToolTip": "UI\\Mappers\\DomainToUI.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAADwvz8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:31:23.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAYwEYAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:30:22.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PersonaUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\UseCases\\PersonaUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\PersonaUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\UseCases\\PersonaUseCases.cs",
+              "RelativeToolTip": "Domain\\UseCases\\PersonaUseCases.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAADwv3oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:30:14.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartamentoUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\UseCases\\DepartamentoUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\DepartamentoUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\UseCases\\DepartamentoUseCases.cs",
+              "RelativeToolTip": "Domain\\UseCases\\DepartamentoUseCases.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:29:56.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Persona\\IPersonaRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Persona\\IPersonaRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Persona\\IPersonaRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Persona\\IPersonaRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:29:52.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IPersonaUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Persona\\IPersonaUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Persona\\IPersonaUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Persona\\IPersonaUseCases.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Persona\\IPersonaUseCases.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:29:52.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDepartamentoUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Departamento\\IDepartamentoUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Departamento\\IDepartamentoUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Departamento\\IDepartamentoUseCases.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Departamento\\IDepartamentoUseCases.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:29:49.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Entities\\Persona.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Persona.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Entities\\Persona.cs",
+              "RelativeToolTip": "Domain\\Entities\\Persona.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwBAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:29:21.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IDepartamentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Departamento\\IDepartamentoRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Departamento\\IDepartamentoRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Departamento\\IDepartamentoRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Departamento\\IDepartamentoRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:29:20.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Departamento.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Entities\\Departamento.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Departamento.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Entities\\Departamento.cs",
+              "RelativeToolTip": "Domain\\Entities\\Departamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:29:17.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\DTOs\\PersonaDTO.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaDTO.cs",
+              "RelativeToolTip": "Domain\\DTOs\\PersonaDTO.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:28:33.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PersonaConListadoDepartamento.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaConListadoDepartamento.cs",
+              "RelativeDocumentMoniker": "Domain\\DTOs\\PersonaConListadoDepartamento.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaConListadoDepartamento.cs",
+              "RelativeToolTip": "Domain\\DTOs\\PersonaConListadoDepartamento.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:28:05.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonaConDepartamentoSeleccionado.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaConDepartamentoSeleccionado.cs",
+              "RelativeDocumentMoniker": "Domain\\DTOs\\PersonaConDepartamentoSeleccionado.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaConDepartamentoSeleccionado.cs",
+              "RelativeToolTip": "Domain\\DTOs\\PersonaConDepartamentoSeleccionado.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:27:22.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\Repositories\\PersonaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\PersonaRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\Repositories\\PersonaRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\PersonaRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAADwv1IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:26:03.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DepartamentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\Repositories\\DepartamentoRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\DepartamentoRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\Repositories\\DepartamentoRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\DepartamentoRepository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv0YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:24:56.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\DataResources\\Connection.cs",
+              "RelativeDocumentMoniker": "Data\\DataResources\\Connection.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\DataResources\\Connection.cs",
+              "RelativeToolTip": "Data\\DataResources\\Connection.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwv20AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:21:06.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InversifyConfig.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\CompositionRoot\\InversifyConfig.cs",
+              "RelativeDocumentMoniker": "CompositionRoot\\InversifyConfig.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\CompositionRoot\\InversifyConfig.cs",
+              "RelativeToolTip": "CompositionRoot\\InversifyConfig.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T20:21:04.846Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+COMPOSITION ROOT/
+    InversifyConfig.cs
+    + static class InversifyConfig
+        + static IServiceCollection AddCompositionRoot(IServiceCollection services, IConfiguration configuration)
+
+DOMAIN/
+    ENTITIES/
+        Persona.cs
+        + class Persona
+            - _id: int { get; set; }
+            - _nombre: string { get; set; }
+            - _apellidos: string { get; set; }
+            - _fechaNac: DateTime { get; set; }
+            - _direccion: string { get; set; }
+            - _telefono: string { get; set; }
+            - _foto: string { get; set; }
+            - _idDepartamento: int { get; set; }
+            + Persona()
+            + Persona(int id, string nombre, string apellidos, DateTime fechaNac, string direccion, string telefono, string foto, int idDepartamento)
+
+        Departamento.cs
+        + class Departamento
+            - _idDepartamento: int { get; set; }
+            - _nombreDepartamento: string { get; set; }
+            + Departamento()
+            + Departamento(int idDepartamento, string nombreDepartamento)
+
+    DTOs/
+        PersonaDTO.cs
+        + class PersonaDTO
+            + id: int { get; }
+            + nombre: string { get; }
+            + apellidos: string { get; }
+            + idDepartamento: int? { get; }
+            + PersonaDTO(int id, string nombre, string apellidos, int? idDepartamento)
+
+        PersonaConDepartamentoSeleccionado.cs
+        + class PersonaConDepartamentoSeleccionado
+            + Persona _persona { get; }
+            + Departamento _departamento { get; }
+            + PersonaConDepartamentoSeleccionado(Persona persona, Departamento departamento)
+
+        PersonaConListadoDepartamento.cs
+        + class PersonaConListadoDepartamento
+            + Persona _persona { get; }
+            + List<Departamento> _listadoDepartamentos { get; }
+            + PersonaConListadoDepartamento(Persona persona, List<Departamento> listadoDepartamentos)
+
+    INTERFACES/
+        PERSONA/
+            IPersonaRepository.cs
+            + interface IPersonaRepository
+                List<Persona> getPersonas()
+
+            IPersonaUseCases.cs
+            + interface IPersonaUseCases
+                List<PersonaConListadoDepartamento> getPersonas()
+                int comprobarAciertos(List<PersonaConDepartamentoSeleccionado> personas)
+        
+        DEPARTAMENTO/
+            IDepartamentoRepository.cs
+            + interface IDepartamentoRepository
+                List<Departamento> getDepartamentos()
+
+            IDepartamentoUseCases.cs
+            + interface IDepartamentoUseCases
+                List<Departamento> getDepartamentos()
+
+    USECASES/
+            PersonaUseCases.cs
+            + class PersonaUseCases : IPersonaUseCases
+                - readonly IPersonaRepository _personaRepository
+                - readonly IDepartamentoUseCases _departamentoUseCases
+                + PersonaUseCases(IPersonaRepository personaRepository, IDepartamentoUseCases departamentoUseCases)
+                + List<PersonaConListadoDepartamento> getPersonas()
+                + int comprobarAciertos(List<PersonaConDepartamentoSeleccionado> personas)
+                
+            DepartamentoUseCases.cs
+            + class DepartamentoUseCases : IDepartamentoUseCases
+                - readonly IDepartamentoRepository _departamentoRepository
+                + DepartamentoUseCases(IDepartamentoRepository departamentoRepository)
+                + List<Departamento> getDepartamentos()
+
+DATA/
+    DATARESOURCES/
+    Connection.cs
+        + string server { get; set; }
+        + string database { get; set; }
+        + string user { get; set; }
+        + string pass { get; set; }
+        + Connection()
+        + Connection(string server, string database, string user, string pass)
+        + SqlConnection getConnection()
+        + void closeConnection(ref SqlConnection connection)
+
+    REPOSITORIES/
+        PersonaRepository.cs
+        + class PersonaRepository : IPersonaRepository
+            + List<Persona> getPersonas()
+
+        DepartamentoRepository.cs
+        + class DepartamentoRepository : IDepartamentoRepository
+            + List<Departamento> getDepartamentos()
+
+UI/
+    MAPPERS/
+        IDomainToUI.cs
+        + interface IDomainToUI
+            + PersonaConColor transformar(PersonaConListadoDepartamento persona)
+
+        DomainToUI.cs
+        + class DomainToUI : IDomainToUI
+            - List<String> colores
+            + PersonaConColor transformar(PersonaConListadoDepartamento persona)
+
+    MODELS/
+        PersonaConColor.cs
+            + class PersonaConColor
+                + Persona _persona { get; set; }
+                + List<Departamento> _departamentos { get; set; }
+                + string _color { get; set; }
+                + PersonaConColor()
+                + PersonaConColor(Persona persona, List<Departamento> departamentos, string colorDepartamento)
+
+    CONTROLLERS/
+        HomeController.cs
+        + class HomeController : Controller
+            - readonly IPersonaUseCases _personaUseCases
+            - readonly IDepartamentoUseCases _departamentoUseCases
+            + HomeController(IPersonaUseCases personaUseCases, IDepartamentoUseCases departamentoUseCases)
+            + IActionResult Index()
+            + IActionResult Index(List<int> personaId, List<int> departamentoId) [HttpPost]
+
+VIEWS/
+    HOME/
+        Index.cshtml
+            @model List<UI.Models.PersonaConColor>
