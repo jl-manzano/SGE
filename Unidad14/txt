@@ -1,0 +1,4 @@
+exec on cmd -> npm install -g @angular/cli@latest
+cambiarse a carpeta donde se quiere hacer -> ng new nombreNuevo; (no, css, no, none)
+cd nombreNuevo
+ng serve -o
