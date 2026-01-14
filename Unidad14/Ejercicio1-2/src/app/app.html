@@ -1,0 +1,10 @@
+<h2>Tabla de personas</h2>
+<app-tabla-personas [personas]="personas"></app-tabla-personas>
+
+<h2>Listado de personas</h2>
+<app-lista-personas [personas]="personas"></app-lista-personas>
+
+<h2>Formulario de persona</h2>
+<app-formulario-persona (personaCreada)="addPersona($event)"></app-formulario-persona>
+
+<router-outlet />

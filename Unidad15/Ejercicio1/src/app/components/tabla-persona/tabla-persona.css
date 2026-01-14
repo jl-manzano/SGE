@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:host {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+thead tr th {
+  padding: 1.125rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+tbody tr {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #f8f9ff;
+}
+
+tbody tr td {
+  padding: 1.125rem 1.5rem;
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+tbody tr td:first-child {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+/* Columna de acciones */
+tbody tr td:last-child {
+  text-align: center;
+}
+
+/* Botón de eliminar */
+.btn-eliminar {
+  background: white;
+  border: 2px solid #667eea;
+  border-radius: 12px;
+  padding: 0.5rem 1.25rem;
+  color: #667eea;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  min-width: 100px;
+}
+
+.btn-eliminar:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-eliminar:active {
+  transform: translateY(0);
+}
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+tbody tr {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  thead tr th,
+  tbody tr td {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .btn-eliminar {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}

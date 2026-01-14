@@ -1,0 +1,19 @@
+<table border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let p of personas; let i = index">
+      <td>{{ p.nombre }}</td>
+      <td>{{ p.apellidos }}</td>
+      <td>
+        <button (click)="eliminarPersona(i)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

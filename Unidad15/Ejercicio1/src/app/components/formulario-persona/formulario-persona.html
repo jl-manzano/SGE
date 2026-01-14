@@ -1,0 +1,17 @@
+<h2>Formulario de persona</h2>
+<form (ngSubmit)="guardar()">
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" name="nombre" type="text" [(ngModel)]="nombre" />
+  </div>
+
+  <div>
+    <label for="apellidos">Apellidos:</label>
+    <input id="apellidos" name="apellidos" type="text" [(ngModel)]="apellidos" />
+  </div>
+
+  <button type="submit">Guardar</button>
+</form>
+
+<!-- Botón para volver a la tabla -->
+<a routerLink="/">Volver a la tabla</a>

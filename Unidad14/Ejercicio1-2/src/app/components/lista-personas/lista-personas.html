@@ -1,0 +1,9 @@
+<ul class="heroes">
+  <li *ngFor="let p of personas; let i = index">
+    <button type="button">
+      <span class="badge">{{ i + 1 }}</span>
+      <span class="name">{{ p.nombre }} {{ p.apellidos }}</span>
+      <button type="button" (click)="eliminarPersona(i)">Eliminar</button>
+    </button>
+  </li>
+</ul>
