@@ -1,0 +1,55 @@
+<h2>Componentes de Angular Material (Ejercicio 3)</h2>
+
+<div class="material-container">
+  
+  <!-- Progress Spinner -->
+  <mat-card class="component-card">
+    <mat-card-header>
+      <mat-card-title>Progress Spinner</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <button mat-raised-button color="primary" (click)="toggleSpinner()">
+        {{ showSpinner ? 'Ocultar' : 'Mostrar' }} Spinner
+      </button>
+      <div class="spinner-container" *ngIf="showSpinner">
+        <mat-spinner></mat-spinner>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Radio Buttons -->
+  <mat-card class="component-card">
+    <mat-card-header>
+      <mat-card-title>Radio Buttons</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Selecciona tu color favorito:</p>
+      <mat-radio-group [(ngModel)]="favoriteColor">
+        <mat-radio-button value="rojo">Rojo</mat-radio-button>
+        <mat-radio-button value="azul">Azul</mat-radio-button>
+        <mat-radio-button value="verde">Verde</mat-radio-button>
+      </mat-radio-group>
+      <p class="selection">Seleccionado: <strong>{{ favoriteColor }}</strong></p>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Slider -->
+  <mat-card class="component-card">
+    <mat-card-header>
+      <mat-card-title>Slider</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Ajusta el valor:</p>
+      <mat-slider 
+        min="0" 
+        max="100" 
+        step="1" 
+        [(ngModel)]="sliderValue"
+        discrete>
+        <input matSliderThumb>
+      </mat-slider>
+      <p class="selection">Valor: <strong>{{ sliderValue }}</strong></p>
+    </mat-card-content>
+  </mat-card>
+
+</div>

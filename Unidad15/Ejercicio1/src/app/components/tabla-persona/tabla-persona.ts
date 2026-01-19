@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Persona } from '../../models/persona';
 
@@ -11,8 +11,9 @@ import { Persona } from '../../models/persona';
 })
 export class TablaPersona {
   @Input() personas: Persona[] = [];
+  @Output() personaEliminada = new EventEmitter<number>();
   
   eliminarPersona(index: number) {
-    this.personas.splice(index, 1);  // Elimina la persona en la posición 'index'
+    this.personaEliminada.emit(index);
   }
 }

@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-.heroes button {
+.heroes > li > button {
   width: 100%;
   background: white;
   border: 2px solid #e2e8f0;
@@ -33,14 +33,14 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.heroes button:hover {
+.heroes > li > button:hover {
   border-color: #667eea;
   background: #f8f9ff;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.15);
 }
 
-.heroes button:active {
+.heroes > li > button:active {
   transform: translateY(0);
 }
 
@@ -67,9 +67,28 @@
   flex: 1;
 }
 
-.heroes button:hover .name {
+.heroes > li > button:hover .name {
   color: #667eea;
   font-weight: 600;
+}
+
+.btn-eliminar-lista {
+  background: white;
+  border: 2px solid #f56565;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: #f56565;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-eliminar-lista:hover {
+  background: #f56565;
+  color: white;
+  transform: scale(1.05);
 }
 
 /* Animación de entrada */
@@ -103,7 +122,7 @@
     grid-template-columns: 1fr;
   }
   
-  .heroes button {
+  .heroes > li > button {
     padding: 1rem 1.25rem;
   }
   
@@ -115,5 +134,10 @@
   
   .name {
     font-size: 0.95rem;
+  }
+
+  .btn-eliminar-lista {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
   }
 }

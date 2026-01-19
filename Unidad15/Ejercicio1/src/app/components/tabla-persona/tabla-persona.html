@@ -13,14 +13,8 @@
       <td>{{ p.nombre }}</td>
       <td>{{ p.apellidos }}</td>
       <td>
-        <button (click)="eliminarPersona(i)">Eliminar</button>
+        <button class="btn-eliminar" (click)="eliminarPersona(i)">Eliminar</button>
       </td>
     </tr>
   </tbody>
 </table>
-
-<!-- Botón para navegar al formulario -->
-<a routerLink="/formulario">Abrir Formulario</a>
-
-<!-- Botón para navegar al listado -->
-<a routerLink="/listado">Abrir Listado</a>

@@ -1,0 +1,23 @@
+
+.main-div{
+
+
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+
+.formularioCard{
+    max-width: 400px;
+}
+mat-form-field {
+    width: 100%;
+}
+
+
+.errorEnValidacion {
+    margin-top: 5px;
+    color: #a87878;
+}

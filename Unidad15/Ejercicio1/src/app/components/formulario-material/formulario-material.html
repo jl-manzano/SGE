@@ -1,0 +1,41 @@
+<h2>Formulario con Angular Material (Ejercicio 4)</h2>
+
+<div class="main-div">
+    <mat-card class="formularioCard">
+        <mat-card-header>
+            <mat-card-title>Formulario Reactivo</mat-card-title>
+        </mat-card-header>
+
+
+    
+        <mat-card-content>
+            
+                <mat-form-field appearance="outline">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput placeholder="Escribe tu nombre" formControlName="nombre">
+                    <mat-hint></mat-hint>
+                    <ng-container *ngIf="formulario.controls.nombre.errors != undefined">
+                        <div class="errorEnValidacion" *ngIf="(formulario.controls.nombre.dirty ||
+                        formulario.controls.nombre.touched) &&this.formulario.controls.nombre.errors?.required">El campo no puede estar vacío</div>
+                        <div class="errorEnValidacion" *ngIf="formulario.controls.nombre.errors.minlength">El campo no puede tener menos de cuatro caracteres</div>
+                    </ng-container>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Apellidos</mat-label>
+                    <input matInput placeholder="Escribe tus apellidos" formControlName="apellidos">
+                    <mat-hint></mat-hint>
+                    <span class="errorEnValidacion" *ngIf="(formulario.controls.apellidos.dirty ||
+                    formulario.controls.apellidos.touched) &&this.formulario.controls.apellidos.errors?.required">Los apellidos son obligatorios</span>
+                </mat-form-field>
+                             
+            
+        </mat-card-content>
+
+
+
+
+        <mat-card-actions>
+            <button (click)="saluda()" [disabled]="formulario.invalid" mat-raised-button color="primary">Entrar</button>
+        </mat-card-actions>
+    </mat-card> 
+</div>

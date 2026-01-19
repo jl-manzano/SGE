@@ -1,9 +1,39 @@
 <!-- Navegación -->
 <nav>
-  <a routerLink="/">Tabla</a>
-  <a routerLink="/formulario">Abrir Formulario</a>
-  <a routerLink="/listado">Abrir Listado</a>
+  <button (click)="mostrarTabla()">Tabla</button>
+  <button (click)="mostrarFormulario()">Formulario</button>
+  <button (click)="mostrarLista()">Listado</button>
+  <button (click)="mostrarFormularioReactivo()">Formulario Reactivo</button>
+  <button (click)="mostrarMaterialComponents()">Material Components</button>
+  <button (click)="mostrarFormularioMaterial()">Formulario Material</button>
 </nav>
 
-<!-- Aquí se inyectan los componentes según la ruta -->
-<router-outlet></router-outlet>
+<!-- Mostrar componentes según la vista actual -->
+<app-tabla-personas 
+  *ngIf="vistaActual === 'tabla'"
+  [personas]="personas"
+  (personaEliminada)="eliminarPersona($event)">
+</app-tabla-personas>
+
+<app-formulario-persona
+  *ngIf="vistaActual === 'formulario'"
+  (personaCreada)="addPersona($event)">
+</app-formulario-persona>
+
+<app-lista-personas
+  *ngIf="vistaActual === 'lista'"
+  [personas]="personas"
+  (personaEliminada)="eliminarPersona($event)">
+</app-lista-personas>
+
+<app-formulario-reactivo
+  *ngIf="vistaActual === 'reactivo'">
+</app-formulario-reactivo>
+
+<app-material-components
+  *ngIf="vistaActual === 'material'">
+</app-material-components>
+
+<app-formulario-material
+  *ngIf="vistaActual === 'material-form'">
+</app-formulario-material>

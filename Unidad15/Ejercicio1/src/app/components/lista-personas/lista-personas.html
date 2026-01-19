@@ -4,10 +4,7 @@
     <button type="button">
       <span class="badge">{{ i + 1 }}</span>
       <span class="name">{{ p.nombre }} {{ p.apellidos }}</span>
-      <button type="button" (click)="eliminarPersona(i)">Eliminar</button>
+      <button type="button" class="btn-eliminar-lista" (click)="eliminarPersona(i)">Eliminar</button>
     </button>
   </li>
 </ul>
-
-<!-- Botón para volver a la tabla -->
-<a routerLink="/">Volver a la tabla</a>
