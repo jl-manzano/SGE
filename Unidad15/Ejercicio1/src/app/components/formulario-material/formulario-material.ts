@@ -5,6 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-formulario-material',
@@ -15,14 +16,14 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatCardModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   templateUrl: './formulario-material.html',
   styleUrls: ['./formulario-material.css'],
 })
 export class FormularioMaterial {
   formulario: FormGroup;
-  mensajeSaludo = '';
 
   constructor(private fb: FormBuilder) {
     this.formulario = this.fb.group({
@@ -34,7 +35,8 @@ export class FormularioMaterial {
   saluda() {
     if (this.formulario.valid) {
       const nombre = this.formulario.get('nombre')?.value;
-      this.mensajeSaludo = `Hola ${nombre}`;
+      alert(`¡Hola ${nombre}! 👋`);
+      this.formulario.reset();
     }
   }
 }

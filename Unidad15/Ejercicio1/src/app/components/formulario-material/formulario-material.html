@@ -3,39 +3,50 @@
 <div class="main-div">
     <mat-card class="formularioCard">
         <mat-card-header>
-            <mat-card-title>Formulario Reactivo</mat-card-title>
+            <div class="card-header-content">
+                <mat-icon class="header-icon">account_circle</mat-icon>
+                <mat-card-title>Formulario Reactivo</mat-card-title>
+                <mat-card-subtitle>Completa tus datos personales</mat-card-subtitle>
+            </div>
         </mat-card-header>
 
-
-    
         <mat-card-content>
-            
-                <mat-form-field appearance="outline">
+            <form [formGroup]="formulario" class="formulario-material">
+                <mat-form-field appearance="outline" class="campo-completo">
                     <mat-label>Nombre</mat-label>
-                    <input matInput placeholder="Escribe tu nombre" formControlName="nombre">
-                    <mat-hint></mat-hint>
-                    <ng-container *ngIf="formulario.controls.nombre.errors != undefined">
-                        <div class="errorEnValidacion" *ngIf="(formulario.controls.nombre.dirty ||
-                        formulario.controls.nombre.touched) &&this.formulario.controls.nombre.errors?.required">El campo no puede estar vacío</div>
-                        <div class="errorEnValidacion" *ngIf="formulario.controls.nombre.errors.minlength">El campo no puede tener menos de cuatro caracteres</div>
-                    </ng-container>
+                    <input matInput placeholder="Ej: Juan" formControlName="nombre">
+                    <mat-icon matPrefix>person</mat-icon>
+                    <mat-hint>Mínimo 4 caracteres</mat-hint>
+                    <mat-error *ngIf="formulario.controls['nombre'].errors?.['required']">
+                        El nombre es <strong>obligatorio</strong>
+                    </mat-error>
+                    <mat-error *ngIf="formulario.controls['nombre'].errors?.['minlength']">
+                        El nombre debe tener al menos <strong>4 caracteres</strong>
+                    </mat-error>
                 </mat-form-field>
-                <mat-form-field appearance="outline">
+                
+                <mat-form-field appearance="outline" class="campo-completo">
                     <mat-label>Apellidos</mat-label>
-                    <input matInput placeholder="Escribe tus apellidos" formControlName="apellidos">
-                    <mat-hint></mat-hint>
-                    <span class="errorEnValidacion" *ngIf="(formulario.controls.apellidos.dirty ||
-                    formulario.controls.apellidos.touched) &&this.formulario.controls.apellidos.errors?.required">Los apellidos son obligatorios</span>
+                    <input matInput placeholder="Ej: García López" formControlName="apellidos">
+                    <mat-icon matPrefix>badge</mat-icon>
+                    <mat-hint>Apellido completo</mat-hint>
+                    <mat-error *ngIf="formulario.controls['apellidos'].errors?.['required']">
+                        Los apellidos son <strong>obligatorios</strong>
+                    </mat-error>
                 </mat-form-field>
-                             
-            
+            </form>
         </mat-card-content>
 
-
-
-
-        <mat-card-actions>
-            <button (click)="saluda()" [disabled]="formulario.invalid" mat-raised-button color="primary">Entrar</button>
+        <mat-card-actions align="end">
+            <button 
+                (click)="saluda()" 
+                [disabled]="formulario.invalid" 
+                mat-raised-button 
+                color="primary"
+                class="btn-saludar">
+                <mat-icon>waving_hand</mat-icon>
+                Saludar
+            </button>
         </mat-card-actions>
     </mat-card> 
 </div>

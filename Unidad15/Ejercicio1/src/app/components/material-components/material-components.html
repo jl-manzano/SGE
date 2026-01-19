@@ -34,22 +34,22 @@
   </mat-card>
 
   <!-- Slider -->
-  <mat-card class="component-card">
-    <mat-card-header>
-      <mat-card-title>Slider</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p>Ajusta el valor:</p>
-      <mat-slider 
-        min="0" 
-        max="100" 
-        step="1" 
-        [(ngModel)]="sliderValue"
-        discrete>
-        <input matSliderThumb>
-      </mat-slider>
-      <p class="selection">Valor: <strong>{{ sliderValue }}</strong></p>
-    </mat-card-content>
-  </mat-card>
+<!-- Slider -->
+<mat-card class="component-card">
+  <mat-card-header>
+    <mat-card-title>Slider</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Ajusta el valor:</p>
+    <mat-slider 
+      min="0" 
+      max="100" 
+      step="1" 
+      discrete>
+      <input matSliderThumb [(ngModel)]="sliderValue">
+    </mat-slider>
+    <p class="selection">Valor: <strong>{{ sliderValue }}</strong></p>
+  </mat-card-content>
+</mat-card>
 
 </div>

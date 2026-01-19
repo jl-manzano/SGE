@@ -7,17 +7,31 @@
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  color: #2d3748;
   font-weight: 700;
-  margin-bottom: 2rem;
   text-align: center;
+  font-size: 2rem;
+
+  padding: 0.5rem 0;
+  line-height: 1.35;
+
+  margin-bottom: 3rem; /* 👈 SEPARACIÓN CLAVE */
+
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+:host {
+  display: block;
+  padding: 2rem 1.5rem;
 }
 
 .material-container {
   max-width: 900px;
   margin: 0 auto;
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem; /* antes 2rem */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 

@@ -1,11 +1,11 @@
 <!-- Navegación -->
-<nav>
-  <button (click)="mostrarTabla()">Tabla</button>
-  <button (click)="mostrarFormulario()">Formulario</button>
-  <button (click)="mostrarLista()">Listado</button>
-  <button (click)="mostrarFormularioReactivo()">Formulario Reactivo</button>
-  <button (click)="mostrarMaterialComponents()">Material Components</button>
-  <button (click)="mostrarFormularioMaterial()">Formulario Material</button>
+<nav class="navbar">
+  <button [class.active]="vistaActual === 'tabla'" (click)="mostrarTabla()">Tabla</button>
+  <button [class.active]="vistaActual === 'formulario'" (click)="mostrarFormulario()">Formulario</button>
+  <button [class.active]="vistaActual === 'lista'" (click)="mostrarLista()">Listado</button>
+  <button [class.active]="vistaActual === 'reactivo'" (click)="mostrarFormularioReactivo()">Formulario Reactivo</button>
+  <button [class.active]="vistaActual === 'material'" (click)="mostrarMaterialComponents()">Material Components</button>
+  <button [class.active]="vistaActual === 'material-form'" (click)="mostrarFormularioMaterial()">Formulario Material</button>
 </nav>
 
 <!-- Mostrar componentes según la vista actual -->
