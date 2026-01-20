@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChatClean")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52ef859a243cb2a9f9b02f3d6596c44d9d869199")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+088cb5118821283b560d67be417dce8b396f9ea4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChatClean")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChatClean")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
