@@ -1,0 +1,258 @@
+﻿@page
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-color: #6366f1;
+        --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --glass-bg: rgba(255, 255, 255, 0.95);
+    }
+
+    body {
+        background: var(--bg-gradient);
+        font-family: 'Inter', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .chat-card {
+        background: var(--glass-bg);
+        border-radius: 1.5rem;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        overflow: hidden;
+    }
+
+    .chat-header {
+        background: var(--primary-color);
+        padding: 1.5rem;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    .chat-body {
+        padding: 1.5rem;
+        background: #f8fafc;
+        height: 400px;
+        overflow-y: auto;
+    }
+
+    #messagesList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+        #messagesList li {
+            background: white;
+            padding: 0.75rem 1rem;
+            border-radius: 1rem;
+            border-bottom-left-radius: 0.25rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            color: #1e293b;
+            font-size: 0.95rem;
+            max-width: 85%;
+            border: 1px solid #e2e8f0;
+            animation: fadeIn 0.3s ease;
+        }
+
+    .chat-footer {
+        padding: 1.5rem;
+        background: white;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .input-group-custom {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 2px solid #e2e8f0;
+        border-radius: 0.75rem;
+        outline: none;
+        transition: all 0.2s;
+        font-size: 0.95rem;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+        input[type="text"]:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+        }
+
+    label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #64748b;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+        display: block;
+    }
+
+    #sendButton {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.75rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+    }
+
+        #sendButton:hover:not(:disabled) {
+            background: #4f46e5;
+        }
+
+        #sendButton:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+        }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<div class="chat-card">
+    <div class="chat-header">
+        ChatClean - SignalR
+    </div>
+    <div class="chat-body">
+        <ul id="messagesList"></ul>
+    </div>
+    <div class="chat-footer">
+        <div class="input-group-custom">
+            <div>
+                <label>Usuario</label>
+                <input type="text" id="userInput" placeholder="Tu nombre..." />
+            </div>
+            <div>
+                <label>Mensaje</label>
+                <input type="text" id="messageInput" placeholder="Escribe algo..." />
+            </div>
+            <input type="button" id="sendButton" value="Enviar Mensaje" />
+        </div>
+    </div>
+</div>
+
+<!-- SignalR desde CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@@microsoft/signalr@@8.0.0/dist/browser/signalr.min.js"></script>
+
+<!-- Clase clsMensajeUsuario (inline) -->
+<script>
+    class clsMensajeUsuario {
+        constructor(usuario = '', mensaje = '') {
+            this.usuario = usuario;
+            this.mensaje = mensaje;
+        }
+
+        static fromJSON(json) {
+            return new clsMensajeUsuario(
+                json.usuario || '',
+                json.mensaje || ''
+            );
+        }
+
+        toJSON() {
+            return {
+                usuario: this.usuario,
+                mensaje: this.mensaje
+            };
+        }
+
+        isValid() {
+            return this.mensaje.trim().length > 0;
+        }
+    }
+
+    console.log('✅ clsMensajeUsuario cargado');
+</script>
+
+<!-- Chat logic (inline) -->
+<script>
+    "use strict";
+
+    var connection = new signalR.HubConnectionBuilder()
+        .withUrl("/chatHub")
+        .build();
+
+    document.getElementById("sendButton").disabled = true;
+
+    connection.on("ReceiveMessage", function (mensajeJSON) {
+        console.log('📩 Mensaje recibido:', mensajeJSON);
+
+        var mensajeUsuario = clsMensajeUsuario.fromJSON(mensajeJSON);
+
+        var li = document.createElement("li");
+        li.textContent = mensajeUsuario.usuario + " dice: " + mensajeUsuario.mensaje;
+
+        document.getElementById("messagesList").appendChild(li);
+
+        var chatBody = document.querySelector('.chat-body');
+        chatBody.scrollTop = chatBody.scrollHeight;
+    });
+
+    connection.start().then(function () {
+        document.getElementById("sendButton").disabled = false;
+        console.log("✅ Conectado a SignalR");
+    }).catch(function (err) {
+        console.error("❌ Error:", err.toString());
+    });
+
+    document.getElementById("sendButton").addEventListener("click", enviarMensaje);
+
+    document.getElementById("messageInput").addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            enviarMensaje();
+        }
+    });
+
+    function enviarMensaje() {
+        var user = document.getElementById("userInput").value.trim();
+        var message = document.getElementById("messageInput").value.trim();
+
+        if (message === '') {
+            alert('El mensaje no puede estar vacío');
+            return;
+        }
+
+        console.log('📤 Enviando:', user, message);
+
+        var mensajeUsuario = new clsMensajeUsuario(user || 'Anónimo', message);
+
+        connection.invoke("SendMessage", mensajeUsuario.toJSON())
+            .then(function () {
+                console.log('✅ Mensaje enviado');
+                document.getElementById("messageInput").value = '';
+            })
+            .catch(function (err) {
+                console.error("❌ Error al enviar:", err.toString());
+            });
+    }
+</script>

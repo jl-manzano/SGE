@@ -1,0 +1,15 @@
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\ChatClean.exe
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\ChatClean.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\ChatClean.deps.json
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\ChatClean.runtimeconfig.json
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\ChatClean.pdb
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.ObjectPool.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Options.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\SignalR\ChatClean\obj\Release\net8.0\PubTmp\Out\System.Net.WebSockets.WebSocketProtocol.dll
