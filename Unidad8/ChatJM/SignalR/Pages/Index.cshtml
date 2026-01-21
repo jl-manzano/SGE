@@ -1,6 +1,6 @@
 ﻿@page
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
     :root {
@@ -17,6 +17,7 @@
         align-items: center;
         justify-content: center;
         margin: 0;
+        padding: 2rem 1rem;
     }
 
     .chat-card {
@@ -28,6 +29,7 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
 
     .chat-header {
@@ -62,15 +64,33 @@
         #messagesList li {
             background: white;
             padding: 0.75rem 1rem;
-            border-radius: 1rem;
+            border-radius: 1.125rem;
             border-bottom-left-radius: 0.25rem;
             box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-            color: #1e293b;
-            font-size: 0.95rem;
+            font-size: 0.9375rem;
             max-width: 85%;
             border: 1px solid #e2e8f0;
             animation: fadeIn 0.3s ease;
         }
+
+    /* Nombre del usuario arriba (como en React) */
+    .user-label {
+        font-size: 0.6875rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        margin-bottom: 0.25rem;
+        display: block;
+        letter-spacing: 0.025em;
+    }
+
+    /* Texto del mensaje */
+    .message-text {
+        color: #1e293b;
+        font-size: 0.9375rem;
+        line-height: 1.25rem;
+        display: block;
+    }
 
     .chat-footer {
         padding: 1.5rem;
@@ -98,6 +118,7 @@
         transition: all 0.2s;
         font-size: 0.95rem;
         box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
     }
 
         input[type="text"]:focus {
@@ -126,6 +147,8 @@
         transition: transform 0.1s, background 0.2s;
         width: 100%;
         margin-top: 0.5rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
     }
 
         #sendButton:hover {
@@ -138,15 +161,18 @@
         }
 
     @@keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
+        from
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     }
 
     /* Personalización del Scrollbar */
@@ -157,6 +183,20 @@
     .chat-body::-webkit-scrollbar-thumb {
         background: #cbd5e1;
         border-radius: 10px;
+    }
+
+    /* Responsive para pantallas pequeñas */
+    @@media (max-height: 700px) {
+        .chat-body
+
+    {
+        height: 300px;
+    }
+
+    body {
+        padding: 1rem 0.5rem;
+    }
+
     }
 </style>
 
@@ -188,4 +228,66 @@
 </div>
 
 <script src="~/js/signalr/dist/browser/signalr.js"></script>
-<script src="~/js/chat.js"></script>
+<script>
+    "use strict";
+
+    var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+
+    // Deshabilitar botón hasta conectar
+    document.getElementById("sendButton").disabled = true;
+
+    connection.on("ReceiveMessage", function (user, message) {
+        var li = document.createElement("li");
+
+        // Crear el label del usuario (como en React)
+        var userLabel = document.createElement("span");
+        userLabel.className = "user-label";
+        userLabel.textContent = user || 'Anónimo';
+
+        // Crear el texto del mensaje
+        var messageText = document.createElement("span");
+        messageText.className = "message-text";
+        messageText.textContent = message;
+
+        // Agregar ambos al li
+        li.appendChild(userLabel);
+        li.appendChild(messageText);
+
+        document.getElementById("messagesList").appendChild(li);
+
+        // Auto-scroll al final
+        var chatBody = document.querySelector('.chat-body');
+        chatBody.scrollTop = chatBody.scrollHeight;
+    });
+
+    connection.start().then(function () {
+        document.getElementById("sendButton").disabled = false;
+    }).catch(function (err) {
+        return console.error(err.toString());
+    });
+
+    document.getElementById("sendButton").addEventListener("click", function (event) {
+        var user = document.getElementById("userInput").value || "Anónimo";
+        var message = document.getElementById("messageInput").value;
+
+        if (message.trim() === '') {
+            alert('El mensaje no puede estar vacío');
+            return;
+        }
+
+        connection.invoke("SendMessage", user, message).catch(function (err) {
+            return console.error(err.toString());
+        });
+
+        // Limpiar input del mensaje
+        document.getElementById("messageInput").value = '';
+        event.preventDefault();
+    });
+
+    // Permitir enviar con Enter
+    document.getElementById("messageInput").addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            document.getElementById("sendButton").click();
+        }
+    });
+</script>
