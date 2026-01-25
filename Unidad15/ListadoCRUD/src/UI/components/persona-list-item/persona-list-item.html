@@ -1,0 +1,34 @@
+<div class="persona-item-container">
+  <div class="main-content" (click)="onPersonaClick()">
+    <div class="avatar" [style.background-color]="persona.color">
+      @if (shouldShowImage()) {
+        <img 
+          [src]="persona.foto" 
+          class="avatar-image"
+          (error)="handleImageError()"
+          alt="Foto de perfil"
+        />
+      } @else {
+        <span class="initials">{{ persona.initials }}</span>
+      }
+      <div class="avatar-overlay"></div>
+    </div>
+    
+    <div class="content">
+      <h3 class="name">{{ persona.nombre }} {{ persona.apellidos }}</h3>
+      
+      <div class="info-row">
+        <span class="info-icon">📞</span>
+        <span class="info">{{ persona.telefono }}</span>
+      </div>
+      
+      <div class="department-badge">
+        <span class="department-text">{{ persona.nombreDepartamento }}</span>
+      </div>
+    </div>
+  </div>
+  
+  <button class="delete-button" (click)="onDeleteClick($event)" type="button">
+    <span class="delete-text">🗑️</span>
+  </button>
+</div>

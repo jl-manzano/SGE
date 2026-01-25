@@ -1,0 +1,64 @@
+<div class="container">
+  <!-- Loading State -->
+  @if (personasService.isLoading() && personasService.personas().length === 0) {
+    <div class="center-container">
+      <div class="spinner"></div>
+      <p class="loading-text">Cargando personal...</p>
+    </div>
+  }
+
+  <!-- Error State -->
+  @else if (personasService.error()) {
+    <div class="center-container">
+      <div class="error-container">
+        <span class="error-icon">⚠️</span>
+        <p class="error-text">{{ personasService.error() }}</p>
+        <button class="retry-button" (click)="handleRetry()">
+          Reintentar
+        </button>
+      </div>
+    </div>
+  }
+
+  <!-- Content -->
+  @else {
+    <!-- Header con botón de navegación -->
+    <div class="header">
+      <div class="header-content">
+        <button class="back-button" (click)="navigateBack()">
+          <span class="back-arrow">←</span>
+        </button>
+        <h1 class="header-title">Personal</h1>
+      </div>
+      <p class="header-subtitle">
+        {{ personasService.personas().length }} persona{{ personasService.personas().length !== 1 ? 's' : '' }} registrada{{ personasService.personas().length !== 1 ? 's' : '' }}
+      </p>
+    </div>
+
+    <!-- List -->
+    <div class="list-content">
+      @if (personasService.personas().length === 0) {
+        <!-- Empty State -->
+        <div class="empty-container">
+          <span class="empty-icon">👥</span>
+          <p class="empty-text">No hay personas registradas</p>
+          <p class="empty-subtext">Toca el botón + para agregar la primera persona</p>
+        </div>
+      } @else {
+        <!-- Personas List -->
+        @for (persona of personasService.personas(); track persona.id) {
+          <app-persona-list-item
+            [persona]="persona"
+            (personaClick)="handleEditPersona(persona)"
+            (deleteClick)="handleDeletePersona(persona)"
+          />
+        }
+      }
+    </div>
+
+    <!-- FAB -->
+    <button class="fab" (click)="handleAddPersona()">
+      <span class="fab-text">+</span>
+    </button>
+  }
+</div>

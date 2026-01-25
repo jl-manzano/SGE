@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importar fuente moderna de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Reset y estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+  color: #1a1a2e;
+}
+
+/* Mejorar la legibilidad del texto */
+p, span, div, a, button, input, textarea, select, label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Optimizar el renderizado de fuentes */
+body, input, button, textarea, select {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+/* Mejorar contraste y legibilidad */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #1a1a2e;
+}
+
+/* Optimizar tamaños de texto */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Mejorar apariencia de inputs */
+input, textarea, select {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Mejorar apariencia de botones */
+button {
+  font-weight: 600;
+  letter-spacing: 0;
+}

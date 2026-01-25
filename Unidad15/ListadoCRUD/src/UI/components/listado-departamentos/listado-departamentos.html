@@ -1,0 +1,59 @@
+<div class="container">
+  <!-- Loading State -->
+  @if (departamentosService.isLoading() && departamentosService.departamentos().length === 0) {
+    <div class="center-container">
+      <div class="spinner"></div>
+      <p class="loading-text">Cargando departamentos...</p>
+    </div>
+  }
+
+  <!-- Error State -->
+  @else if (departamentosService.error()) {
+    <div class="center-container">
+      <div class="error-container">
+        <span class="error-icon">⚠️</span>
+        <p class="error-text">{{ departamentosService.error() }}</p>
+        <button class="retry-button" (click)="handleRetry()">
+          Reintentar
+        </button>
+      </div>
+    </div>
+  }
+
+  <!-- Content -->
+  @else {
+    <!-- Header con botón de navegación -->
+    <div class="header">
+      <div class="header-content">
+        <button class="back-button" (click)="navigateBack()">
+          <span class="back-arrow">←</span>
+        </button>
+        <h1 class="header-title">Departamentos</h1>
+      </div>
+      <p class="header-subtitle">
+        {{ departamentosService.departamentos().length }} departamento{{ departamentosService.departamentos().length !== 1 ? 's' : '' }}
+      </p>
+    </div>
+
+    <!-- List -->
+    <div class="list-content">
+      @if (departamentosService.departamentos().length === 0) {
+        <!-- Empty State -->
+        <div class="empty-container">
+          <span class="empty-icon">🏢</span>
+          <p class="empty-text">No hay departamentos registrados</p>
+          <p class="empty-subtext">Comienza agregando tu primer departamento</p>
+        </div>
+      } @else {
+        <!-- Departamentos List -->
+        @for (departamento of departamentosService.departamentos(); track departamento.idDepartamento) {
+          <app-departamento-list-item
+            [departamento]="departamento"
+            (departamentoClick)="handleEditDepartamento(departamento)"
+            (deleteClick)="handleDeleteDepartamento(departamento)"
+          />
+        }
+      }
+    </div>
+  }
+</div>

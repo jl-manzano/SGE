@@ -1,0 +1,16 @@
+<div class="departamento-item-container">
+  <div class="main-content" (click)="onDepartamentoClick()">
+    <div class="icon-container" [style.background-color]="departamento.color">
+      <span class="icon">{{ departamento.icon }}</span>
+      <div class="icon-overlay"></div>
+    </div>
+    
+    <div class="content">
+      <h3 class="name">{{ departamento.nombreDepartamento }}</h3>
+    </div>
+  </div>
+  
+  <button class="delete-button" (click)="onDeleteClick($event)" type="button">
+    <span class="delete-text">🗑️</span>
+  </button>
+</div>

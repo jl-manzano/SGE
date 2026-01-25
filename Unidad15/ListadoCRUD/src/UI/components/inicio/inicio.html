@@ -1,0 +1,63 @@
+<div class="container">
+  <!-- Header limpio -->
+  <div class="header">
+    <div class="logo-circle">
+      <span class="logo-emoji">🗃️</span>
+    </div>
+    <h1 class="header-title">RRHH</h1>
+    <p class="header-subtitle">Gestión de Recursos Humanos</p>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <!-- Tarjetas principales -->
+    <div class="cards-container">
+      <button class="card card-primary" (click)="navigateToPersonas()">
+        <div class="card-icon-container">
+          <span class="card-icon">👥</span>
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Personal</h2>
+          <p class="card-description">Gestiona empleados y contactos</p>
+        </div>
+        <div class="card-arrow">
+          <span class="arrow-text">→</span>
+        </div>
+      </button>
+
+      <button class="card card-secondary" (click)="navigateToDepartamentos()">
+        <div class="card-icon-container">
+          <span class="card-icon">🏢</span>
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Departamentos</h2>
+          <p class="card-description">Organiza las áreas de tu empresa</p>
+        </div>
+        <div class="card-arrow">
+          <span class="arrow-text">→</span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Info adicional -->
+    <div class="info-section">
+      <div class="info-card">
+        <span class="info-icon">⚡</span>
+        <h3 class="info-title">Rápido y eficiente</h3>
+        <p class="info-text">Accede a toda la información en segundos</p>
+      </div>
+
+      <div class="info-card">
+        <span class="info-icon">🔒</span>
+        <h3 class="info-title">Seguro</h3>
+        <p class="info-text">Tus datos protegidos en todo momento</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="footer-text">Sistema RRHH v1.0</p>
+      <p class="footer-subtext">2025 • Gestión Integral</p>
+    </div>
+  </div>
+</div>

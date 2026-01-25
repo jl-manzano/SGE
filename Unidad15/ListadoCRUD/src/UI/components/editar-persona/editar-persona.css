@@ -1,0 +1,275 @@
+.scroll-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.header {
+  background-color: #667eea;
+  padding: 20px;
+  padding-top: 24px;
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.back-arrow {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header-text-container {
+  flex: 1;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 4px 0;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.form {
+  padding: 20px;
+}
+
+.photo-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.preview-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 3px solid #667eea;
+  object-fit: cover;
+}
+
+.preview-image-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 3px solid #667eea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-initials {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a2e;
+}
+
+.required {
+  color: #dc3545;
+}
+
+.input {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  color: #1a1a2e;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+
+  &::placeholder {
+    color: #adb5bd;
+  }
+
+  &:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+  }
+}
+
+.hint {
+  font-size: 12px;
+  color: #6c757d;
+  margin: 6px 0 0 0;
+}
+
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.picker-item {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover:not(:disabled) {
+    border-color: #667eea;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.picker-item-selected {
+  background-color: #667eea;
+  border-color: #667eea;
+}
+
+.picker-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.picker-icon {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.picker-text {
+  font-size: 16px;
+  color: #1a1a2e;
+  font-weight: 500;
+}
+
+.picker-text-selected {
+  color: #fff;
+  font-weight: 600;
+}
+
+.checkmark {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.button-group {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  display: flex;
+  padding: 16px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  font-size: 16px;
+  font-weight: 600;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.primary-button {
+  background-color: #667eea;
+  color: #fff;
+}
+
+.secondary-button {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+}
+
+.button-disabled {
+  background-color: #adb5bd;
+  opacity: 0.6;
+}
+
+.button-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.button-text {
+  color: #fff;
+}
+
+.secondary-button-text {
+  color: #6c757d;
+}
+
+.spinner-small {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,162 @@
+<div class="scroll-container">
+  <!-- Header -->
+  <div class="header">
+    <div class="header-content">
+      <button class="back-button" (click)="navigateBack()">
+        <span class="back-arrow">←</span>
+      </button>
+      <div class="header-text-container">
+        <h1 class="header-title">
+          {{ isEditing ? 'Editar Persona' : 'Nueva Persona' }}
+        </h1>
+        <p class="header-subtitle">
+          {{ isEditing ? 'Modifica los datos de la persona' : 'Completa la información' }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="form">
+    <!-- Vista previa de la foto -->
+    @if (foto()) {
+      <div class="photo-preview">
+        @if (foto() && !imageError()) {
+          <img 
+            [src]="foto()" 
+            class="preview-image"
+            (error)="handleImageError()"
+            alt="Foto de perfil"
+          />
+        } @else {
+          <div class="preview-image-placeholder" [style.background-color]="'#667eea'">
+            <span class="preview-initials">{{ initials }}</span>
+          </div>
+        }
+      </div>
+    }
+
+    <!-- URL de foto -->
+    <div class="input-group">
+      <label class="label">URL de la foto de perfil</label>
+      <input
+        type="text"
+        class="input"
+        [value]="foto()"
+        (input)="onFotoChange($any($event.target).value)"
+        placeholder="https://ejemplo.com/foto.jpg"
+        [disabled]="isSaving()"
+      />
+      <p class="hint">Pega la URL de una imagen (opcional)</p>
+    </div>
+
+    <!-- Nombre -->
+    <div class="input-group">
+      <label class="label">Nombre <span class="required">*</span></label>
+      <input
+        type="text"
+        class="input"
+        [value]="nombre()"
+        (input)="nombre.set($any($event.target).value)"
+        placeholder="Ingrese el nombre"
+        [disabled]="isSaving()"
+      />
+    </div>
+
+    <!-- Apellidos -->
+    <div class="input-group">
+      <label class="label">Apellidos <span class="required">*</span></label>
+      <input
+        type="text"
+        class="input"
+        [value]="apellidos()"
+        (input)="apellidos.set($any($event.target).value)"
+        placeholder="Ingrese los apellidos"
+        [disabled]="isSaving()"
+      />
+    </div>
+
+    <!-- Teléfono -->
+    <div class="input-group">
+      <label class="label">Teléfono <span class="required">*</span></label>
+      <input
+        type="tel"
+        class="input"
+        [value]="telefono()"
+        (input)="telefono.set($any($event.target).value)"
+        placeholder="Ingrese el teléfono"
+        [disabled]="isSaving()"
+      />
+    </div>
+
+    <!-- Dirección -->
+    <div class="input-group">
+      <label class="label">Dirección</label>
+      <input
+        type="text"
+        class="input"
+        [value]="direccion()"
+        (input)="direccion.set($any($event.target).value)"
+        placeholder="Ingrese la dirección"
+        [disabled]="isSaving()"
+      />
+    </div>
+
+    <!-- Departamento -->
+    <div class="input-group">
+      <label class="label">Departamento <span class="required">*</span></label>
+      <div class="picker">
+        @for (dep of departamentosService.departamentos(); track dep.idDepartamento) {
+          <button
+            type="button"
+            class="picker-item"
+            [class.picker-item-selected]="idDepartamento() === dep.idDepartamento"
+            (click)="selectDepartamento(dep.idDepartamento)"
+            [disabled]="isSaving()"
+          >
+            <div class="picker-content">
+              <span class="picker-icon">{{ dep.icon }}</span>
+              <span 
+                class="picker-text"
+                [class.picker-text-selected]="idDepartamento() === dep.idDepartamento"
+              >
+                {{ dep.nombreDepartamento }}
+              </span>
+            </div>
+            @if (idDepartamento() === dep.idDepartamento) {
+              <span class="checkmark">✓</span>
+            }
+          </button>
+        }
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="button-group">
+      <button 
+        type="button"
+        class="button primary-button"
+        [class.button-disabled]="isSaving()"
+        (click)="handleGuardar()"
+        [disabled]="isSaving()"
+      >
+        @if (isSaving()) {
+          <div class="spinner-small"></div>
+        } @else {
+          <span class="button-icon">{{ isEditing ? '💾' : '➕' }}</span>
+          <span class="button-text">{{ isEditing ? 'Actualizar' : 'Guardar' }}</span>
+        }
+      </button>
+
+      <button
+        type="button"
+        class="button secondary-button"
+        (click)="navigateBack()"
+        [disabled]="isSaving()"
+      >
+        <span class="button-icon">✕</span>
+        <span class="button-text secondary-button-text">Cancelar</span>
+      </button>
+    </div>
+  </div>
+</div>
