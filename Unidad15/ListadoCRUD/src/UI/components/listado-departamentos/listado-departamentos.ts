@@ -17,7 +17,6 @@ import { DepartamentoUIModel } from '../../Models/DepartamentoUIModel';
   styleUrls: ['./listado-departamentos.css']
 })
 export class ListadoDepartamentosComponent implements OnInit {
-  // ViewModel integrado - accede al Service Singleton
   constructor(
     public departamentosService: DepartamentosService,
     private router: Router

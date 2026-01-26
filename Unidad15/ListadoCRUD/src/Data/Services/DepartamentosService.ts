@@ -8,16 +8,14 @@ import { DepartamentoUIModel, toDepartamentoUIModel } from '../../UI/Models/Depa
  * Contiene estado compartido y lógica de datos
  */
 @Injectable({
-  providedIn: 'root' // ← Singleton
+  providedIn: 'root'
 })
 export class DepartamentosService {
-  // Estado compartido (Signals)
   private _departamentos = signal<DepartamentoUIModel[]>([]);
   private _departamentoSeleccionado = signal<DepartamentoUIModel | null>(null);
   private _isLoading = signal<boolean>(false);
   private _error = signal<string | null>(null);
 
-  // Públicos readonly
   readonly departamentos = this._departamentos.asReadonly();
   readonly departamentoSeleccionado = this._departamentoSeleccionado.asReadonly();
   readonly isLoading = this._isLoading.asReadonly();

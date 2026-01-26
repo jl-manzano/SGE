@@ -13,7 +13,6 @@ import { DepartamentosService } from '../Data/Services/DepartamentosService';
 export class AppComponent implements OnInit {
   title = 'RRHH';
   
-  // Usar signals en lugar de propiedades normales para zoneless mode
   isLoading = signal(true);
   error = signal<string | null>(null);
 
@@ -37,11 +36,11 @@ export class AppComponent implements OnInit {
       console.log('Personas cargadas:', this.personasService.personas());
 
       console.log('Aplicación inicializada correctamente');
-      this.isLoading.set(false);  // ← Actualizar el signal
+      this.isLoading.set(false);
     } catch (err) {
       console.error('Error al inicializar la aplicación:', err);
       this.error.set(err instanceof Error ? err.message : 'Error desconocido');
-      this.isLoading.set(false);  // ← Actualizar el signal incluso en error
+      this.isLoading.set(false);
     }
   }
 }

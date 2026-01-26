@@ -1,30 +1,31 @@
 import { Injectable, signal, computed } from '@angular/core';
-import { PersonaDTO } from '../../Domain/DTOs/PersonaDTO';
 import { Persona } from '../../Domain/Entities/Persona';
 import { PersonaUseCases } from '../../Domain/UseCases/PersonaUseCases';
 import { PersonaUIModel, toPersonaUIModel } from '../../UI/Models/PersonaUIModel';
+import { DepartamentosService } from './DepartamentosService';
 
 /**
  * PersonasService - Singleton (equivalente a getInstance() en React Native)
  * Contiene estado compartido y lógica de datos
  */
 @Injectable({
-  providedIn: 'root' // ← Singleton
+  providedIn: 'root'
 })
 export class PersonasService {
-  // Estado compartido (Signals)
   private _personas = signal<PersonaUIModel[]>([]);
   private _personaSeleccionada = signal<PersonaUIModel | null>(null);
   private _isLoading = signal<boolean>(false);
   private _error = signal<string | null>(null);
 
-  // Públicos readonly
   readonly personas = this._personas.asReadonly();
   readonly personaSeleccionada = this._personaSeleccionada.asReadonly();
   readonly isLoading = this._isLoading.asReadonly();
   readonly error = this._error.asReadonly();
 
-  constructor(private personaUseCases: PersonaUseCases) {}
+  constructor(
+    private personaUseCases: PersonaUseCases,
+    private departamentosService: DepartamentosService
+  ) {}
 
   /**
    * Carga todas las personas
@@ -35,7 +36,7 @@ export class PersonasService {
 
     try {
       const personasDTO = await this.personaUseCases.getPersonas();
-      const personasUI = personasDTO.map(dto => toPersonaUIModel(dto));
+      const personasUI = personasDTO.map(dto => toPersonaUIModel(dto, this.departamentosService));
       this._personas.set(personasUI);
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Error al cargar las personas';

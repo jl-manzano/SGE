@@ -18,7 +18,6 @@ import { Persona } from '../../../Domain/Entities/Persona';
   styleUrls: ['./editar-persona.css']
 })
 export class EditarPersonaComponent implements OnInit {
-  // === ViewModel integrado - Signals locales del formulario ===
   nombre = signal('');
   apellidos = signal('');
   telefono = signal('');
@@ -28,7 +27,6 @@ export class EditarPersonaComponent implements OnInit {
   isSaving = signal(false);
   imageError = signal(false);
 
-  // Computed
   get isEditing(): boolean {
     return this.personasService.personaSeleccionada() !== null;
   }

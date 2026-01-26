@@ -16,7 +16,6 @@ export class PersonaListItemComponent {
 
   private imageError = signal(false);
 
-  // Verificar si debe mostrar la imagen
   shouldShowImage(): boolean {
     return !!this.persona.foto && 
            this.persona.foto.trim() !== '' && 

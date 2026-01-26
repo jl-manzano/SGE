@@ -8,12 +8,10 @@ import { DepartamentoUseCases } from '../Domain/UseCases/DepartamentoUseCases';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    // Modo zoneless (sin Zone.js)
     provideZonelessChangeDetection(),
     
     provideRouter(routes),
     
-    // Proveer UseCases desde el contenedor de Inversify
     {
       provide: PersonaUseCases,
       useFactory: () => container.get<PersonaUseCases>(TYPES.PersonaUseCases)

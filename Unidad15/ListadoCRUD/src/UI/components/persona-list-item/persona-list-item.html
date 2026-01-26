@@ -22,8 +22,9 @@
         <span class="info">{{ persona.telefono }}</span>
       </div>
       
-      <div class="department-badge">
-        <span class="department-text">{{ persona.nombreDepartamento }}</span>
+      <div class="info-row">
+        <span class="info-icon">🏢</span>
+        <span class="info">{{ persona.nombreDepartamento || 'Sin departamento' }}</span>
       </div>
     </div>
   </div>

@@ -17,7 +17,6 @@ import { PersonaUIModel } from '../../Models/PersonaUIModel';
   styleUrls: ['./listado-personas.css']
 })
 export class ListadoPersonasComponent implements OnInit {
-  // ViewModel integrado - accede al Service Singleton
   constructor(
     public personasService: PersonasService,
     private router: Router

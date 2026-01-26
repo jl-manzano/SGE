@@ -7,21 +7,19 @@ export interface DepartamentoUIModel {
   color: string;
 }
 
-// Paleta de colores para los departamentos
 const colors = [
   '#6C5CE7', '#00B894', '#FDCB6E', '#E17055', '#74B9FF', 
   '#A29BFE', '#FF7675', '#FD79A8', '#55EFC4', '#81ECEC'
 ];
 
 export function toDepartamentoUIModel(departamento: Departamento): DepartamentoUIModel {
-  // Asignar color basado en el ID del departamento para que sea consistente
   const colorIndex = departamento.idDepartamento % colors.length;
   const assignedColor = colors[colorIndex];
   
   return {
     idDepartamento: departamento.idDepartamento,
     nombreDepartamento: departamento.nombreDepartamento,
-    icon: '🏢', // Icono fijo para todos los departamentos
+    icon: '🏢',
     color: assignedColor
   };
 }
