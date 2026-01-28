@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using TicTacToe.Models;
-using System.Numerics;
 
 namespace TicTacToe.Hubs
 {
     /// <summary>
     /// Hub de SignalR para el juego de Tres en Raya
-    /// El servidor NO tiene vista, solo gestiona la lógica del juego
+    /// Versión mejorada con logging detallado
     /// </summary>
     public class GameHub : Hub
     {
@@ -21,7 +20,10 @@ namespace TicTacToe.Hubs
         public override async Task OnConnectedAsync()
         {
             await base.OnConnectedAsync();
-            Console.WriteLine($"✅ Cliente conectado: {Context.ConnectionId}");
+            Console.WriteLine($"╔══════════════════════════════════════════╗");
+            Console.WriteLine($"║  ✅ CLIENTE CONECTADO                    ║");
+            Console.WriteLine($"╚══════════════════════════════════════════╝");
+            Console.WriteLine($"   Connection ID: {Context.ConnectionId}");
 
             lock (_lock)
             {
@@ -29,22 +31,29 @@ namespace TicTacToe.Hubs
                 if (_gameState.PlayerX == null)
                 {
                     _gameState.PlayerX = new Player(Context.ConnectionId, "X", "Jugador X");
-                    Console.WriteLine($"🎮 Jugador X asignado: {Context.ConnectionId}");
+                    Console.WriteLine($"   🎮 Rol asignado: JUGADOR X");
                 }
                 else if (_gameState.PlayerO == null)
                 {
                     _gameState.PlayerO = new Player(Context.ConnectionId, "O", "Jugador O");
                     _gameState.WaitingForPlayer = false;
-                    Console.WriteLine($"🎮 Jugador O asignado: {Context.ConnectionId}");
+                    Console.WriteLine($"   🎮 Rol asignado: JUGADOR O");
+                    Console.WriteLine($"   ✅ ¡Juego listo para comenzar!");
                 }
                 else
                 {
-                    Console.WriteLine($"👀 Espectador conectado: {Context.ConnectionId}");
+                    Console.WriteLine($"   👀 Rol asignado: ESPECTADOR");
                 }
+
+                Console.WriteLine($"   Estado actual:");
+                Console.WriteLine($"   - Player X: {(_gameState.PlayerX != null ? "Conectado" : "Vacío")}");
+                Console.WriteLine($"   - Player O: {(_gameState.PlayerO != null ? "Conectado" : "Vacío")}");
+                Console.WriteLine($"   - Esperando: {_gameState.WaitingForPlayer}");
             }
 
             // Notificar a TODOS los clientes del nuevo estado
             await Clients.All.SendAsync("GameStateUpdated", _gameState);
+            Console.WriteLine($"   📤 Estado enviado a todos los clientes\n");
         }
 
         /// <summary>
@@ -54,7 +63,10 @@ namespace TicTacToe.Hubs
         public override async Task OnDisconnectedAsync(Exception? exception)
         {
             await base.OnDisconnectedAsync(exception);
-            Console.WriteLine($"🔌 Cliente desconectado: {Context.ConnectionId}");
+            Console.WriteLine($"╔══════════════════════════════════════════╗");
+            Console.WriteLine($"║  🔌 CLIENTE DESCONECTADO                 ║");
+            Console.WriteLine($"╚══════════════════════════════════════════╝");
+            Console.WriteLine($"   Connection ID: {Context.ConnectionId}");
 
             lock (_lock)
             {
@@ -62,37 +74,47 @@ namespace TicTacToe.Hubs
                 if (_gameState.PlayerX?.ConnectionId == Context.ConnectionId ||
                     _gameState.PlayerO?.ConnectionId == Context.ConnectionId)
                 {
-                    Console.WriteLine("🔄 Reiniciando juego por desconexión");
+                    Console.WriteLine($"   🔄 Un jugador se desconectó - Reiniciando juego");
                     _gameState = new GameState();
+                }
+                else
+                {
+                    Console.WriteLine($"   👀 Un espectador se desconectó");
                 }
             }
 
             await Clients.All.SendAsync("GameStateUpdated", _gameState);
+            Console.WriteLine($"   📤 Estado actualizado enviado\n");
         }
 
         /// <summary>
         /// Acción: Realizar un movimiento en el tablero
-        /// Valida el movimiento y notifica a todos los clientes
         /// </summary>
         public async Task MakeMove(int position)
         {
+            Console.WriteLine($"╔══════════════════════════════════════════╗");
+            Console.WriteLine($"║  📥 MOVIMIENTO RECIBIDO                  ║");
+            Console.WriteLine($"╚══════════════════════════════════════════╝");
+            Console.WriteLine($"   Connection ID: {Context.ConnectionId}");
+            Console.WriteLine($"   Posición: {position}");
+
             try
             {
-                Console.WriteLine($"📥 MakeMove - Position: {position}, ConnectionId: {Context.ConnectionId}");
-
                 lock (_lock)
                 {
                     // Validar que el juego no haya terminado
                     if (_gameState.GameOver)
                     {
-                        Console.WriteLine("❌ El juego ya terminó");
+                        Console.WriteLine($"   ❌ RECHAZADO: El juego ya terminó");
+                        Console.WriteLine();
                         return;
                     }
 
                     // Validar que haya dos jugadores
                     if (_gameState.WaitingForPlayer)
                     {
-                        Console.WriteLine("❌ Esperando al segundo jugador");
+                        Console.WriteLine($"   ❌ RECHAZADO: Esperando al segundo jugador");
+                        Console.WriteLine();
                         return;
                     }
 
@@ -104,34 +126,42 @@ namespace TicTacToe.Hubs
                         playerSymbol = "O";
                     else
                     {
-                        Console.WriteLine("❌ Jugador no válido");
+                        Console.WriteLine($"   ❌ RECHAZADO: Jugador no válido (espectador)");
+                        Console.WriteLine();
                         return;
                     }
+
+                    Console.WriteLine($"   Jugador identificado: {playerSymbol}");
 
                     // Validar que sea su turno
                     if (playerSymbol != _gameState.CurrentTurn)
                     {
-                        Console.WriteLine($"❌ No es el turno de {playerSymbol}");
+                        Console.WriteLine($"   ❌ RECHAZADO: No es el turno de {playerSymbol}");
+                        Console.WriteLine($"   Turno actual: {_gameState.CurrentTurn}");
+                        Console.WriteLine();
                         return;
                     }
 
                     // Validar posición
                     if (position < 0 || position > 8)
                     {
-                        Console.WriteLine($"❌ Posición inválida: {position}");
+                        Console.WriteLine($"   ❌ RECHAZADO: Posición inválida ({position})");
+                        Console.WriteLine();
                         return;
                     }
 
                     // Validar que la casilla esté vacía
                     if (!string.IsNullOrEmpty(_gameState.Board[position]))
                     {
-                        Console.WriteLine($"❌ Casilla {position} ocupada");
+                        Console.WriteLine($"   ❌ RECHAZADO: Casilla {position} ocupada por '{_gameState.Board[position]}'");
+                        Console.WriteLine();
                         return;
                     }
 
                     // ✅ REALIZAR MOVIMIENTO
                     _gameState.Board[position] = playerSymbol;
-                    Console.WriteLine($"✅ Movimiento: {playerSymbol} → posición {position}");
+                    Console.WriteLine($"   ✅ MOVIMIENTO ACEPTADO");
+                    Console.WriteLine($"   Tablero actualizado: [{string.Join(", ", _gameState.Board.Select(c => string.IsNullOrEmpty(c) ? "_" : c))}]");
 
                     // Verificar ganador
                     string? winner = _gameState.CheckWinner();
@@ -139,43 +169,55 @@ namespace TicTacToe.Hubs
                     {
                         _gameState.Winner = winner;
                         _gameState.GameOver = true;
-                        Console.WriteLine($"🏆 Juego terminado. Resultado: {winner}");
+                        if (winner == "draw")
+                            Console.WriteLine($"   🤝 RESULTADO: ¡EMPATE!");
+                        else
+                            Console.WriteLine($"   🏆 RESULTADO: ¡Ganó {winner}!");
                     }
                     else
                     {
                         // Cambiar turno
                         _gameState.SwitchTurn();
-                        Console.WriteLine($"🔄 Turno cambiado a: {_gameState.CurrentTurn}");
+                        Console.WriteLine($"   🔄 Turno cambiado a: {_gameState.CurrentTurn}");
                     }
                 }
 
                 // Notificar a TODOS los clientes
                 await Clients.All.SendAsync("GameStateUpdated", _gameState);
-                Console.WriteLine("📤 Estado enviado a todos los clientes");
+                Console.WriteLine($"   📤 Estado enviado a todos los clientes\n");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error en MakeMove: {ex.Message}");
+                Console.WriteLine($"   ❌ ERROR: {ex.Message}");
+                Console.WriteLine($"   Stack: {ex.StackTrace}\n");
             }
         }
 
         /// <summary>
         /// Acción: Reiniciar el juego
-        /// Mantiene los jugadores pero limpia el tablero
         /// </summary>
         public async Task ResetGame()
         {
+            Console.WriteLine($"╔══════════════════════════════════════════╗");
+            Console.WriteLine($"║  🔄 REINICIO DE JUEGO SOLICITADO         ║");
+            Console.WriteLine($"╚══════════════════════════════════════════╝");
+            Console.WriteLine($"   Connection ID: {Context.ConnectionId}");
+
             try
             {
-                Console.WriteLine($"🔄 ResetGame solicitado por: {Context.ConnectionId}");
-
                 lock (_lock)
                 {
-                    // Mantener jugadores, reiniciar tablero
+                    // Guardar jugadores actuales
                     var playerX = _gameState.PlayerX;
                     var playerO = _gameState.PlayerO;
-                    var waitingForPlayer = _gameState.WaitingForPlayer;
+                    var waitingForPlayer = (playerX == null || playerO == null);
 
+                    Console.WriteLine($"   Estado antes del reinicio:");
+                    Console.WriteLine($"   - Player X: {(playerX != null ? playerX.ConnectionId : "null")}");
+                    Console.WriteLine($"   - Player O: {(playerO != null ? playerO.ConnectionId : "null")}");
+                    Console.WriteLine($"   - WaitingForPlayer: {_gameState.WaitingForPlayer}");
+
+                    // Reiniciar manteniendo los jugadores
                     _gameState = new GameState
                     {
                         PlayerX = playerX,
@@ -183,24 +225,41 @@ namespace TicTacToe.Hubs
                         WaitingForPlayer = waitingForPlayer
                     };
 
-                    Console.WriteLine("✅ Juego reiniciado");
+                    Console.WriteLine($"   ✅ Juego reiniciado");
+                    Console.WriteLine($"   Estado después del reinicio:");
+                    Console.WriteLine($"   - Tablero: [{string.Join(", ", _gameState.Board.Select(c => string.IsNullOrEmpty(c) ? "_" : c))}]");
+                    Console.WriteLine($"   - Turno actual: {_gameState.CurrentTurn}");
+                    Console.WriteLine($"   - Game Over: {_gameState.GameOver}");
+                    Console.WriteLine($"   - Winner: {_gameState.Winner ?? "null"}");
+                    Console.WriteLine($"   - WaitingForPlayer: {_gameState.WaitingForPlayer}");
                 }
 
+                // Notificar a TODOS los clientes
                 await Clients.All.SendAsync("GameStateUpdated", _gameState);
+                Console.WriteLine($"   📤 Estado enviado a todos los clientes\n");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error en ResetGame: {ex.Message}");
+                Console.WriteLine($"   ❌ ERROR en ResetGame: {ex.Message}");
+                Console.WriteLine($"   Stack: {ex.StackTrace}\n");
             }
         }
 
         /// <summary>
         /// Acción: Obtener el estado actual del juego
-        /// Útil cuando un cliente se reconecta
         /// </summary>
         public async Task GetGameState()
         {
+            Console.WriteLine($"╔══════════════════════════════════════════╗");
+            Console.WriteLine($"║  📥 SOLICITUD DE ESTADO                  ║");
+            Console.WriteLine($"╚══════════════════════════════════════════╝");
+            Console.WriteLine($"   Connection ID: {Context.ConnectionId}");
+            Console.WriteLine($"   Tablero: [{string.Join(", ", _gameState.Board.Select(c => string.IsNullOrEmpty(c) ? "_" : c))}]");
+            Console.WriteLine($"   Turno: {_gameState.CurrentTurn}");
+            Console.WriteLine($"   Game Over: {_gameState.GameOver}");
+
             await Clients.Caller.SendAsync("GameStateUpdated", _gameState);
+            Console.WriteLine($"   📤 Estado enviado al cliente\n");
         }
     }
 }

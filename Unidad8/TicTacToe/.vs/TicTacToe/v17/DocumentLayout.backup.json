@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\",
+  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoe\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoe\\tictactoe.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:tictactoe.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoe\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoe\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoe\\models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoe\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoe\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoe\\tictactoe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoe\\models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoe\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoe\\tictactoe.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:tictactoe.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoe\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoe\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoe\\tictactoe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7D880040-2473-4A88-8297-36B3A2223A3D}|TicTacToe.csproj|solutionrelative:tictactoe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -42,107 +42,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-27T12:37:26.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TicTacToe",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\TicTacToe.csproj",
-              "RelativeDocumentMoniker": "TicTacToe.csproj",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\TicTacToe.csproj",
-              "RelativeToolTip": "TicTacToe.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-27T12:37:23.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TicTacToe",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\TicTacToe.csproj",
-              "RelativeDocumentMoniker": "TicTacToe.csproj",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\TicTacToe.csproj",
-              "RelativeToolTip": "TicTacToe.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-27T12:14:29.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T12:37:26.562Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-27T10:05:06.992Z",
-              "EditorCaption": ""
+              "Title": "TicTacToe",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\TicTacToe.csproj",
+              "RelativeDocumentMoniker": "TicTacToe.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\TicTacToe.csproj",
+              "RelativeToolTip": "TicTacToe.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T12:37:23.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwDoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T10:02:33.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Models\\Player.cs",
-              "RelativeDocumentMoniker": "Models\\Player.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Models\\Player.cs",
-              "RelativeToolTip": "Models\\Player.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T10:01:49.961Z",
-              "EditorCaption": ""
+              "DocumentIndex": 7,
+              "Title": "TicTacToe.csproj",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\TicTacToe.csproj",
+              "RelativeDocumentMoniker": "TicTacToe.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\TicTacToe.csproj",
+              "RelativeToolTip": "TicTacToe.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T12:14:29.689Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GameState.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Models\\GameState.cs",
-              "RelativeDocumentMoniker": "Models\\GameState.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Models\\GameState.cs",
-              "RelativeToolTip": "Models\\GameState.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAUwFgAAAABAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T10:05:06.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwDoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T10:01:14.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T10:02:33.039Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "Models\\Player.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Models\\Player.cs",
+              "RelativeToolTip": "Models\\Player.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:01:49.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Models\\GameState.cs",
+              "RelativeDocumentMoniker": "Models\\GameState.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Models\\GameState.cs",
+              "RelativeToolTip": "Models\\GameState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:01:14.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "GameHub.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Hubs\\GameHub.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Hubs\\GameHub.cs",
               "RelativeDocumentMoniker": "Hubs\\GameHub.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToe\\Hubs\\GameHub.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToe\\Hubs\\GameHub.cs",
               "RelativeToolTip": "Hubs\\GameHub.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAUwM4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAwwPYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T10:00:30.708Z",
               "EditorCaption": ""

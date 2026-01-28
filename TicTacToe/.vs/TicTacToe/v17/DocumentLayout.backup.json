@@ -1,0 +1,308 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|solutionrelative:ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\ui\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|solutionrelative:ui\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE75A230-D2CC-4BBD-921E-D877B6ADDF29}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\compositionroot\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE75A230-D2CC-4BBD-921E-D877B6ADDF29}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\ui\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|solutionrelative:ui\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\domain\\usecases\\usecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\usecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\domain\\services\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\services\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\domain\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\domain\\interfaces\\igamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\igamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\domain\\interfaces\\iusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\domain\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|solutionrelative:ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\ui\\ui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|solutionrelative:ui\\ui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE75A230-D2CC-4BBD-921E-D877B6ADDF29}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\compositionroot\\compositionroot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FE75A230-D2CC-4BBD-921E-D877B6ADDF29}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\compositionroot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\tictactoe\\ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{99830973-3682-4432-9081-CC39473C5CBA}|UI\\UI.csproj|solutionrelative:ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\appsettings.json",
+              "RelativeDocumentMoniker": "UI\\appsettings.json",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\appsettings.json",
+              "RelativeToolTip": "UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-28T00:37:24.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGameRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Interfaces\\IGameRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IGameRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Interfaces\\IGameRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IGameRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T00:27:26.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "UI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "UI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T22:46:13.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UI",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\UI.csproj",
+              "RelativeDocumentMoniker": "UI\\UI.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\UI.csproj",
+              "RelativeToolTip": "UI\\UI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T22:46:09.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameRepository.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Services\\GameRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Services\\GameRepository.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Services\\GameRepository.cs",
+              "RelativeToolTip": "Domain\\Services\\GameRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T22:31:14.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\Pages\\Index.cshtml",
+              "RelativeToolTip": "UI\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T21:42:25.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CompositionRoot",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\CompositionRoot\\CompositionRoot.csproj",
+              "RelativeDocumentMoniker": "CompositionRoot\\CompositionRoot.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\CompositionRoot\\CompositionRoot.csproj",
+              "RelativeToolTip": "CompositionRoot\\CompositionRoot.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T21:30:56.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "Domain\\Services\\GameService.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Services\\GameService.cs",
+              "RelativeToolTip": "Domain\\Services\\GameService.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAwwNAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T21:26:13.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameHub.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\Hubs\\GameHub.cs",
+              "RelativeDocumentMoniker": "UI\\Hubs\\GameHub.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\Hubs\\GameHub.cs",
+              "RelativeToolTip": "UI\\Hubs\\GameHub.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAADwv60AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T21:20:29.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UI",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\UI.csproj",
+              "RelativeDocumentMoniker": "UI\\UI.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\UI.csproj",
+              "RelativeToolTip": "UI\\UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T21:19:58.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Entities\\Game.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Game.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Entities\\Game.cs",
+              "RelativeToolTip": "Domain\\Entities\\Game.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvxkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T20:43:54.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\Program.cs",
+              "RelativeDocumentMoniker": "UI\\Program.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\Program.cs",
+              "RelativeToolTip": "UI\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowEkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T20:04:30.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\CompositionRoot\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "CompositionRoot\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\CompositionRoot\\DependencyInjection.cs",
+              "RelativeToolTip": "CompositionRoot\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T20:03:08.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\UseCases\\UseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\UseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\UseCases\\UseCases.cs",
+              "RelativeToolTip": "Domain\\UseCases\\UseCases.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwv1AAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T20:02:51.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Interfaces\\IUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUseCases.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Interfaces\\IUseCases.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IUseCases.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA/wAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T20:02:31.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Entities\\Player.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Player.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Entities\\Player.cs",
+              "RelativeToolTip": "Domain\\Entities\\Player.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T20:02:04.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Domain",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T20:01:40.916Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

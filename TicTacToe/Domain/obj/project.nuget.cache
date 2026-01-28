@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6Bu0TEpUqtI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\portatil\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.2\\microsoft.extensions.configuration.abstractions.10.0.2.nupkg.sha512",
+    "C:\\Users\\portatil\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.2\\microsoft.extensions.primitives.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

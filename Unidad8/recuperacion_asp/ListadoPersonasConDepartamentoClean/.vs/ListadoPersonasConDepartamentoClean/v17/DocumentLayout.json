@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8A0847DA-DE07-48C9-BFC2-6604CE271FD8}|UI\\UI.csproj|solutionrelative:ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\recuperacion_asp\\listadopersonascondepartamentoclean\\domain\\entities\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DABF03A-A552-48E1-B3B6-D0F83E588DA0}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -94,11 +102,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "UI",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\UI.csproj",
+              "RelativeDocumentMoniker": "UI\\UI.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\UI.csproj",
+              "RelativeToolTip": "UI\\UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T19:39:25.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Domain",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T19:39:25.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Program.cs",
               "RelativeDocumentMoniker": "UI\\Program.cs",
@@ -110,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
@@ -122,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "PersonaConColor.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Models\\PersonaConColor.cs",
               "RelativeDocumentMoniker": "UI\\Models\\PersonaConColor.cs",
@@ -134,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "IDomainToUI.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Mappers\\IDomainToUI.cs",
               "RelativeDocumentMoniker": "UI\\Mappers\\IDomainToUI.cs",
@@ -146,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DomainToUI.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Mappers\\DomainToUI.cs",
               "RelativeDocumentMoniker": "UI\\Mappers\\DomainToUI.cs",
@@ -158,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\UI\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "UI\\Controllers\\HomeController.cs",
@@ -170,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "PersonaUseCases.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\UseCases\\PersonaUseCases.cs",
               "RelativeDocumentMoniker": "Domain\\UseCases\\PersonaUseCases.cs",
@@ -182,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "DepartamentoUseCases.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\UseCases\\DepartamentoUseCases.cs",
               "RelativeDocumentMoniker": "Domain\\UseCases\\DepartamentoUseCases.cs",
@@ -194,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "IPersonaRepository.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Persona\\IPersonaRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\Persona\\IPersonaRepository.cs",
@@ -206,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "IPersonaUseCases.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Persona\\IPersonaUseCases.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\Persona\\IPersonaUseCases.cs",
@@ -218,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "IDepartamentoUseCases.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Departamento\\IDepartamentoUseCases.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\Departamento\\IDepartamentoUseCases.cs",
@@ -230,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Entities\\Persona.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Persona.cs",
@@ -242,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "IDepartamentoRepository.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Interfaces\\Departamento\\IDepartamentoRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\Departamento\\IDepartamentoRepository.cs",
@@ -254,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Departamento.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\Entities\\Departamento.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Departamento.cs",
@@ -267,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PersonaDTO.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaDTO.cs",
               "RelativeDocumentMoniker": "Domain\\DTOs\\PersonaDTO.cs",
@@ -279,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "PersonaConListadoDepartamento.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaConListadoDepartamento.cs",
               "RelativeDocumentMoniker": "Domain\\DTOs\\PersonaConListadoDepartamento.cs",
@@ -291,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PersonaConDepartamentoSeleccionado.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Domain\\DTOs\\PersonaConDepartamentoSeleccionado.cs",
               "RelativeDocumentMoniker": "Domain\\DTOs\\PersonaConDepartamentoSeleccionado.cs",
@@ -303,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "PersonaRepository.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\Repositories\\PersonaRepository.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\PersonaRepository.cs",
@@ -315,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "DepartamentoRepository.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\Repositories\\DepartamentoRepository.cs",
               "RelativeDocumentMoniker": "Data\\Repositories\\DepartamentoRepository.cs",
@@ -327,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Connection.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\Data\\DataResources\\Connection.cs",
               "RelativeDocumentMoniker": "Data\\DataResources\\Connection.cs",
@@ -339,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "InversifyConfig.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\recuperacion_asp\\ListadoPersonasConDepartamentoClean\\CompositionRoot\\InversifyConfig.cs",
               "RelativeDocumentMoniker": "CompositionRoot\\InversifyConfig.cs",
