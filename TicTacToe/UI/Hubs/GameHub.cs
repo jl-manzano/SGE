@@ -5,49 +5,27 @@ using Domain.Entities;
 
 namespace TicTacToe.Presentation.Hubs
 {
-    /// <summary>
-    /// Hub de SignalR - Capa de Presentación (UI)
-    /// CORREGIDO: Ahora inyecta GameService en lugar de usar new
-    /// </summary>
     public class GameHub : Hub
     {
         private readonly IUseCases _useCases;
         private readonly GameService _gameService;
+        private readonly IRoomRepository _roomRepository;
+        private readonly RoomService _roomService;
+        private static readonly Dictionary<string, string> _connectionRooms = new Dictionary<string, string>();
 
-        /// <summary>
-        /// Constructor con INYECCIÓN DE DEPENDENCIAS
-        /// CORREGIDO: Recibe GameService como parámetro
-        /// </summary>
-        public GameHub(IUseCases useCases, GameService gameService)
+        public GameHub(IUseCases useCases, GameService gameService, IRoomRepository roomRepository, RoomService roomService)
         {
             _useCases = useCases;
             _gameService = gameService;
+            _roomRepository = roomRepository;
+            _roomService = roomService;
         }
 
         public override async Task OnConnectedAsync()
         {
             await base.OnConnectedAsync();
             Console.WriteLine($"✅ Cliente conectado: {Context.ConnectionId}");
-
-            try
-            {
-                Game game = _useCases.ConnectPlayer(
-                    Context.ConnectionId,
-                    "Jugador"
-                );
-
-                await Clients.All.SendAsync(
-                    "GameStateUpdated",
-                    CreateGameStateDto(game)
-                );
-
-                Console.WriteLine("📤 Estado enviado\n");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"❌ Error: {ex.Message}");
-                await Clients.Caller.SendAsync("Error", ex.Message);
-            }
+            await SendRoomListToAll();
         }
 
         public override async Task OnDisconnectedAsync(Exception? exception)
@@ -57,79 +35,133 @@ namespace TicTacToe.Presentation.Hubs
 
             try
             {
-                Game game = _useCases.DisconnectPlayer(Context.ConnectionId);
+                if (_connectionRooms.ContainsKey(Context.ConnectionId))
+                {
+                    string roomId = _connectionRooms[Context.ConnectionId];
+                    _connectionRooms.Remove(Context.ConnectionId);
 
-                await Clients.All.SendAsync(
-                    "GameStateUpdated",
-                    CreateGameStateDto(game)
-                );
+                    Room? room = _roomService.LeaveRoom(roomId, Context.ConnectionId);
+                    if (room != null)
+                        await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
 
-                Console.WriteLine("📤 Estado actualizado\n");
+                    await SendRoomListToAll();
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error: {ex.Message}");
+                Console.WriteLine($"❌ Error en desconexión: {ex.Message}");
+            }
+        }
+
+        public async Task CreateRoom(string roomName)
+        {
+            Console.WriteLine($"🏗️ Creando sala: {roomName}");
+            try
+            {
+                Room room = _roomService.CreateRoom(roomName);
+                Console.WriteLine($"✅ Sala creada: {room.RoomId} - {room.RoomName}");
+                await SendRoomListToAll();
+                await Clients.Caller.SendAsync("RoomCreated", new { roomId = room.RoomId, roomName = room.RoomName });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error al crear sala: {ex.Message}");
+                await Clients.Caller.SendAsync("Error", ex.Message);
+            }
+        }
+
+        public async Task JoinRoom(string roomId, string playerName = "Jugador")
+        {
+            Console.WriteLine($"🚪 {Context.ConnectionId} intentando unirse a sala {roomId}");
+            try
+            {
+                await Groups.AddToGroupAsync(Context.ConnectionId, roomId);
+                Room room = _roomService.JoinRoom(roomId, Context.ConnectionId, playerName);
+                _connectionRooms[Context.ConnectionId] = roomId;
+                Console.WriteLine($"✅ {Context.ConnectionId} se unió a sala {roomId}");
+                await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
+                await SendRoomListToAll();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error al unirse a sala: {ex.Message}");
+                await Clients.Caller.SendAsync("Error", ex.Message);
             }
         }
 
         public async Task MakeMove(int position)
         {
             Console.WriteLine($"📥 Movimiento en posición {position}");
-
             try
             {
-                Game game = _useCases.MakeMove(
-                    Context.ConnectionId,
-                    position
-                );
+                if (!_connectionRooms.ContainsKey(Context.ConnectionId))
+                    throw new InvalidOperationException("No estás en ninguna sala");
 
-                await Clients.All.SendAsync(
-                    "GameStateUpdated",
-                    CreateGameStateDto(game)
-                );
+                string roomId = _connectionRooms[Context.ConnectionId];
+                Room? room = _roomRepository.GetRoom(roomId);
+                if (room == null)
+                    throw new InvalidOperationException("La sala no existe");
 
-                Console.WriteLine("✅ Movimiento exitoso\n");
+                _gameService.MakeMove(room.Game, Context.ConnectionId, position);
+                await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
+                Console.WriteLine($"✅ Movimiento procesado en sala {roomId}");
             }
-            catch (InvalidOperationException ex)
+            catch (Exception ex)
             {
-                Console.WriteLine($"❌ Rechazado: {ex.Message}");
+                Console.WriteLine($"❌ Error: {ex.Message}");
                 await Clients.Caller.SendAsync("Error", ex.Message);
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine($"❌ Inválido: {ex.Message}");
-                await Clients.Caller.SendAsync("Error", ex.Message);
-            }
-            catch (Exception)
-            {
-                await Clients.Caller.SendAsync(
-                    "Error",
-                    "Error al procesar movimiento"
-                );
             }
         }
 
         public async Task ResetGame()
         {
-            Console.WriteLine("🔄 Reinicio solicitado");
-
+            Console.WriteLine($"🔄 Reinicio solicitado por {Context.ConnectionId}");
             try
             {
-                Game game = _useCases.ResetGame();
+                if (!_connectionRooms.ContainsKey(Context.ConnectionId))
+                    throw new InvalidOperationException("No estás en ninguna sala");
 
-                await Clients.All.SendAsync(
-                    "GameStateUpdated",
-                    CreateGameStateDto(game)
-                );
+                string roomId = _connectionRooms[Context.ConnectionId];
+                Room? room = _roomRepository.GetRoom(roomId);
+                if (room == null)
+                    throw new InvalidOperationException("La sala no existe");
 
-                Console.WriteLine("✅ Juego reiniciado\n");
+                _gameService.ResetGame(room.Game);
+                await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
+                Console.WriteLine($"✅ Juego reiniciado en sala {roomId}");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                await Clients.Caller.SendAsync(
-                    "Error",
-                    "Error al reiniciar"
-                );
+                Console.WriteLine($"❌ Error al reiniciar: {ex.Message}");
+                await Clients.Caller.SendAsync("Error", ex.Message);
+            }
+        }
+
+        public async Task GetRoomList()
+        {
+            try
+            {
+                List<object> rooms = _roomService.GetRoomList();
+                await Clients.Caller.SendAsync("RoomListUpdated", rooms);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error al obtener salas: {ex.Message}");
+                await Clients.Caller.SendAsync("Error", ex.Message);
+            }
+        }
+
+        private async Task SendRoomListToAll()
+        {
+            try
+            {
+                List<object> rooms = _roomService.GetRoomList();
+                await Clients.All.SendAsync("RoomListUpdated", rooms);
+                Console.WriteLine($"📤 Lista de salas enviada ({rooms.Count} salas)");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error al enviar lista: {ex.Message}");
             }
         }
 
@@ -137,27 +169,19 @@ namespace TicTacToe.Presentation.Hubs
         {
             bool waitingForPlayer = _gameService.IsWaitingForPlayer(game);
 
-            object? playerXDto = null;
-            if (game.PlayerX != null)
+            object? playerXDto = game.PlayerX != null ? new
             {
-                playerXDto = new
-                {
-                    connectionId = game.PlayerX.ConnectionId,
-                    symbol = game.PlayerX.Symbol,
-                    name = game.PlayerX.Name
-                };
-            }
+                connectionId = game.PlayerX.ConnectionId,
+                symbol = game.PlayerX.Symbol,
+                name = game.PlayerX.Name
+            } : null;
 
-            object? playerODto = null;
-            if (game.PlayerO != null)
+            object? playerODto = game.PlayerO != null ? new
             {
-                playerODto = new
-                {
-                    connectionId = game.PlayerO.ConnectionId,
-                    symbol = game.PlayerO.Symbol,
-                    name = game.PlayerO.Name
-                };
-            }
+                connectionId = game.PlayerO.ConnectionId,
+                symbol = game.PlayerO.Symbol,
+                name = game.PlayerO.Name
+            } : null;
 
             return new
             {

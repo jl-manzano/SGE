@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iUwf5xo2gNs=",
+  "dgSpecHash": "pO5JgOON+ZQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\TicTacToe\\UI\\UI.csproj",
+  "projectFilePath": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\UI\\UI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\portatil\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.2\\microsoft.extensions.configuration.abstractions.10.0.2.nupkg.sha512",
-    "C:\\Users\\portatil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.2\\microsoft.extensions.dependencyinjection.abstractions.10.0.2.nupkg.sha512",
-    "C:\\Users\\portatil\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.2\\microsoft.extensions.primitives.10.0.2.nupkg.sha512"
+    "C:\\Users\\jl.manzano\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.2\\microsoft.extensions.configuration.abstractions.10.0.2.nupkg.sha512",
+    "C:\\Users\\jl.manzano\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.2\\microsoft.extensions.dependencyinjection.abstractions.10.0.2.nupkg.sha512",
+    "C:\\Users\\jl.manzano\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.2\\microsoft.extensions.primitives.10.0.2.nupkg.sha512"
   ],
   "logs": []
 }
