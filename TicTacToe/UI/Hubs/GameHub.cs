@@ -41,8 +41,11 @@ namespace TicTacToe.Presentation.Hubs
                     _connectionRooms.Remove(Context.ConnectionId);
 
                     Room? room = _roomService.LeaveRoom(roomId, Context.ConnectionId);
+
                     if (room != null)
+                    {
                         await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
+                    }
 
                     await SendRoomListToAll();
                 }
@@ -78,13 +81,60 @@ namespace TicTacToe.Presentation.Hubs
                 await Groups.AddToGroupAsync(Context.ConnectionId, roomId);
                 Room room = _roomService.JoinRoom(roomId, Context.ConnectionId, playerName);
                 _connectionRooms[Context.ConnectionId] = roomId;
+
                 Console.WriteLine($"✅ {Context.ConnectionId} se unió a sala {roomId}");
+
                 await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
                 await SendRoomListToAll();
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"❌ Error al unirse a sala: {ex.Message}");
+                await Clients.Caller.SendAsync("Error", ex.Message);
+            }
+        }
+
+        // ✅ NUEVO: Método para salir voluntariamente de una sala
+        public async Task LeaveRoom()
+        {
+            Console.WriteLine($"🚪 {Context.ConnectionId} saliendo de la sala voluntariamente");
+
+            try
+            {
+                if (!_connectionRooms.ContainsKey(Context.ConnectionId))
+                {
+                    Console.WriteLine($"⚠️ {Context.ConnectionId} no está en ninguna sala");
+                    return;
+                }
+
+                string roomId = _connectionRooms[Context.ConnectionId];
+                _connectionRooms.Remove(Context.ConnectionId);
+
+                // Remover del grupo de SignalR
+                await Groups.RemoveFromGroupAsync(Context.ConnectionId, roomId);
+
+                // Remover del juego
+                Room? room = _roomService.LeaveRoom(roomId, Context.ConnectionId);
+
+                Console.WriteLine($"✅ {Context.ConnectionId} salió de sala {roomId}");
+
+                // Si la sala aún existe, notificar a los demás jugadores
+                if (room != null)
+                {
+                    await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
+                    Console.WriteLine($"📤 Estado actualizado enviado a sala {roomId}");
+                }
+                else
+                {
+                    Console.WriteLine($"🗑️ Sala {roomId} eliminada (estaba vacía)");
+                }
+
+                // Actualizar lista de salas para todos
+                await SendRoomListToAll();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error al salir de sala: {ex.Message}");
                 await Clients.Caller.SendAsync("Error", ex.Message);
             }
         }
@@ -99,10 +149,12 @@ namespace TicTacToe.Presentation.Hubs
 
                 string roomId = _connectionRooms[Context.ConnectionId];
                 Room? room = _roomRepository.GetRoom(roomId);
+
                 if (room == null)
                     throw new InvalidOperationException("La sala no existe");
 
                 _gameService.MakeMove(room.Game, Context.ConnectionId, position);
+
                 await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
                 Console.WriteLine($"✅ Movimiento procesado en sala {roomId}");
             }
@@ -123,10 +175,12 @@ namespace TicTacToe.Presentation.Hubs
 
                 string roomId = _connectionRooms[Context.ConnectionId];
                 Room? room = _roomRepository.GetRoom(roomId);
+
                 if (room == null)
                     throw new InvalidOperationException("La sala no existe");
 
                 _gameService.ResetGame(room.Game);
+
                 await Clients.Group(roomId).SendAsync("GameStateUpdated", CreateGameStateDto(room.Game));
                 Console.WriteLine($"✅ Juego reiniciado en sala {roomId}");
             }
