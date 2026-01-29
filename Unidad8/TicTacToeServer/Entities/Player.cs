@@ -1,9 +1,5 @@
 ﻿namespace TicTacToeServer.Entities
 {
-    /// <summary>
-    /// Jugador conectado a una sala
-    /// Solo información básica para comunicación
-    /// </summary>
     public class Player
     {
         public string ConnectionId { get; set; } = "";

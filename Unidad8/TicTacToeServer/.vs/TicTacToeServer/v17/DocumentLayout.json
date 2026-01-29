@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -53,8 +53,7 @@
               "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\TicTacToeServer.csproj",
               "RelativeToolTip": "TicTacToeServer.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-29T17:23:09.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T17:23:09.151Z"
             },
             {
               "$type": "Document",
@@ -66,12 +65,11 @@
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-29T16:59:37.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T16:59:37.689Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -96,26 +94,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Player.cs",
               "RelativeDocumentMoniker": "Entities\\Player.cs",
               "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Player.cs",
               "RelativeToolTip": "Entities\\Player.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAowCAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T12:21:19.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Room.cs",
               "RelativeDocumentMoniker": "Entities\\Room.cs",
               "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Room.cs",
               "RelativeToolTip": "Entities\\Room.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowC4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T12:20:25.659Z",
               "EditorCaption": ""
@@ -134,13 +132,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameHub.cs",
               "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Hubs\\GameHub.cs",
               "RelativeDocumentMoniker": "Hubs\\GameHub.cs",
               "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Hubs\\GameHub.cs",
               "RelativeToolTip": "Hubs\\GameHub.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAcwAMBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T12:19:42.132Z",
               "EditorCaption": ""
