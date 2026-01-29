@@ -43,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\tictactoe\\domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\tictactoe\\domain\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64D2863D-0DB6-403C-8A79-1DC66F359515}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -101,7 +97,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -109,8 +105,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAMYTAAAAAAAAAAAnwOQTAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-01-28T11:55:41.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T11:55:41.956Z"
             },
             {
               "$type": "Document",
@@ -122,8 +117,7 @@
               "RelativeToolTip": "Domain\\Services\\RoomRepository.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAgwD8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T11:31:21.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T11:31:21.327Z"
             },
             {
               "$type": "Document",
@@ -135,12 +129,11 @@
               "RelativeToolTip": "Domain\\Services\\RoomService.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAgwEoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T11:23:56.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T11:23:56.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "IRoomRepository.cs",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\Domain\\Interfaces\\IRoomRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IRoomRepository.cs",
@@ -148,8 +141,7 @@
               "RelativeToolTip": "Domain\\Interfaces\\IRoomRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T11:23:47.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T11:23:47.094Z"
             },
             {
               "$type": "Document",
@@ -161,12 +153,11 @@
               "RelativeToolTip": "Domain\\Entities\\Room.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwCUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T11:23:34.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T11:23:34.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\UI\\appsettings.json",
               "RelativeDocumentMoniker": "UI\\appsettings.json",
@@ -186,12 +177,11 @@
               "RelativeToolTip": "Domain\\Interfaces\\IGameRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T00:27:26.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T00:27:26.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\UI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "UI\\Properties\\launchSettings.json",
@@ -203,15 +193,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "UI",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\UI\\UI.csproj",
               "RelativeDocumentMoniker": "UI\\UI.csproj",
               "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\UI\\UI.csproj",
               "RelativeToolTip": "UI\\UI.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-27T22:46:09.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T22:46:09.557Z"
             },
             {
               "$type": "Document",
@@ -223,8 +212,7 @@
               "RelativeToolTip": "Domain\\Services\\GameRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T22:31:14.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T22:31:14.199Z"
             },
             {
               "$type": "Document",
@@ -236,12 +224,11 @@
               "RelativeToolTip": "UI\\Pages\\Index.cshtml",
               "ViewState": "AgIAAEoAAAAAAAAAAAAswGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-27T21:42:25.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T21:42:25.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "CompositionRoot.csproj",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\CompositionRoot\\CompositionRoot.csproj",
               "RelativeDocumentMoniker": "CompositionRoot\\CompositionRoot.csproj",
@@ -249,8 +236,7 @@
               "RelativeToolTip": "CompositionRoot\\CompositionRoot.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-27T21:30:56.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T21:30:56.631Z"
             },
             {
               "$type": "Document",
@@ -262,8 +248,7 @@
               "RelativeToolTip": "Domain\\Services\\GameService.cs",
               "ViewState": "AgIAALcAAAAAAAAAAAAowNAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T21:26:13.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T21:26:13.811Z"
             },
             {
               "$type": "Document",
@@ -275,12 +260,11 @@
               "RelativeToolTip": "UI\\Hubs\\GameHub.cs",
               "ViewState": "AgIAAKsAAAAAAAAAAAAwwMUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T21:20:29.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T21:20:29.391Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "UI.csproj",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\UI\\UI.csproj",
               "RelativeDocumentMoniker": "UI\\UI.csproj",
@@ -288,12 +272,11 @@
               "RelativeToolTip": "UI\\UI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-27T21:19:58.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T21:19:58.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\Domain\\Entities\\Game.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Game.cs",
@@ -301,8 +284,7 @@
               "RelativeToolTip": "Domain\\Entities\\Game.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAA2wBkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T20:43:54.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T20:43:54.658Z"
             },
             {
               "$type": "Document",
@@ -319,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\CompositionRoot\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "CompositionRoot\\DependencyInjection.cs",
@@ -327,8 +309,7 @@
               "RelativeToolTip": "CompositionRoot\\DependencyInjection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T20:03:08.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T20:03:08.079Z"
             },
             {
               "$type": "Document",
@@ -340,12 +321,11 @@
               "RelativeToolTip": "Domain\\UseCases\\UseCases.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAgwFAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T20:02:51.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T20:02:51.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "IUseCases.cs",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\Domain\\Interfaces\\IUseCases.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IUseCases.cs",
@@ -353,25 +333,11 @@
               "RelativeToolTip": "Domain\\Interfaces\\IUseCases.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T20:02:31.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T20:02:31.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\Domain\\Entities\\Player.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Player.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\Domain\\Entities\\Player.cs",
-              "RelativeToolTip": "Domain\\Entities\\Player.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T20:02:04.919Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "Domain.csproj",
               "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\TicTacToe\\Domain\\Domain.csproj",
               "RelativeDocumentMoniker": "Domain\\Domain.csproj",
@@ -379,8 +345,7 @@
               "RelativeToolTip": "Domain\\Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-27T20:01:40.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T20:01:40.916Z"
             }
           ]
         }
