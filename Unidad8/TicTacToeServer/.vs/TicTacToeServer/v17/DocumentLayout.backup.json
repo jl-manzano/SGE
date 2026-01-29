@@ -1,45 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\",
+  "WorkspaceRootPath": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\rooms\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:rooms\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\rooms\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:rooms\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\rooms\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:rooms\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\tictactoeserver.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:tictactoeserver.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\jl.manzano\\documents\\github\\sge\\unidad8\\tictactoeserver\\tictactoeserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|c:\\users\\portatil\\desktop\\j\\dam\\sge\\unidad8\\tictactoeserver\\tictactoeserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E8C7486C-E07E-410F-8C87-82C6055F1465}|TicTacToeServer.csproj|solutionrelative:tictactoeserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -50,69 +42,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "TicTacToeServer",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\TicTacToeServer.csproj",
+              "RelativeDocumentMoniker": "TicTacToeServer.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\TicTacToeServer.csproj",
+              "RelativeToolTip": "TicTacToeServer.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-29T17:23:09.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T16:59:37.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Program.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEwAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T12:44:35.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-29T12:39:59.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T12:39:59.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Game.cs",
-              "RelativeDocumentMoniker": "Entities\\Game.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Game.cs",
-              "RelativeToolTip": "Entities\\Game.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAzwBkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T12:39:39.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRoomRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Rooms\\IRoomRepository.cs",
-              "RelativeDocumentMoniker": "Rooms\\IRoomRepository.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Rooms\\IRoomRepository.cs",
-              "RelativeToolTip": "Rooms\\IRoomRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T12:38:02.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Player.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Player.cs",
               "RelativeDocumentMoniker": "Entities\\Player.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Player.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Player.cs",
               "RelativeToolTip": "Entities\\Player.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvx8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T12:21:19.18Z",
               "EditorCaption": ""
@@ -120,64 +110,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Rooms\\RoomService.cs",
-              "RelativeDocumentMoniker": "Rooms\\RoomService.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Rooms\\RoomService.cs",
-              "RelativeToolTip": "Rooms\\RoomService.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAiwGAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T12:21:05.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoomRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Rooms\\RoomRepository.cs",
-              "RelativeDocumentMoniker": "Rooms\\RoomRepository.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Rooms\\RoomRepository.cs",
-              "RelativeToolTip": "Rooms\\RoomRepository.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAA2wD4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T12:20:56.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Room.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Room.cs",
               "RelativeDocumentMoniker": "Entities\\Room.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Room.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Entities\\Room.cs",
               "RelativeToolTip": "Entities\\Room.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T12:20:25.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TicTacToeServer",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\TicTacToeServer.csproj",
+              "DocumentIndex": 7,
+              "Title": "TicTacToeServer.csproj",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\TicTacToeServer.csproj",
               "RelativeDocumentMoniker": "TicTacToeServer.csproj",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\TicTacToeServer.csproj",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\TicTacToeServer.csproj",
               "RelativeToolTip": "TicTacToeServer.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-29T12:19:59.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T12:19:59.761Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GameHub.cs",
-              "DocumentMoniker": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Hubs\\GameHub.cs",
+              "DocumentMoniker": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Hubs\\GameHub.cs",
               "RelativeDocumentMoniker": "Hubs\\GameHub.cs",
-              "ToolTip": "C:\\Users\\jl.manzano\\Documents\\GitHub\\SGE\\Unidad8\\TicTacToeServer\\Hubs\\GameHub.cs",
+              "ToolTip": "C:\\Users\\portatil\\Desktop\\j\\dam\\SGE\\Unidad8\\TicTacToeServer\\Hubs\\GameHub.cs",
               "RelativeToolTip": "Hubs\\GameHub.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAuwDcBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAswAMBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T12:19:42.132Z",
               "EditorCaption": ""

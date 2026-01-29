@@ -1,10 +1,5 @@
 ﻿namespace TicTacToeServer.Entities
 {
-    /// <summary>
-    /// Sala de juego
-    /// Solo mantiene información de los jugadores conectados
-    /// NO mantiene estado del juego (tablero, ganador, etc.)
-    /// </summary>
     public class Room
     {
         public string RoomId { get; set; } = "";
@@ -31,9 +26,6 @@
             CreatedAt = DateTime.UtcNow;
         }
 
-        /// <summary>
-        /// Cuenta jugadores en la sala
-        /// </summary>
         public int GetPlayerCount()
         {
             int count = 0;
@@ -42,17 +34,11 @@
             return count;
         }
 
-        /// <summary>
-        /// Verifica si la sala está llena (2 jugadores)
-        /// </summary>
         public bool IsFull()
         {
             return GetPlayerCount() >= 2;
         }
 
-        /// <summary>
-        /// Verifica si la sala está vacía
-        /// </summary>
         public bool IsEmpty()
         {
             return GetPlayerCount() == 0;

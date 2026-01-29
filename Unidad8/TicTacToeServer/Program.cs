@@ -21,7 +21,7 @@ builder.Services.AddCors(options =>
             "http://localhost:8081",
             "http://localhost:19006",
             "http://localhost:19000",
-            "http://192.168.100.178:8081"  // ? Actualiza con tu IP
+            "http://192.168.1.100:8081"
         )
         .AllowAnyHeader()
         .AllowAnyMethod()
@@ -53,10 +53,10 @@ app.MapGet("/api/status", () => new
 {
     status = "running",
     game = "TicTacToe - Cliente hace TODO",
-    version = "4.0",
+    version = "5.0",
     architecture = "Servidor Minimalista (solo retransmite)",
     url = "http://localhost:5251",
-    networkUrl = "http://192.168.100.178:5251"  // ? Actualiza con tu IP
+    networkUrl = "http://192.168.1.100:5251"  // ?? Actualiza con tu IP
 });
 
 // ==========================================
@@ -68,8 +68,8 @@ Console.WriteLine("??????????????????????????????????????????");
 Console.WriteLine();
 Console.WriteLine("? Escuchando en:");
 Console.WriteLine("   ?? Local:  http://localhost:5251");
-Console.WriteLine("   ?? Red:    http://192.168.100.178:5251");
-Console.WriteLine("? Hub:   /gameHub");
+Console.WriteLine("   ?? Red:    http://192.168.1.100:5251");  // ?? Actualiza
+Console.WriteLine("?? Hub:   /gameHub");
 Console.WriteLine("?? El servidor SOLO retransmite mensajes");
 Console.WriteLine("?? El cliente hace TODA la lógica");
 Console.WriteLine();

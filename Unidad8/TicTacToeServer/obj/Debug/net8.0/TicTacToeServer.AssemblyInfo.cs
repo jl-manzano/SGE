@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TicTacToeServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cdc63183a3ffd8948b1dfed6779cbb6bf1b24b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b923a9df4c1a598b4ede4bddd1c960b34685cc19")]
 [assembly: System.Reflection.AssemblyProductAttribute("TicTacToeServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TicTacToeServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
