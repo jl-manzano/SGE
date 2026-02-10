@@ -1,38 +1,42 @@
-using TicTacToeServer.Hubs;
+ï»¿using TicTacToeServer.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // ==========================================
-// CONFIGURAR PUERTO FIJO
+// CONFIGURAR PUERTO (Kestrel solo para local, Azure ignora esto)
 // ==========================================
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-    serverOptions.ListenAnyIP(5251);
+    serverOptions.ListenAnyIP(5251, listenOptions =>
+    {
+        listenOptions.Protocols = Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols.Http1AndHttp2;
+    });
 });
 
 // ==========================================
-// CONFIGURACIÓN CORS
+// CONFIGURACIÃ“N CORS
 // ==========================================
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins(
-            "http://localhost:8081",
-            "http://localhost:19006",
-            "http://localhost:19000",
-            "http://192.168.1.100:8081"
-        )
-        .AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowCredentials();
+        policy.SetIsOriginAllowed(_ => true)
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
     });
 });
 
 // ==========================================
 // SERVICIOS
 // ==========================================
-builder.Services.AddSignalR();
+builder.Services.AddSignalR(options =>
+{
+    options.EnableDetailedErrors = true;
+    options.KeepAliveInterval = TimeSpan.FromSeconds(10);
+    options.ClientTimeoutInterval = TimeSpan.FromSeconds(30);
+});
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -41,6 +45,7 @@ var app = builder.Build();
 // MIDDLEWARE
 // ==========================================
 app.UseCors("AllowAll");
+app.UseWebSockets();
 app.UseRouting();
 
 // ==========================================
@@ -52,26 +57,20 @@ app.MapHub<GameHub>("/gameHub");
 app.MapGet("/api/status", () => new
 {
     status = "running",
-    game = "TicTacToe - Cliente hace TODO",
+    game = "TicTacToe",
     version = "5.0",
-    architecture = "Servidor Minimalista (solo retransmite)",
-    url = "http://localhost:5251",
-    networkUrl = "http://192.168.1.100:5251"  // ?? Actualiza con tu IP
+    environment = builder.Environment.EnvironmentName,
+    isAzure = !string.IsNullOrEmpty(Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID"))
 });
 
 // ==========================================
-// LOGS DE INICIO
+// LOG DE INICIO (mÃ­nimo)
 // ==========================================
-Console.WriteLine("??????????????????????????????????????????");
-Console.WriteLine("?   TicTacToe Server (Minimalista)      ?");
-Console.WriteLine("??????????????????????????????????????????");
-Console.WriteLine();
-Console.WriteLine("? Escuchando en:");
-Console.WriteLine("   ?? Local:  http://localhost:5251");
-Console.WriteLine("   ?? Red:    http://192.168.1.100:5251");  // ?? Actualiza
-Console.WriteLine("?? Hub:   /gameHub");
-Console.WriteLine("?? El servidor SOLO retransmite mensajes");
-Console.WriteLine("?? El cliente hace TODA la lógica");
-Console.WriteLine();
+var isAzure = !string.IsNullOrEmpty(Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID"));
+var url = isAzure
+    ? "https://tictactoeserver-dyb5dggmhyhfa2gh.spaincentral-01.azurewebsites.net"
+    : "http://localhost:5251";
+
+Console.WriteLine($"TicTacToe Server iniciado en {url}/gameHub");
 
 app.Run();

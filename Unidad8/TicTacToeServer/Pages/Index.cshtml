@@ -1,10 +1,93 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Servidor Activo";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        /* Animación de fondo suave */
+        .bg-animate {
+            background: linear-gradient(-45deg, #4f46e5, #7c3aed, #db2777, #2563eb);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Se usa @@ para escapar el símbolo en Razor */
+        @@keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .pulse-status {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @@keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: .7; transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body class="bg-animate flex items-center justify-center min-h-screen p-4">
+
+    <div class="glass-card rounded-[2.5rem] p-8 md:p-12 max-w-lg w-full text-center text-white relative overflow-hidden">
+        
+        <div class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl"></div>
+
+        <div class="flex justify-center mb-6">
+            <div class="relative">
+                <div class="pulse-status absolute inset-0 bg-green-400 rounded-full blur-md"></div>
+                <div class="relative bg-green-500 text-white p-4 rounded-full shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Servidor <span class="text-green-300">Activo</span>
+        </h1>
+        
+        <p class="text-white/80 text-lg leading-relaxed mb-10">
+            El entorno de <span class="font-semibold">ASP.NET Core</span> se está ejecutando sin problemas. Todos los sistemas están operativos.
+        </p>
+
+        <div class="space-y-4">
+            <a href="https://learn.microsoft.com/aspnet/core" 
+               class="flex items-center justify-center gap-2 w-full bg-white text-indigo-600 font-bold px-8 py-4 rounded-2xl shadow-xl transition-all duration-300 hover:bg-opacity-90 hover:shadow-white/10 hover:-translate-y-1 active:scale-95">
+                <span>Documentación Oficial</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                </svg>
+            </a>
+            
+            <p class="text-xs uppercase tracking-[0.2em] text-white/50 font-medium">
+                TicTacToe Server • Status: OK
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

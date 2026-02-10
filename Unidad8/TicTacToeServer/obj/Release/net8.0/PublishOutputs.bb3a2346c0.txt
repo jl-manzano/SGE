@@ -1,0 +1,7 @@
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\TicTacToeServer\obj\Release\net8.0\PubTmp\Out\TicTacToeServer.exe
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\TicTacToeServer\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\TicTacToeServer\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\TicTacToeServer\obj\Release\net8.0\PubTmp\Out\TicTacToeServer.dll
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\TicTacToeServer\obj\Release\net8.0\PubTmp\Out\TicTacToeServer.deps.json
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\TicTacToeServer\obj\Release\net8.0\PubTmp\Out\TicTacToeServer.runtimeconfig.json
+C:\Users\jl.manzano\Documents\GitHub\SGE\Unidad8\TicTacToeServer\obj\Release\net8.0\PubTmp\Out\TicTacToeServer.pdb

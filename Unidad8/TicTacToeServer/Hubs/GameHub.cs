@@ -3,23 +3,45 @@ using TicTacToeServer.Entities;
 
 namespace TicTacToeServer.Hubs
 {
+    /// <summary>
+    /// Hub de SignalR para gestionar la comunicación en tiempo real del juego Tic Tac Toe.
+    /// Maneja conexiones, salas y retransmisión de movimientos entre jugadores.
+    /// </summary>
     public class GameHub : Hub
     {
+        /// <summary>
+        /// Diccionario de salas activas indexadas por RoomId.
+        /// </summary>
         private static readonly Dictionary<string, Room> _rooms = new Dictionary<string, Room>();
+
+        /// <summary>
+        /// Mapeo de ConnectionId a RoomId para rastrear en qué sala está cada conexión.
+        /// </summary>
         private static readonly Dictionary<string, string> _connectionRooms = new Dictionary<string, string>();
+
+        /// <summary>
+        /// Contador incremental para generar IDs únicos de sala.
+        /// </summary>
         private static int _roomCounter = 0;
 
+        /// <summary>
+        /// Se ejecuta cuando un cliente se conecta al hub.
+        /// Envía la lista de salas actualizada al nuevo cliente.
+        /// </summary>
         public override async Task OnConnectedAsync()
         {
             await base.OnConnectedAsync();
-            Console.WriteLine($"✅ Cliente conectado: {Context.ConnectionId}");
             await SendRoomListToAll();
         }
 
+        /// <summary>
+        /// Se ejecuta cuando un cliente se desconecta del hub.
+        /// Notifica al oponente y limpia la sala si es necesario.
+        /// </summary>
+        /// <param name="exception">Excepción que causó la desconexión, si la hay.</param>
         public override async Task OnDisconnectedAsync(Exception? exception)
         {
             await base.OnDisconnectedAsync(exception);
-            Console.WriteLine($"🔌 Cliente desconectado: {Context.ConnectionId}");
 
             try
             {
@@ -36,13 +58,16 @@ namespace TicTacToeServer.Hubs
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error en desconexión: {ex.Message}");
+                Console.Error.WriteLine($"Error en desconexión: {ex.Message}");
             }
         }
 
+        /// <summary>
+        /// Crea una nueva sala de juego.
+        /// </summary>
+        /// <param name="roomName">Nombre de la sala. Si está vacío, se genera uno automático.</param>
         public async Task CreateRoom(string roomName)
         {
-            Console.WriteLine($"🏗️ Creando sala: {roomName}");
             try
             {
                 if (string.IsNullOrWhiteSpace(roomName))
@@ -54,20 +79,23 @@ namespace TicTacToeServer.Hubs
                 var room = new Room(roomId, roomName);
                 _rooms[roomId] = room;
 
-                Console.WriteLine($"✅ Sala creada: {roomId} - {roomName}");
                 await SendRoomListToAll();
                 await Clients.Caller.SendAsync("RoomCreated", new { roomId, roomName });
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error al crear sala: {ex.Message}");
                 await Clients.Caller.SendAsync("Error", ex.Message);
             }
         }
 
+        /// <summary>
+        /// Une al cliente actual a una sala existente.
+        /// Asigna símbolo X o O según disponibilidad.
+        /// </summary>
+        /// <param name="roomId">ID de la sala a unirse.</param>
+        /// <param name="playerName">Nombre del jugador.</param>
         public async Task JoinRoom(string roomId, string playerName = "Jugador")
         {
-            Console.WriteLine($"🚪 {Context.ConnectionId} intentando unirse a sala {roomId}");
             try
             {
                 if (!_rooms.ContainsKey(roomId))
@@ -90,8 +118,6 @@ namespace TicTacToeServer.Hubs
                     room.PlayerO = player;
 
                 _connectionRooms[Context.ConnectionId] = roomId;
-
-                Console.WriteLine($"✅ {Context.ConnectionId} se unió como {symbol}");
 
                 if (room.PlayerX != null)
                 {
@@ -119,11 +145,14 @@ namespace TicTacToeServer.Hubs
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error al unirse: {ex.Message}");
                 await Clients.Caller.SendAsync("Error", ex.Message);
             }
         }
 
+        /// <summary>
+        /// Retransmite un movimiento a todos los jugadores de la sala.
+        /// </summary>
+        /// <param name="position">Posición del tablero (0-8).</param>
         public async Task BroadcastMove(int position)
         {
             try
@@ -133,8 +162,6 @@ namespace TicTacToeServer.Hubs
 
                 string roomId = _connectionRooms[Context.ConnectionId];
 
-                Console.WriteLine($"📤 Retransmitiendo movimiento: posición {position} en sala {roomId}");
-
                 await Clients.Group(roomId).SendAsync("MoveBroadcasted", new
                 {
                     connectionId = Context.ConnectionId,
@@ -143,11 +170,13 @@ namespace TicTacToeServer.Hubs
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error: {ex.Message}");
                 await Clients.Caller.SendAsync("Error", ex.Message);
             }
         }
 
+        /// <summary>
+        /// Retransmite la solicitud de reinicio del juego a todos los jugadores de la sala.
+        /// </summary>
         public async Task BroadcastReset()
         {
             try
@@ -157,8 +186,6 @@ namespace TicTacToeServer.Hubs
 
                 string roomId = _connectionRooms[Context.ConnectionId];
 
-                Console.WriteLine($"🔄 Retransmitiendo reinicio en sala {roomId}");
-
                 await Clients.Group(roomId).SendAsync("ResetBroadcasted", new
                 {
                     connectionId = Context.ConnectionId
@@ -166,11 +193,14 @@ namespace TicTacToeServer.Hubs
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error: {ex.Message}");
                 await Clients.Caller.SendAsync("Error", ex.Message);
             }
         }
 
+        /// <summary>
+        /// Permite al cliente abandonar la sala actual.
+        /// Notifica al oponente y limpia la sala si queda vacía.
+        /// </summary>
         public async Task LeaveRoom()
         {
             try
@@ -186,15 +216,16 @@ namespace TicTacToeServer.Hubs
 
                 LeaveRoomInternal(roomId, Context.ConnectionId);
                 await SendRoomListToAll();
-
-                Console.WriteLine($"👋 {Context.ConnectionId} salió de sala {roomId}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error al salir: {ex.Message}");
+                Console.Error.WriteLine($"Error al salir: {ex.Message}");
             }
         }
 
+        /// <summary>
+        /// Envía la lista de salas disponibles al cliente que lo solicita.
+        /// </summary>
         public async Task GetRoomList()
         {
             try
@@ -204,11 +235,16 @@ namespace TicTacToeServer.Hubs
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error al obtener salas: {ex.Message}");
                 await Clients.Caller.SendAsync("Error", ex.Message);
             }
         }
 
+        /// <summary>
+        /// Remueve un jugador de una sala internamente.
+        /// Elimina la sala si queda vacía.
+        /// </summary>
+        /// <param name="roomId">ID de la sala.</param>
+        /// <param name="connectionId">ID de conexión del jugador a remover.</param>
         private void LeaveRoomInternal(string roomId, string connectionId)
         {
             if (!_rooms.ContainsKey(roomId))
@@ -221,15 +257,16 @@ namespace TicTacToeServer.Hubs
             else if (room.PlayerO?.ConnectionId == connectionId)
                 room.PlayerO = null;
 
-            Console.WriteLine($"👋 Jugador {connectionId} salió de sala {roomId}");
-
             if (room.IsEmpty())
             {
                 _rooms.Remove(roomId);
-                Console.WriteLine($"🗑️ Sala eliminada: {roomId}");
             }
         }
 
+        /// <summary>
+        /// Genera la lista de salas con su información para enviar a los clientes.
+        /// </summary>
+        /// <returns>Lista de objetos anónimos con datos de cada sala.</returns>
         private List<object> GetRoomListInternal()
         {
             return _rooms.Values.Select(room => new
@@ -243,17 +280,19 @@ namespace TicTacToeServer.Hubs
             }).ToList<object>();
         }
 
+        /// <summary>
+        /// Envía la lista actualizada de salas a todos los clientes conectados.
+        /// </summary>
         private async Task SendRoomListToAll()
         {
             try
             {
                 var roomList = GetRoomListInternal();
                 await Clients.All.SendAsync("RoomListUpdated", roomList);
-                Console.WriteLine($"📤 Lista de salas enviada ({roomList.Count} salas)");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error al enviar lista: {ex.Message}");
+                Console.Error.WriteLine($"Error al enviar lista: {ex.Message}");
             }
         }
     }
